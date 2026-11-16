@@ -1,0 +1,9 @@
+{
+ "tanggal": "-",
+ "jam": "-",
+ "status": "belum pernah jalan",
+ "model": null,
+ "agents": {},
+ "log": [],
+ "error": "Shift pertama belum jalan. Jalankan workflow 'Shift malam Kantor AI' sekali dari tab Actions."
+}
