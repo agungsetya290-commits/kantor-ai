@@ -148,7 +148,7 @@ def shift(models):
 
     # --- Divisi Shorts & Editor ---
     tren = feed(FEED_SHORTS)
-    nova = kerja("nova", "Nova", "Shorts & Editor", "Trend hunter", f"""Kamu Nova, trend hunter kantor konten. Judul berita/post minggu ini:
+    nova = kerja("gendol", "Gendol", "Shorts & Editor", "Trend hunter", f"""Kamu Gendol, karyawan trend hunter di kantor milik CEO Gembi. Judul berita/post minggu ini:
 {json.dumps(tren, ensure_ascii=False)}
 
 Dari bahan itu, usulkan 3 ide YouTube Shorts 9:16 untuk penonton LUAR NEGERI (narasi bahasa Inggris).
@@ -158,14 +158,14 @@ Skema: {{"ide":[{{"judul_kerja":"","sudut":"","kenapa_nonton":"","sumber":"berit
         catatan=f"{len(tren)} judul terbaca dari RSS")
 
     pilih = (nova.get("ide") or [{}])[0] if isinstance(nova, dict) else {}
-    ale = kerja("ale", "Ale", "Shorts & Editor", "Naskah", f"""Kamu Ale, penulis naskah Shorts. Ide terpilih:
+    ale = kerja("paero", "Paero", "Shorts & Editor", "Naskah", f"""Kamu Paero, karyawan penulis naskah Shorts. Ide terpilih:
 {json.dumps(pilih, ensure_ascii=False)}
 
 Tulis naskah Shorts 35-45 detik, narasi bahasa INGGRIS, hook di 2 detik pertama, ada pertanyaan penutup.
 Skema: {{"hook":"","naskah":[{{"detik":"0-3","narasi":"","teks_layar":""}}],"cta":"","durasi_detik":0}}
 {RULES}""")
 
-    kerja("rara", "Rara", "Shorts & Editor", "Editor", f"""Kamu Rara, editor video. Naskah:
+    kerja("bonyek", "Bonyek", "Shorts & Editor", "Editor video", f"""Kamu Bonyek, karyawan editor video. Naskah:
 {json.dumps(ale, ensure_ascii=False)}
 
 Buat instruksi edit siap pakai (CapCut/Remotion): per shot ada visual, animasi teks (nama efek + durasi), transisi, SFX/musik.
@@ -174,7 +174,7 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
 
     # --- Divisi Affiliate & Sosmed ---
     gadget = feed(FEED_GADGET)
-    sari = kerja("sari", "Sari", "Affiliate & Sosmed", "Riset produk", f"""Kamu Sari, riset produk affiliate gadget. Judul berita gadget hari ini:
+    sari = kerja("botak", "Botak", "Affiliate & Sosmed", "Riset produk", f"""Kamu Botak, karyawan riset produk affiliate gadget. Judul berita gadget hari ini:
 {json.dumps(gadget, ensure_ascii=False)}
 
 Usulkan 3 ide konten "tips gadget" untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
@@ -182,20 +182,22 @@ Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "l
 Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk_tipe":"","hook":"","sumber":"berita|lab"}}]}}""",
         catatan=f"{len(gadget)} judul terbaca dari RSS")
 
-    dimas = kerja("dimas", "Dimas", "Affiliate & Sosmed", "Caption", f"""Kamu Dimas, copywriter sosmed. Ide produk:
+    dimas = kerja("mahim", "Mahim", "Affiliate & Sosmed", "Caption", f"""Kamu Mahim, karyawan copywriter sosmed. Ide produk:
 {json.dumps((sari.get("ide") or [])[:2] if isinstance(sari, dict) else [], ensure_ascii=False)}
 
 Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threads (santai), Facebook (agak panjang).
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
 Skema: {{"paket":[{{"topik":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
 
-    kerja("bima", "Bima", "Affiliate & Sosmed", "Antrean posting", f"""Kamu Bima, admin antrean posting. Bahan siap:
+    kerja("rahma", "Rahma", "Sekretariat", "Sekretaris CEO", f"""Kamu Rahma, sekretaris CEO Gembi. Laporan karyawan malam ini:
+Status kerja: {json.dumps(log, ensure_ascii=False)}
 Shorts: {json.dumps({"hook": ale.get("hook") if isinstance(ale, dict) else None}, ensure_ascii=False)}
 Caption: {json.dumps([p.get("topik") for p in (dimas.get("paket") or [])] if isinstance(dimas, dict) else [], ensure_ascii=False)}
 
-Susun antrean posting 3 hari ke depan. Jam padat penonton Indonesia untuk affiliate, jam padat US/EU untuk Shorts bahasa Inggris.
-Agung posting manual dari antrean ini.
-Skema: {{"antrean":[{{"hari":"","jam_wib":"","platform":"","isi":"","status":"nunggu dicek"}}]}}""")
+Tulis laporan singkat untuk CEO Gembi: apa yang sudah jadi, apa yang gagal, dan apa yang perlu Gembi cek dulu.
+Lalu susun antrean posting 3 hari ke depan (jam padat Indonesia untuk affiliate, jam padat US/EU untuk Shorts Inggris).
+Gembi yang memutuskan dan posting manual; kamu tidak posting.
+Skema: {{"laporan_ceo":"","perlu_dicek":[],"antrean":[{{"hari":"","jam_wib":"","platform":"","isi":"","status":"nunggu persetujuan CEO"}}]}}""")
 
     return agents, log, dipakai
 
