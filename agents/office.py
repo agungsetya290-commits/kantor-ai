@@ -1,4 +1,4 @@
-agents/office.py#!/usr/bin/env python3
+#!/usr/bin/env python3
 """Kantor AI - satu shift malam. Jalan di GitHub Actions, tulis hasil ke data/."""
 import json, os, re, sys, time, urllib.request, urllib.error, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
