@@ -14,7 +14,7 @@ MODEL_PREF = ["3.8-flash", "3.6-flash", "3.5-flash", "flash-lite", "flash"]
 MODEL_BLOCK = ["image", "video", "embedding", "tts", "live", "audio", "vision", "gemma"]
 
 
-def http(url, data=None, timeout=90):
+def http(url, data=None, timeout=40):
     req = urllib.request.Request(url, data=data, headers={
         "User-Agent": UA, "Content-Type": "application/json", "Accept": "*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -46,11 +46,11 @@ def pick_models():
             if pref in n.lower() and n not in ranked:
                 ranked.append(n)
     ranked = ranked or names
-    print(f"[model] kandidat: {ranked[:4]}")
-    return ranked[:4] or ["gemini-flash-latest"]
+    print(f"[model] kandidat: {ranked[:3]}")
+    return ranked[:3] or ["gemini-flash-latest"]
 
 
-def ask(models, prompt, retries=3):
+def ask(models, prompt, retries=2):
     """Satu permintaan ke Gemini, minta JSON. Kalau satu model sibuk (429/503),
     tunggu lalu coba lagi; habis itu pindah ke model cadangan."""
     payload = json.dumps({
@@ -69,7 +69,7 @@ def ask(models, prompt, retries=3):
                 last = f"HTTP {e.code} ({model})"
                 print(f"[gemini] {last}: {e.read().decode()[:200]}", file=sys.stderr)
                 if e.code in (429, 500, 502, 503) and i < retries - 1:
-                    time.sleep(15 * (i + 1))
+                    time.sleep(10 * (i + 1))
                     continue
                 break
             except Exception as e:
@@ -125,12 +125,16 @@ RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polo
 def shift(models):
     """Satu shift. Tiap agent dibungkus sendiri: kalau satu gagal, sisanya tetap kerja."""
     agents, log, dipakai = {}, [], []
+    mulai = time.time()
+    BATAS = 420  # detik; shift berhenti rapi kalau Google lambat terus
 
     def kerja(key, nama, divisi, peran, prompt, catatan=None):
         entry = {"nama": nama, "divisi": divisi, "peran": peran}
         if catatan:
             entry["catatan"] = catatan
         try:
+            if time.time() - mulai > BATAS:
+                raise RuntimeError("batas waktu shift tercapai, agent ini dilewati")
             hasil, model = ask(models, prompt)
             entry["hasil"] = hasil
             dipakai.append(model)
