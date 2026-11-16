@@ -72,6 +72,17 @@ button.btn:hover{border-color:var(--gold);color:var(--gold)}
 .note{font-size:10px;color:var(--dim);margin-top:12px;line-height:1.7;border-top:1px solid var(--line);padding-top:9px}
 .hist{display:none;flex-wrap:wrap;gap:5px;margin-bottom:10px}
 .hist.on{display:flex}
+.hdivider{position:absolute;left:0;right:0;top:40%;height:4px;background:var(--wall);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.rug{position:absolute;left:22%;right:22%;top:6%;height:30%;background:#3a2a4f;border:2px dashed #5a4775;border-radius:4px}
+.desk.ceo .deskTop{background:#8a6a2f;border-color:#2a1d0a}
+.crown{left:9px;top:0;width:12px;height:4px;background:var(--gold);border:1px solid #241a33}
+.acts{display:flex;gap:6px;margin-top:6px}
+.acts button{font-family:var(--font);font-size:10px;padding:4px 8px;cursor:pointer;border-radius:2px;
+  background:#231c30;color:var(--ink);border:1px solid var(--line)}
+.acts button.on-ok{border-color:var(--ok);color:var(--ok)}
+.acts button.on-rev{border-color:var(--warn);color:var(--warn)}
+.st-ok{color:var(--ok)}.st-rev{color:var(--warn)}.st-wait{color:var(--gold)}
 </style>
 </head>
 <body>
@@ -81,25 +92,27 @@ button.btn:hover{border-color:var(--gold);color:var(--gold)}
   <div class="sub" id="meta">memuat shift…</div>
 
   <div class="floor" id="floor">
-    <div class="divider"></div>
-    <div class="roomlabel" style="left:8px;top:8px">Shorts &amp; Editor</div>
-    <div class="roomlabel" style="right:8px;top:8px">Affiliate &amp; Sosmed</div>
+    <div class="rug"></div>
+    <div class="hdivider"></div>
+    <div class="roomlabel" style="left:8px;top:8px">Ruang CEO</div>
+    <div class="roomlabel" style="left:8px;top:calc(40% + 10px)">Ruang Kerja · Shorts &amp; Editor</div>
+    <div class="roomlabel" style="left:8px;top:calc(73% + 4px)">Affiliate &amp; Sosmed</div>
     <div class="room" id="room"></div>
   </div>
 
   <div class="bar">
     <button class="btn" id="histBtn">Lihat riwayat shift</button>
-    <button class="btn" id="inboxBtn">Nunggu kamu cek</button>
+    <button class="btn" id="inboxBtn">Meja CEO: cek semua</button>
   </div>
   <div class="hist" id="hist"></div>
 
   <div class="panel" id="panel">
     <h2>Pilih meja</h2>
-    <div class="who">Klik meja agent buat lihat hasil kerjanya semalam.</div>
+    <div class="who">Klik meja karyawan buat lihat hasil kerjanya. Klik meja Gembi buat cek dan setujui semua.</div>
   </div>
 
   <div class="note">
-    Agent kerja tiap malam 00:30 WIB lewat GitHub Actions, hasilnya nunggu Agung cek — agent tidak posting sendiri.
+    Agent kerja tiap malam 00:30 WIB lewat GitHub Actions, hasilnya nunggu CEO Gembi cek — karyawan dan Rahma tidak posting sendiri.
     Angka dan ide di sini hasil riset judul berita + tulisan model, bukan prediksi views, viral, atau penghasilan.
     Ide berlabel <b>lab</b> adalah contoh editorial, bukan tren nyata.
   </div>
@@ -107,11 +120,17 @@ button.btn:hover{border-color:var(--gold);color:var(--gold)}
 
 <script>
 const DESKS = {
-  nova:{x:26,y:33}, ale:{x:26,y:58}, rara:{x:26,y:83},
-  sari:{x:74,y:33}, dimas:{x:74,y:58}, bima:{x:74,y:83}
+  gembi:{x:38,y:22}, rahma:{x:66,y:22},
+  gendol:{x:18,y:58}, paero:{x:50,y:58}, bonyek:{x:82,y:58},
+  botak:{x:32,y:84}, mahim:{x:68,y:84}
 };
-const DOOR = {x:50,y:97};
-const SHIRT = {nova:"#5ddb9a",ale:"#79b8ff",rara:"#ffcf5c",sari:"#ff9ecb",dimas:"#c79bff",bima:"#ffa46b"};
+const DOOR = {x:50,y:99};
+const SHIRT = {gembi:"#2b2b3a",rahma:"#ff9ecb",gendol:"#5ddb9a",paero:"#79b8ff",bonyek:"#ffcf5c",botak:"#ffa46b",mahim:"#c79bff"};
+const KARYAWAN = ["gendol","paero","bonyek","botak","mahim","rahma"];
+let cek = {};
+const cekKey = () => "kantor-cek-" + (shift && shift.tanggal);
+function loadCek(){ try{ cek = JSON.parse(localStorage.getItem(cekKey())||"{}"); }catch(e){ cek = {}; } }
+function saveCek(){ try{ localStorage.setItem(cekKey(), JSON.stringify(cek)); }catch(e){} }
 let shift=null, history=[];
 
 const esc = s => String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
@@ -133,15 +152,15 @@ function buildRoom(data){
   room.innerHTML="";
   const agents=data.agents||{};
   Object.entries(DESKS).forEach(([id,p])=>{
-    const a=agents[id];
+    const a = id==="gembi" ? {nama:"Gembi",peran:"CEO · yang ngecek"} : agents[id];
     const d=document.createElement("button");
-    d.className="desk"; d.style.left=p.x+"%"; d.style.top=(p.y+9)+"%";
+    d.className="desk"+(id==="gembi"?" ceo":""); d.style.left=p.x+"%"; d.style.top=(p.y+9)+"%";
     d.setAttribute("aria-pressed","false");
     d.innerHTML=`<div class="deskTop"></div>
       <div class="deskName">${esc(a?a.nama:id)}</div>
       <div class="deskRole">${esc(a?a.peran:"meja kosong")}</div>
-      ${a?'<span class="badge">nunggu kamu cek</span>':''}`;
-    d.onclick=()=>show(id,d);
+      ${id==="gembi"?`<span class="badge">${sisa()} nunggu dicek</span>`:(a?badge(id):'')}`;
+    d.onclick=()=> id==="gembi" ? ceoDesk() : show(id,d);
     room.appendChild(d);
 
     if(!a) return;
@@ -149,7 +168,7 @@ function buildRoom(data){
     g.className="guy"; g.style.left=DOOR.x+"%"; g.style.top=DOOR.y+"%";
     g.innerHTML=`<span class="tag">${esc(a.nama)}</span>
       <i class="shadow"></i><i class="head"></i><i class="hair"></i><i class="eyes"></i>
-      <i class="body" style="background:${SHIRT[id]}"></i><i class="arm"></i><i class="legs"></i>`;
+      <i class="body" style="background:${SHIRT[id]}"></i><i class="arm"></i><i class="legs"></i>${id==="gembi"?'<i class="crown"></i>':''}`;
     room.appendChild(g);
     setTimeout(()=>{g.style.left=p.x+"%"; g.style.top=p.y+"%";
       setTimeout(()=>g.classList.add("work"),1400);},150+Math.random()*700);
@@ -159,11 +178,12 @@ function buildRoom(data){
 function show(id,btn){
   document.querySelectorAll(".desk").forEach(b=>b.setAttribute("aria-pressed","false"));
   if(btn) btn.setAttribute("aria-pressed","true");
-  const a=(shift.agents||{})[id], p=document.getElementById("panel");
+  const a=(shift.agents||{})[id], p=document.getElementById("panel"); p.dataset.mode="";
   if(!a){p.innerHTML=`<h2>${esc(id)}</h2><div class="who">Belum ada hasil. Shift terakhir: ${esc(shift.status)}.</div>`;return;}
   p.innerHTML=`<h2>${esc(a.nama)}</h2>
     <div class="who">${esc(a.peran)} · ${esc(a.divisi)}${a.catatan?" · "+esc(a.catatan):""}</div>
-    ${render(a.hasil)}`;
+    ${render(a.hasil)}${actsHtml(id)}`;
+  bindActs(p);
   p.scrollIntoView({behavior:"smooth",block:"nearest"});
 }
 
@@ -177,16 +197,37 @@ function meta(d){
     (d.error?`<div style="color:var(--warn);margin-top:7px">${esc(d.error)}</div>`:"");
 }
 
-function load(d){ shift=d; meta(d); buildRoom(d); }
+function badge(id){
+  const v=cek[id];
+  return v==="ok"?'<span class="badge st-ok">disetujui</span>':v==="rev"?'<span class="badge st-rev">minta revisi</span>':'<span class="badge">nunggu dicek</span>';
+}
+function sisa(){ return KARYAWAN.filter(k=>(shift.agents||{})[k] && !cek[k]).length; }
+function actsHtml(id){
+  return `<div class="acts" data-id="${id}">
+    <button data-v="ok" class="${cek[id]==="ok"?"on-ok":""}">Setujui</button>
+    <button data-v="rev" class="${cek[id]==="rev"?"on-rev":""}">Minta revisi</button></div>`;
+}
+function bindActs(root){
+  root.querySelectorAll(".acts button").forEach(b=>b.onclick=()=>{
+    const id=b.parentElement.dataset.id; cek[id]=cek[id]===b.dataset.v?undefined:b.dataset.v;
+    saveCek(); buildRoom(shift); if(root.dataset.mode==="ceo") ceoDesk(); else show(id);
+  });
+}
+function ceoDesk(){
+  const p=document.getElementById("panel"); p.dataset.mode="ceo";
+  const ag=shift.agents||{};
+  const rahma=ag.rahma&&ag.rahma.hasil;
+  p.innerHTML=`<h2>Meja CEO · Gembi</h2><div class="who">Shift ${esc(shift.tanggal)} · ${sisa()} hasil nunggu keputusanmu</div>`+
+    (rahma&&rahma.laporan_ceo?`<div class="kv"><div class="k">Laporan Rahma</div><div class="v">${esc(rahma.laporan_ceo)}</div></div>`:"")+
+    KARYAWAN.filter(k=>ag[k]).map(k=>`<div class="card"><div class="k">${esc(ag[k].nama)} — ${esc(ag[k].peran)}</div>
+      <div class="v">${ag[k].error?"Gagal: "+esc(ag[k].error):"Hasil siap. Klik mejanya buat baca lengkap."}</div>${actsHtml(k)}</div>`).join("")+
+    (Object.keys(ag).length?"":`<div class="v">Belum ada laporan. ${esc(shift.error||"")}</div>`)+
+    `<div class="note">Keputusan Setujui/Revisi tersimpan di browser ini saja.</div>`;
+  bindActs(p);
+}
+function load(d){ shift=d; loadCek(); meta(d); buildRoom(d); }
 
-document.getElementById("inboxBtn").onclick=()=>{
-  const ag=Object.entries(shift.agents||{});
-  const p=document.getElementById("panel");
-  p.innerHTML=`<h2>Nunggu kamu cek</h2><div class="who">${ag.length} hasil dari shift ${esc(shift.tanggal)}</div>`+
-    (ag.length?ag.map(([id,a])=>`<div class="kv"><div class="k">${esc(a.nama)} — ${esc(a.divisi)}</div>
-      <div class="v">${esc((shift.log||[]).find(l=>l.startsWith(a.nama))||a.peran)}</div></div>`).join("")
-    :`<div class="v">Kosong. ${esc(shift.error||"")}</div>`);
-};
+document.getElementById("inboxBtn").onclick=ceoDesk;
 
 document.getElementById("histBtn").onclick=()=>{
   const h=document.getElementById("hist");
