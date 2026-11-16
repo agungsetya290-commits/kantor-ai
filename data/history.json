@@ -1,131 +1,133 @@
 [
  {
   "tanggal": "2026-11-17",
-  "jam": "01:34 WIB",
+  "jam": "01:58 WIB",
   "status": "sebagian",
   "model": "gemini-3.6-flash",
   "agents": {
-   "nova": {
-    "nama": "Nova",
+   "gendol": {
+    "nama": "Gendol",
     "divisi": "Shorts & Editor",
     "peran": "Trend hunter",
     "catatan": "12 judul terbaca dari RSS",
     "hasil": {
      "ide": [
       {
-       "judul_kerja": "The 1921 Ghost Ship Mystery (Micro-Drama Ep. 1)",
-       "sudut": "Mengangkat tren micro-drama berseri berdurasi agak panjang. Narasi horor sejarah tanpa wajah tentang kapal Carroll A. Deering yang ditemukan tanpa awak, menggunakan visual foto arsip tua yang dianimasikan halus serta sound design ambien laut yang pekat.",
-       "kenapa_nonton": "Penonton luar negeri menyukai misteri sejarah nyata (true mystery) dengan pembawaan atmosferik dan cliffhanger cerita yang memicu rasa penasaran untuk episode berikutnya.",
+       "judul_kerja": "The Silent Village of 1930: Micro-Horror History",
+       "sudut": "Pendekatan microdrama sejarah horor 60 detik (faceless) dengan audio ambience hujan malam dan narasi voiceover Bahasa Inggris yang mencekam.",
+       "kenapa_nonton": "Memanfaatkan tren microdramas di YouTube Shorts untuk mengikat penonton luar negeri yang menyukai sejarah mistis berformat cerita naratif cepat.",
        "sumber": "berita"
       },
       {
-       "judul_kerja": "3 AM Rain in an Abandoned Japanese Shrine",
-       "sudut": "Pengalaman ambien audio-visual 9:16 yang menggabungkan visual hujan berulang di kuil tua dengan narasi bisikan (ASMR horror narration) berbahasa Inggris tentang legenda urban abad ke-18.",
-       "kenapa_nonton": "Memberikan perpaduan unik antara relaksasi dan sensasi merinding (cozy-scary vibe) yang sangat disukai audiens global pencinta konten ambience.",
+       "judul_kerja": "The Medieval Monoculture: The Song That Obsessed an Empire",
+       "sudut": "Eksplorasi fenomena monoculture sejarah kuno yang dikombinasikan dengan visual dark-academia dan ambience perpustakaan tua tanpa wajah.",
+       "kenapa_nonton": "Mengangkat topik tren monoculture historis dengan binaural soundscape yang memicu rasa penasaran audiens global.",
+       "sumber": "berita"
+      },
+      {
+       "judul_kerja": "3 AM Liminal Horror: Sound of the Forgotten Subway",
+       "sudut": "Murni ambience horor atmosferik visual lorong sepi (liminal space) dengan bisikan narasi urban legend sejarah luar negeri.",
+       "kenapa_nonton": "Retention tinggi dari pecinta konten ASMR horor dan visual atmosferik yang imersif tanpa perlu kehadiran kreator di depan kamera.",
        "sumber": "lab"
-      },
-      {
-       "judul_kerja": "The Forbidden Audio from the Paris Catacombs (1890)",
-       "sudut": "Mengadaptasi tren micro-storytelling dengan format doku-horor cepat. Menggunakan rekaman suara vintage buatan, efek dokumen tua, dan peta 3D tanpa menampilkan wajah untuk menceritakan eksperimen suara terlarang abad ke-19.",
-       "kenapa_nonton": "Memanfaatkan daya tarik audiens internasional terhadap tempat-tempat ikonik bernuansa kelam dan misteri sejarah yang belum banyak diketahui.",
-       "sumber": "berita"
       }
      ]
     }
    },
-   "ale": {
-    "nama": "Ale",
+   "paero": {
+    "nama": "Paero",
     "divisi": "Shorts & Editor",
     "peran": "Naskah",
     "hasil": {
-     "hook": "On January 31, 1921, a massive ship was found completely abandoned... with dinner still warm on the kitchen table.",
-     "naskah": [
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    },
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   },
+   "bonyek": {
+    "nama": "Bonyek",
+    "divisi": "Shorts & Editor",
+    "peran": "Editor video",
+    "hasil": {
+     "shot": [
       {
-       "detik": "0-3",
-       "narasi": "On January 31, 1921, a massive ship was found completely abandoned... with dinner still warm on the table.",
-       "teks_layar": "[Top frame: by Agung] [Glitch Effect] FOUND WITHOUT A CREW"
+       "detik": "00:00 - 00:03",
+       "visual": "Cinematic shot suasana kota pagi hari dengan lighting hangat, kamera slow zoom in",
+       "teks": "SELAMAT DATANG",
+       "animasi_teks": "Fade In / 0.5 detik",
+       "transisi": "Glitch Zoom / 0.3 detik",
+       "sfx": "Whoosh Soft Fast"
       },
       {
-       "detik": "3-8",
-       "narasi": "This was the Carroll A. Deering, stranded near the dangerous waters of Cape Hatteras.",
-       "teks_layar": "[Top frame: by Agung] [Fade-in Effect] The Carroll A. Deering (1921)"
+       "detik": "00:03 - 00:06",
+       "visual": "Close-up orang sedang memegang smartphone dengan latar belakang neon",
+       "teks": "KREATIF TANPA BATAS",
+       "animasi_teks": "Typewriter / 0.8 detik",
+       "transisi": "Blur Dissolve / 0.4 detik",
+       "sfx": "Keyboard Typing + Pop"
       },
       {
-       "detik": "8-15",
-       "narasi": "When rescuers finally boarded days later, they expected a tragedy... but found something far stranger.",
-       "teks_layar": "[Top frame: by Agung] [Slide-up Effect] No Crew. No Signs of Struggle."
-      },
-      {
-       "detik": "15-22",
-       "narasi": "All lifeboats were missing, navigation logs were gone, yet a prepared meal was left totally untouched in the galley.",
-       "teks_layar": "[Top frame: by Agung] [Typewriter Effect] Freshly cooked food... left behind."
-      },
-      {
-       "detik": "22-30",
-       "narasi": "Was it a violent mutiny? Rogue pirates? Or did the mysterious Bermuda Triangle claim another victim?",
-       "teks_layar": "[Top frame: by Agung] [Zoom-in Effect] Mutiny? Pirates? Or Something Else?"
-      },
-      {
-       "detik": "30-36",
-       "narasi": "Even a full FBI investigation couldn't solve it. To this day, not a single crew member has ever been found.",
-       "teks_layar": "[Top frame: by Agung] [Shake Effect] Case Unsolved for 100+ Years"
-      },
-      {
-       "detik": "36-40",
-       "narasi": "What do you think happened to the 11 missing men? Comment your theory below and follow for Episode 2!",
-       "teks_layar": "[Top frame: by Agung] [Pulse Effect] WHAT HAPPENED TO THEM? (Follow for Ep. 2)"
+       "detik": "00:06 - 00:10",
+       "visual": "Montase cepat proses editing video di laptop dengan pemandangan studio",
+       "teks": "SAATNYA BERKARYA",
+       "animasi_teks": "Bounce Up / 0.4 detik",
+       "transisi": "Fade to Black / 0.5 detik",
+       "sfx": "Swoosh Heavy + Camera Shutter"
       }
      ],
-     "cta": "What do you think happened to the 11 missing men? Comment your theory below and follow for Episode 2!",
-     "durasi_detik": 40
+     "musik": "Upbeat Electronic Synthwave (Volume 40%, Auto-ducking aktif saat SFX)",
+     "safe_area": "Margin 10% dari tepi layar (Format 9:16 untuk TikTok/Reels), teks utama berada di 1/3 tengah layar",
+     "by_agung": "Top Center (5% dari tepi atas), Font Sans-Serif Small, Opacity 75%"
     }
    },
-   "rara": {
-    "nama": "Rara",
-    "divisi": "Shorts & Editor",
-    "peran": "Editor",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
-    },
-    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
-   },
-   "sari": {
-    "nama": "Sari",
+   "botak": {
+    "nama": "Botak",
     "divisi": "Affiliate & Sosmed",
     "peran": "Riset produk",
     "catatan": "12 judul terbaca dari RSS",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
-   "dimas": {
-    "nama": "Dimas",
+   "mahim": {
+    "nama": "Mahim",
     "divisi": "Affiliate & Sosmed",
     "peran": "Caption",
     "hasil": {
-     "gagal": "batas waktu shift tercapai, agent ini dilewati"
-    },
-    "error": "batas waktu shift tercapai, agent ini dilewati"
+     "paket": [
+      {
+       "topik": "Bantal Sandaran Ergonomis untuk Kenyamanan Duduk Seharian",
+       "tiktok": "Duduk lama pas kerja sering bikin punggung pegal? Cobain bantal sandaran ergonomis ini biar posisi duduk kamu lebih nyaman seharian. Klik keranjang kuning di bawah sekarang sebelum kehabisan ya!",
+       "threads": "Jujur, semenjak pakai bantal sandaran ergonomis ini di kursi kerja, rasanya lebih betah ngetik berjam-jam. Punggung jadi nggak gampang tegang. Ada yang sering merasa pegal juga kalau duduk lama?",
+       "facebook": "Menghabiskan waktu berjam-jam di depan laptop sering kali membuat area punggung dan pinggang terasa tidak nyaman. Menjaga postur duduk yang baik adalah salah satu kunci agar tetap fokus dan produktif sepanjang hari.\n\nBantal sandaran ergonomis ini dirancang untuk membantu menopang lekuk tulang belakang secara lebih optimal. Busa penyangganya empuk, fleksibel, dan cocok dipasang di berbagai jenis kursi kantor maupun kendaraan.\n\nYuk, mulai perhatikan kenyamanan tubuh saat bekerja. Cek info selengkapnya dan temukan varian pilihanmu melalui tautan di toko kami!",
+       "hashtag": [
+        "#KenyamananKerja",
+        "#BantalErgonomis",
+        "#WorkFromHome",
+        "#SolusiPegal",
+        "#PerlengkapanKantor"
+       ]
+      }
+     ]
+    }
    },
-   "bima": {
-    "nama": "Bima",
-    "divisi": "Affiliate & Sosmed",
-    "peran": "Antrean posting",
+   "rahma": {
+    "nama": "Rahma",
+    "divisi": "Sekretariat",
+    "peran": "Sekretaris CEO",
     "hasil": {
-     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "batas waktu shift tercapai, agent ini dilewati"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    }
   },
   "log": [
-   "Nova trend hunter selesai",
-   "Ale naskah selesai",
-   "Rara gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
-   "Sari gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
-   "Dimas gagal: batas waktu shift tercapai, agent ini dilewati",
-   "Bima gagal: batas waktu shift tercapai, agent ini dilewati"
+   "Gendol trend hunter selesai",
+   "Paero gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+   "Bonyek editor video selesai",
+   "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+   "Mahim caption selesai",
+   "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   ],
-  "error": "4 agent gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+  "error": "3 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  }
 ]
