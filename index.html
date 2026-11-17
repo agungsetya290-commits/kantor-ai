@@ -122,7 +122,7 @@ let cek = {};
 const cekKey = () => "kantor-cek-" + (shift && shift.tanggal);
 function loadCek(){ try{ cek = JSON.parse(localStorage.getItem(cekKey())||"{}"); }catch(e){ cek = {}; } }
 function saveCek(){ try{ localStorage.setItem(cekKey(), JSON.stringify(cek)); }catch(e){} }
-let shift=null, history=[];
+let shift=null, history=[], antrean=[];
 
 const esc = s => String(s).replace(/[&<>]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"}[c]));
 
@@ -232,8 +232,25 @@ function ceoDesk(){
     KARYAWAN.filter(k=>ag[k]).map(k=>`<div class="card"><div class="k">${esc(ag[k].nama)} — ${esc(ag[k].peran)}</div>
       <div class="v">${ag[k].error?"Gagal: "+esc(ag[k].error):"Hasil siap. Klik mejanya buat baca lengkap."}</div>${actsHtml(k)}</div>`).join("")+
     (Object.keys(ag).length?"":`<div class="v">Belum ada laporan. ${esc(shift.error||"")}</div>`)+
-    `<div class="note">Keputusan Setujui/Revisi tersimpan di browser ini saja.</div>`;
+    antreanHtml()+
+    `<div class="note">Keputusan Setujui/Revisi di meja ini tersimpan di browser. Yang benar-benar dikirim ke Threads adalah baris antrean yang kamu set <b>setujui: true</b>.</div>`;
   bindActs(p);
+}
+function antreanHtml(){
+  const url=`https://github.com/${REPO}/edit/main/data/antrean.json`;
+  if(!antrean.length) return `<div class="kv"><div class="k">Antrean posting</div>
+    <div class="v">Kosong. Antrean terisi otomatis setelah shift menulis caption.</div></div>`;
+  const baris=antrean.slice().reverse().map(a=>{
+    const st=a.terkirim?`<span class="st-ok">terkirim ${esc(a.terkirim)}</span>`
+      :a.error?`<span class="st-rev">gagal: ${esc(String(a.error).slice(0,60))}</span>`
+      :a.setujui?`<span class="st-wait">disetujui, nunggu jam kirim</span>`
+      :`<span class="st-rev">belum disetujui</span>`;
+    return `<div class="card"><div class="k">${esc(a.judul||a.id)} · ${st}</div>
+      <div class="v">${esc((a.teks||"").slice(0,180))}${(a.teks||"").length>180?"…":""}</div>
+      ${a.link?`<div class="v">link: ${esc(a.link)}</div>`:'<div class="v" style="color:var(--dim)">belum ada link afiliasi</div>'}</div>`;
+  }).join("");
+  return `<div class="kv"><div class="k">Antrean posting Threads</div>${baris}
+    <div class="acts"><button onclick="window.open('${url}','_blank')">Edit antrean di GitHub</button></div></div>`;
 }
 function load(d){ shift=d; loadCek(); meta(d); buildRoom(d); }
 
@@ -251,7 +268,9 @@ document.getElementById("histBtn").onclick=()=>{
   }
 };
 
+const REPO="agungsetya290-commits/kantor-ai";
 const bust="?t="+Date.now();
+fetch("data/antrean.json"+bust).then(r=>r.json()).then(d=>{antrean=d||[];}).catch(()=>{});
 fetch("data/shift.json"+bust).then(r=>r.json()).then(load)
   .catch(e=>document.getElementById("meta").textContent="data/shift.json belum ada: "+e);
 fetch("data/history.json"+bust).then(r=>r.json()).then(d=>history=d||[]).catch(()=>{});
