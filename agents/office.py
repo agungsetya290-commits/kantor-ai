@@ -122,6 +122,15 @@ RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polo
          "Balas HANYA JSON valid sesuai skema.")
 
 
+def baca_produk():
+    """Daftar produk afiliasi milik Agung: nama + link Shopee yang dia tempel sendiri."""
+    try:
+        d = json.load(open(os.path.join(DATA, "produk.json"), encoding="utf-8"))
+        return [p for p in d if p.get("nama") and p.get("link")]
+    except Exception:
+        return []
+
+
 def shift(models):
     """Satu shift. Tiap agent dibungkus sendiri: kalau satu gagal, sisanya tetap kerja."""
     agents, log, dipakai = {}, [], []
@@ -174,20 +183,27 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
 
     # --- Divisi Affiliate & Sosmed ---
     gadget = feed(FEED_GADGET)
+    produk = baca_produk()
+    nama_produk = [p["nama"] for p in produk]
+    aturan_produk = (f"\nPilih produk HANYA dari daftar ini, salin namanya persis: "
+                     f"{json.dumps(nama_produk, ensure_ascii=False)}. Isi field produk dengan nama itu."
+                     if nama_produk else
+                     "\nDaftar produk afiliasi masih kosong, isi field produk dengan string kosong.")
     sari = kerja("botak", "Botak", "Affiliate & Sosmed", "Riset produk", f"""Kamu Botak, karyawan riset produk affiliate gadget. Judul berita gadget hari ini:
 {json.dumps(gadget, ensure_ascii=False)}
 
 Usulkan 3 ide konten "tips gadget" untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
-Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".
-Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk_tipe":"","hook":"","sumber":"berita|lab"}}]}}""",
-        catatan=f"{len(gadget)} judul terbaca dari RSS")
+Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".{aturan_produk}
+Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber":"berita|lab"}}]}}""",
+        catatan=f"{len(gadget)} judul berita, {len(produk)} produk afiliasi terdaftar")
 
     dimas = kerja("mahim", "Mahim", "Affiliate & Sosmed", "Caption", f"""Kamu Mahim, karyawan copywriter sosmed. Ide produk:
 {json.dumps((sari.get("ide") or [])[:2] if isinstance(sari, dict) else [], ensure_ascii=False)}
 
 Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threads (santai), Facebook (agak panjang).
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
-Skema: {{"paket":[{{"topik":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
+Salin field produk dari ide yang kamu pakai apa adanya.
+Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
 
     kerja("rahma", "Rahma", "Sekretariat", "Sekretaris CEO", f"""Kamu Rahma, sekretaris CEO Gembi. Laporan karyawan malam ini:
 Status kerja: {json.dumps(log, ensure_ascii=False)}
@@ -214,6 +230,7 @@ def tulis_antrean(data):
         antrean = []
     sudah = {a.get("id") for a in antrean}
 
+    produk = {p["nama"].strip().lower(): p["link"] for p in baca_produk()}
     mahim = (data.get("agents", {}).get("mahim") or {}).get("hasil") or {}
     paket = mahim.get("paket") if isinstance(mahim, dict) else None
     baru = 0
@@ -225,8 +242,10 @@ def tulis_antrean(data):
         kid = f"{data['tanggal']}-mahim-{i}"
         if kid in sudah:
             continue
+        link = produk.get((p.get("produk") or "").strip().lower(), "")
         antrean.append({
             "id": kid,
+            "link": link,
             "tanggal": data["tanggal"],
             "judul": p.get("topik") or f"caption {i}",
             "platform": "threads",
