@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Kantor AI - satu shift malam. Jalan di GitHub Actions, tulis hasil ke data/."""
-import json, os, re, sys, time, urllib.request, urllib.error, xml.etree.ElementTree as ET
+import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -122,6 +122,30 @@ RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polo
          "Balas HANYA JSON valid sesuai skema.")
 
 
+def tren_threads(kata=("charger", "fast charging", "baterai hp")):
+    """Apa yang lagi dibicarakan orang di Threads soal niche ini.
+
+    Pakai keyword search resmi; kalau token tidak punya izinnya atau API menolak,
+    kembalikan daftar kosong dan kantor jalan seperti biasa dengan bahan RSS.
+    """
+    token = os.environ.get("THREADS_TOKEN", "").strip()
+    if not token:
+        return []
+    out = []
+    for q in kata:
+        url = ("https://graph.threads.net/v1.0/keyword_search"
+               f"?q={urllib.parse.quote(q)}&search_type=TOP&fields=text&access_token={token}")
+        try:
+            body = json.loads(http(url, timeout=25))
+            for m in (body.get("data") or [])[:4]:
+                t = re.sub(r"\s+", " ", (m.get("text") or "")).strip()
+                if 20 < len(t) < 220:
+                    out.append(t)
+        except Exception as e:
+            print(f"[tren] {q} gagal: {e}", file=sys.stderr)
+    return out[:10]
+
+
 def judul_terpakai(n=15):
     """Judul caption yang sudah pernah masuk antrean, supaya tidak diulang."""
     try:
@@ -195,6 +219,7 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
     produk = baca_produk()
     nama_produk = [p["nama"] for p in produk]
     riwayat = judul_terpakai()
+    tren = tren_threads()
     aturan_produk = (f"\nPilih produk HANYA dari daftar ini, salin namanya persis: "
                      f"{json.dumps(nama_produk, ensure_ascii=False)}. Isi field produk dengan nama itu."
                      if nama_produk else
@@ -210,6 +235,8 @@ Usulkan 5 ide konten untuk TikTok/Shopee affiliate (keranjang kuning), format vi
 Satu ide untuk tiap produk di daftar. Produk tetap sama tiap hari, jadi WAJIB ganti sudut pandang:
 masalah yang diangkat, gaya hook, dan contoh situasi harus beda dari judul yang sudah dipakai di bawah ini.
 Judul yang sudah dipakai: {json.dumps(riwayat, ensure_ascii=False)}
+Yang lagi dibicarakan orang di Threads soal topik ini: {json.dumps(tren, ensure_ascii=False)}
+Kalau daftar itu berisi, sambungkan minimal satu ide ke obrolan yang sedang ramai, tetap di akun sendiri.
 Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".{aturan_produk}
 Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber":"berita|lab"}}]}}""",
         catatan=f"{len(gadget)} judul berita, {len(produk)} produk afiliasi terdaftar")
