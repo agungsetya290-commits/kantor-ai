@@ -1,6 +1,6 @@
 {
  "tanggal": "2026-11-17",
- "jam": "01:58 WIB",
+ "jam": "07:55 WIB",
  "status": "sebagian",
  "model": "gemini-3.6-flash",
  "agents": {
@@ -12,21 +12,21 @@
    "hasil": {
     "ide": [
      {
-      "judul_kerja": "The Silent Village of 1930: Micro-Horror History",
-      "sudut": "Pendekatan microdrama sejarah horor 60 detik (faceless) dengan audio ambience hujan malam dan narasi voiceover Bahasa Inggris yang mencekam.",
-      "kenapa_nonton": "Memanfaatkan tren microdramas di YouTube Shorts untuk mengikat penonton luar negeri yang menyukai sejarah mistis berformat cerita naratif cepat.",
+      "judul_kerja": "Dark History: The Creepy 'Rizz' of Grigori Rasputin",
+      "sudut": "Menghubungkan tren budaya populer 'Rizz' dengan sejarah kelam daya pikat mistis Rasputin, menggunakan narasi bahasa Inggris bertekstur berat, efek suara atmosferik, dan visual vintage tanpa wajah.",
+      "kenapa_nonton": "Penonton internasional tertarik pada perpaduan istilah tren modern dengan fakta sejarah gelap yang misterius.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "The Medieval Monoculture: The Song That Obsessed an Empire",
-      "sudut": "Eksplorasi fenomena monoculture sejarah kuno yang dikombinasikan dengan visual dark-academia dan ambience perpustakaan tua tanpa wajah.",
-      "kenapa_nonton": "Mengangkat topik tren monoculture historis dengan binaural soundscape yang memicu rasa penasaran audiens global.",
+      "judul_kerja": "60-Second Horror Microdrama: The Lost Tapes of Paris Catacombs",
+      "sudut": "Mengadaptasi tren microdrama menjadi kisah horor sejarah singkat 9:16 berkecepatan tinggi tentang kejadian nyata di bawah tanah Paris, didukung soundscape ambience yang mencekam.",
+      "kenapa_nonton": "Format microdrama yang cepat dan sinematik memberikan ketegangan instan yang disukai pencinta horor global.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "3 AM Liminal Horror: Sound of the Forgotten Subway",
-      "sudut": "Murni ambience horor atmosferik visual lorong sepi (liminal space) dengan bisikan narasi urban legend sejarah luar negeri.",
-      "kenapa_nonton": "Retention tinggi dari pecinta konten ASMR horor dan visual atmosferik yang imersif tanpa perlu kehadiran kreator di depan kamera.",
+      "judul_kerja": "3 AM Ambience & Mystery: The Flannan Isles Lighthouse Disappearance",
+      "sudut": "Eksperimen narasi misteri hilangnya penjaga mercusuar yang dikombinasikan dengan ambience suara badai laut dan visual POV sinematik malam hari.",
+      "kenapa_nonton": "Menyajikan sensasi imersif dan efek merinding (chills) yang pas untuk dinikmati penonton luar negeri sebelum tidur.",
       "sumber": "lab"
      }
     ]
@@ -46,36 +46,9 @@
    "divisi": "Shorts & Editor",
    "peran": "Editor video",
    "hasil": {
-    "shot": [
-     {
-      "detik": "00:00 - 00:03",
-      "visual": "Cinematic shot suasana kota pagi hari dengan lighting hangat, kamera slow zoom in",
-      "teks": "SELAMAT DATANG",
-      "animasi_teks": "Fade In / 0.5 detik",
-      "transisi": "Glitch Zoom / 0.3 detik",
-      "sfx": "Whoosh Soft Fast"
-     },
-     {
-      "detik": "00:03 - 00:06",
-      "visual": "Close-up orang sedang memegang smartphone dengan latar belakang neon",
-      "teks": "KREATIF TANPA BATAS",
-      "animasi_teks": "Typewriter / 0.8 detik",
-      "transisi": "Blur Dissolve / 0.4 detik",
-      "sfx": "Keyboard Typing + Pop"
-     },
-     {
-      "detik": "00:06 - 00:10",
-      "visual": "Montase cepat proses editing video di laptop dengan pemandangan studio",
-      "teks": "SAATNYA BERKARYA",
-      "animasi_teks": "Bounce Up / 0.4 detik",
-      "transisi": "Fade to Black / 0.5 detik",
-      "sfx": "Swoosh Heavy + Camera Shutter"
-     }
-    ],
-    "musik": "Upbeat Electronic Synthwave (Volume 40%, Auto-ducking aktif saat SFX)",
-    "safe_area": "Margin 10% dari tepi layar (Format 9:16 untuk TikTok/Reels), teks utama berada di 1/3 tengah layar",
-    "by_agung": "Top Center (5% dari tepi atas), Font Sans-Serif Small, Opacity 75%"
-   }
+    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   },
+   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   },
   "botak": {
    "nama": "Botak",
@@ -83,31 +56,39 @@
    "peran": "Riset produk",
    "catatan": "12 judul terbaca dari RSS",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "ide": [
+     {
+      "topik": "Tips Memilih HP Gaming Terjangkau Bebas Lag",
+      "masalah_penonton": "Sering keliru beli HP murah tapi performa patah-patah dan baterai cepat boros saat dipakai main game.",
+      "produk_tipe": "Smartphone Gaming Entry-Level",
+      "hook": "Stop beli HP gaming asal murah! Cek 3 hal ini dulu biar main game anti ngelag dan baterai gak cepat habis.",
+      "sumber": "berita"
+     },
+     {
+      "topik": "Tips Beli Laptop Hemat yang Panjang Umur",
+      "masalah_penonton": "Khawatir laptop terjangkau cepat lemot dan tidak bisa dipakai jangka panjang untuk tugas kuliah atau kerja.",
+      "produk_tipe": "Laptop Student Upgradeable",
+      "hook": "Mau laptop terjangkau tapi pengen awet bertahun-tahun? Pastikan kamu pilih yang punya kemampuan upgrade ini!",
+      "sumber": "berita"
+     },
+     {
+      "topik": "Tips Cari HP Outdoor Tahan Banting & Baterai Awet",
+      "masalah_penonton": "HP sering retak atau rusak karena sering jatuh saat aktivitas outdoor dan mobilitas tinggi.",
+      "produk_tipe": "Smartphone Durabilitas Tinggi",
+      "hook": "Sering kerja outdoor dan HP gampang rusak? Cek kriteria HP tahan banting ini biar gak bolak-balik servis!",
+      "sumber": "berita"
+     }
+    ]
+   }
   },
   "mahim": {
    "nama": "Mahim",
    "divisi": "Affiliate & Sosmed",
    "peran": "Caption",
    "hasil": {
-    "paket": [
-     {
-      "topik": "Bantal Sandaran Ergonomis untuk Kenyamanan Duduk Seharian",
-      "tiktok": "Duduk lama pas kerja sering bikin punggung pegal? Cobain bantal sandaran ergonomis ini biar posisi duduk kamu lebih nyaman seharian. Klik keranjang kuning di bawah sekarang sebelum kehabisan ya!",
-      "threads": "Jujur, semenjak pakai bantal sandaran ergonomis ini di kursi kerja, rasanya lebih betah ngetik berjam-jam. Punggung jadi nggak gampang tegang. Ada yang sering merasa pegal juga kalau duduk lama?",
-      "facebook": "Menghabiskan waktu berjam-jam di depan laptop sering kali membuat area punggung dan pinggang terasa tidak nyaman. Menjaga postur duduk yang baik adalah salah satu kunci agar tetap fokus dan produktif sepanjang hari.\n\nBantal sandaran ergonomis ini dirancang untuk membantu menopang lekuk tulang belakang secara lebih optimal. Busa penyangganya empuk, fleksibel, dan cocok dipasang di berbagai jenis kursi kantor maupun kendaraan.\n\nYuk, mulai perhatikan kenyamanan tubuh saat bekerja. Cek info selengkapnya dan temukan varian pilihanmu melalui tautan di toko kami!",
-      "hashtag": [
-       "#KenyamananKerja",
-       "#BantalErgonomis",
-       "#WorkFromHome",
-       "#SolusiPegal",
-       "#PerlengkapanKantor"
-      ]
-     }
-    ]
-   }
+    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   },
+   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   },
   "rahma": {
    "nama": "Rahma",
@@ -122,10 +103,10 @@
  "log": [
   "Gendol trend hunter selesai",
   "Paero gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Bonyek editor video selesai",
-  "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Mahim caption selesai",
+  "Bonyek gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+  "Botak riset produk selesai",
+  "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
   "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  ],
- "error": "3 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+ "error": "4 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
 }
