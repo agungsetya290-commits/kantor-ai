@@ -44,6 +44,21 @@ def kirim(user_id, teks):
     return p.get("id")
 
 
+def susun(a):
+    """Teks + link afiliasi. Link ditulis sendiri oleh Agung di antrean.json.
+
+    Threads menolak satu post yang memuat lebih dari 5 link, jadi hanya satu
+    link yang ikut. Teks dipotong supaya total tetap di bawah 500 karakter.
+    """
+    teks = (a.get("teks") or "").strip()
+    link = (a.get("link") or "").strip()
+    if not link:
+        return teks[:500]
+    ekor = "\n\n" + link
+    sisa = 500 - len(ekor)
+    return teks[:sisa].rstrip() + ekor
+
+
 def baca_antrean():
     try:
         return json.load(open(ANTREAN, encoding="utf-8"))
@@ -81,7 +96,7 @@ def main():
 
     terkirim = 0
     for a in siap[:MAX_PER_RUN]:
-        teks = a["teks"].strip()[:500]  # batas satu post Threads
+        teks = susun(a)
         try:
             pid = kirim(uid, teks)
             a["terkirim"] = now.strftime("%Y-%m-%d %H:%M WIB")
