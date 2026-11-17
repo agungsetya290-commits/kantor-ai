@@ -113,8 +113,8 @@ FEED_SHORTS = [
     "https://news.google.com/rss/search?q=viral+short+video&hl=en-US&gl=US&ceid=US:en",
 ]
 FEED_GADGET = [
-    "https://news.google.com/rss/search?q=gadget+murah+review&hl=id&gl=ID&ceid=ID:id",
-    "https://news.google.com/rss/search?q=hp+baru+rilis&hl=id&gl=ID&ceid=ID:id",
+    "https://news.google.com/rss/search?q=charger+hp+cepat+rusak&hl=id&gl=ID&ceid=ID:id",
+    "https://news.google.com/rss/search?q=fast+charging+GaN+charger&hl=id&gl=ID&ceid=ID:id",
 ]
 
 RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polos). "
@@ -192,7 +192,11 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
     sari = kerja("botak", "Botak", "Affiliate & Sosmed", "Riset produk", f"""Kamu Botak, karyawan riset produk affiliate gadget. Judul berita gadget hari ini:
 {json.dumps(gadget, ensure_ascii=False)}
 
-Usulkan 3 ide konten "tips gadget" untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
+NICHE KANTOR INI KHUSUS CHARGER DAN AKSESORIS DAYA: fast charging, teknologi GaN, watt dan protokol PD,
+kabel, kebiasaan ngecas yang merusak baterai, cas sambil main game, charger untuk HP lama vs baru.
+Jangan keluar dari niche itu, jangan bahas HP, laptop, atau produk lain.
+
+Usulkan 3 ide konten untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
 Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".{aturan_produk}
 Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber":"berita|lab"}}]}}""",
         catatan=f"{len(gadget)} judul berita, {len(produk)} produk afiliasi terdaftar")
