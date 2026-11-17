@@ -2,7 +2,7 @@ name: Shift malam Kantor AI
 
 on:
   schedule:
-    - cron: "30 17 * * *"   # 00:30 WIB: agent kerja
+    - cron: "0 9 * * *"     # 16:00 WIB: agent kerja (sesudah kuota Gemini reset)
     - cron: "30 2 * * *"    # 09:30 WIB: kirim yang sudah disetujui CEO
   workflow_dispatch:         # tombol "Run workflow" buat tes manual
 
