@@ -202,6 +202,46 @@ Skema: {{"laporan_ceo":"","perlu_dicek":[],"antrean":[{{"hari":"","jam_wib":"","
     return agents, log, dipakai
 
 
+def tulis_antrean(data):
+    """Tambahkan caption Threads dari Mahim ke antrean, status menunggu CEO.
+
+    Baris lama tidak diubah: yang sudah disetujui atau terkirim tetap apa adanya.
+    """
+    path = os.path.join(DATA, "antrean.json")
+    try:
+        antrean = json.load(open(path, encoding="utf-8"))
+    except Exception:
+        antrean = []
+    sudah = {a.get("id") for a in antrean}
+
+    mahim = (data.get("agents", {}).get("mahim") or {}).get("hasil") or {}
+    paket = mahim.get("paket") if isinstance(mahim, dict) else None
+    baru = 0
+    for i, p in enumerate(paket or [], 1):
+        teks = (p.get("threads") or "").strip()
+        if not teks:
+            continue
+        tag = " ".join(p.get("hashtag") or [])
+        kid = f"{data['tanggal']}-mahim-{i}"
+        if kid in sudah:
+            continue
+        antrean.append({
+            "id": kid,
+            "tanggal": data["tanggal"],
+            "judul": p.get("topik") or f"caption {i}",
+            "platform": "threads",
+            "teks": (teks + ("\n\n" + tag if tag else "")).strip(),
+            "setujui": False,
+            "terkirim": False,
+        })
+        baru += 1
+
+    antrean = antrean[-60:]
+    with open(path, "w", encoding="utf-8") as f:
+        json.dump(antrean, f, ensure_ascii=False, indent=1)
+    print(f"[antrean] {baru} baris baru, total {len(antrean)}")
+
+
 def main():
     now = datetime.now(WIB)
     data = {"tanggal": now.strftime("%Y-%m-%d"), "jam": now.strftime("%H:%M WIB"),
@@ -225,6 +265,7 @@ def main():
     os.makedirs(DATA, exist_ok=True)
     with open(os.path.join(DATA, "shift.json"), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=1)
+    tulis_antrean(data)
 
     hist_path = os.path.join(DATA, "history.json")
     try:
