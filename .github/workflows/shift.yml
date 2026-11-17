@@ -28,6 +28,7 @@ jobs:
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+          THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
         run: python agents/office.py
 
       - name: Kirim yang disetujui ke Threads
