@@ -122,6 +122,15 @@ RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polo
          "Balas HANYA JSON valid sesuai skema.")
 
 
+def judul_terpakai(n=15):
+    """Judul caption yang sudah pernah masuk antrean, supaya tidak diulang."""
+    try:
+        d = json.load(open(os.path.join(DATA, "antrean.json"), encoding="utf-8"))
+        return [a.get("judul", "") for a in d][-n:]
+    except Exception:
+        return []
+
+
 def baca_produk():
     """Daftar produk afiliasi milik Agung: nama + link Shopee yang dia tempel sendiri."""
     try:
@@ -185,6 +194,7 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
     gadget = feed(FEED_GADGET)
     produk = baca_produk()
     nama_produk = [p["nama"] for p in produk]
+    riwayat = judul_terpakai()
     aturan_produk = (f"\nPilih produk HANYA dari daftar ini, salin namanya persis: "
                      f"{json.dumps(nama_produk, ensure_ascii=False)}. Isi field produk dengan nama itu."
                      if nama_produk else
@@ -196,15 +206,19 @@ NICHE KANTOR INI KHUSUS CHARGER DAN AKSESORIS DAYA: fast charging, teknologi GaN
 kabel, kebiasaan ngecas yang merusak baterai, cas sambil main game, charger untuk HP lama vs baru.
 Jangan keluar dari niche itu, jangan bahas HP, laptop, atau produk lain.
 
-Usulkan 3 ide konten untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
+Usulkan 5 ide konten untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
+Satu ide untuk tiap produk di daftar. Produk tetap sama tiap hari, jadi WAJIB ganti sudut pandang:
+masalah yang diangkat, gaya hook, dan contoh situasi harus beda dari judul yang sudah dipakai di bawah ini.
+Judul yang sudah dipakai: {json.dumps(riwayat, ensure_ascii=False)}
 Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".{aturan_produk}
 Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber":"berita|lab"}}]}}""",
         catatan=f"{len(gadget)} judul berita, {len(produk)} produk afiliasi terdaftar")
 
     dimas = kerja("mahim", "Mahim", "Affiliate & Sosmed", "Caption", f"""Kamu Mahim, karyawan copywriter sosmed. Ide produk:
-{json.dumps((sari.get("ide") or [])[:2] if isinstance(sari, dict) else [], ensure_ascii=False)}
+{json.dumps((sari.get("ide") or [])[:5] if isinstance(sari, dict) else [], ensure_ascii=False)}
 
 Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threads (santai), Facebook (agak panjang).
+Buat satu paket untuk tiap ide. Kalimat pembuka tiap paket harus beda satu sama lain, jangan pakai pola yang sama.
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
 Salin field produk dari ide yang kamu pakai apa adanya.
 Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
