@@ -59,6 +59,18 @@ def susun(a):
     return teks[:sisa].rstrip() + ekor
 
 
+def pengaturan():
+    """Setelan pemilik di data/pengaturan.json.
+
+    auto_setujui: true  -> semua baris antrean dianggap disetujui Gembi
+    maks_per_hari: angka -> rem jumlah post sekali jalan
+    """
+    try:
+        return json.load(open(os.path.join(DATA, "pengaturan.json"), encoding="utf-8"))
+    except Exception:
+        return {}
+
+
 def baca_antrean():
     try:
         return json.load(open(ANTREAN, encoding="utf-8"))
@@ -73,8 +85,13 @@ def main():
         print("[post] THREADS_TOKEN belum diisi di repository secrets", file=sys.stderr)
         sys.exit(1)
 
+    setelan = pengaturan()
+    auto = setelan.get("auto_setujui") is True
+    batas = int(setelan.get("maks_per_hari") or MAX_PER_RUN)
+    if auto:
+        print("[post] mode setujui otomatis aktif")
     siap = [a for a in antrean
-            if a.get("setujui") is True and not a.get("terkirim")
+            if (a.get("setujui") is True or auto) and not a.get("terkirim")
             and a.get("platform", "threads") == "threads" and a.get("teks")]
     if not siap:
         print("[post] tidak ada yang disetujui; tidak ada yang dikirim")
@@ -95,7 +112,7 @@ def main():
     print(f"[post] akun: @{profil.get('username')} ({uid})")
 
     terkirim = 0
-    for a in siap[:MAX_PER_RUN]:
+    for a in siap[:batas]:
         teks = susun(a)
         try:
             pid = kirim(uid, teks)
