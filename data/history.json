@@ -1,5 +1,78 @@
 [
  {
+  "tanggal": "2026-11-18",
+  "jam": "00:28 WIB",
+  "status": "gagal",
+  "model": "gemini-3.8-flash",
+  "agents": {
+   "gendol": {
+    "nama": "Gendol",
+    "divisi": "Shorts & Editor",
+    "peran": "Trend hunter",
+    "catatan": "12 judul terbaca dari RSS",
+    "hasil": {
+     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    },
+    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+   },
+   "paero": {
+    "nama": "Paero",
+    "divisi": "Shorts & Editor",
+    "peran": "Naskah",
+    "hasil": {
+     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    },
+    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+   },
+   "bonyek": {
+    "nama": "Bonyek",
+    "divisi": "Shorts & Editor",
+    "peran": "Editor video",
+    "hasil": {
+     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+    },
+    "error": "batas waktu shift tercapai, agent ini dilewati"
+   },
+   "botak": {
+    "nama": "Botak",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Riset produk",
+    "catatan": "12 judul terbaca dari RSS",
+    "hasil": {
+     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+    },
+    "error": "batas waktu shift tercapai, agent ini dilewati"
+   },
+   "mahim": {
+    "nama": "Mahim",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Caption",
+    "hasil": {
+     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+    },
+    "error": "batas waktu shift tercapai, agent ini dilewati"
+   },
+   "rahma": {
+    "nama": "Rahma",
+    "divisi": "Sekretariat",
+    "peran": "Sekretaris CEO",
+    "hasil": {
+     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+    },
+    "error": "batas waktu shift tercapai, agent ini dilewati"
+   }
+  },
+  "log": [
+   "Gendol gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
+   "Paero gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
+   "Bonyek gagal: batas waktu shift tercapai, agent ini dilewati",
+   "Botak gagal: batas waktu shift tercapai, agent ini dilewati",
+   "Mahim gagal: batas waktu shift tercapai, agent ini dilewati",
+   "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
+  ],
+  "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+ },
+ {
   "tanggal": "2026-11-17",
   "jam": "07:55 WIB",
   "status": "sebagian",
