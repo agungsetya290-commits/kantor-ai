@@ -2,9 +2,12 @@ name: Shift malam Kantor AI
 
 on:
   schedule:
-    - cron: "0 9 * * *"     # 16:00 WIB: agent kerja (sesudah kuota Gemini reset)
-    - cron: "30 2 * * *"    # 09:30 WIB: kirim yang sudah disetujui CEO
-  workflow_dispatch:         # tombol "Run workflow" buat tes manual
+    - cron: "0 0 * * *"     # 07:00 WIB - kirim 1 post
+    - cron: "0 5 * * *"     # 12:00 WIB - kirim 1 post
+    - cron: "0 9 * * *"     # 16:00 WIB - agent kerja + kirim 1 post
+    - cron: "30 12 * * *"   # 19:30 WIB - kirim 1 post
+    - cron: "30 14 * * *"   # 21:30 WIB - kirim 1 post
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -24,7 +27,7 @@ jobs:
           python-version: "3.12"
 
       - name: Agent kerja
-        if: github.event.schedule != '30 2 * * *'
+        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 9 * * *'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
@@ -43,5 +46,6 @@ jobs:
           git config user.name "kantor-ai"
           git config user.email "kantor-ai@users.noreply.github.com"
           git add data/
-          git diff --staged --quiet || git commit -m "shift $(TZ=Asia/Jakarta date +%Y-%m-%d)"
+          git diff --staged --quiet || git commit -m "shift $(TZ=Asia/Jakarta date +%Y-%m-%d-%H%M)"
+          git pull --rebase || true
           git push
