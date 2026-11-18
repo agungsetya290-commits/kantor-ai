@@ -30,7 +30,8 @@
   "platform": "threads",
   "teks": "Hp tinggal 20 persen padahal sepuluh menit lagi harus jalan. Ngecas cepat paling kerasa gunanya di momen kayak gini, sepuluh menit pun nambah banyak. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
  },
  {
   "id": "2026-11-18-cadangan-3",
@@ -41,7 +42,8 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
  },
  {
   "id": "2026-11-18-cadangan-4",
@@ -52,6 +54,67 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Detail lengkapnya di link.",
   "setujui": false,
-  "terkirim": false
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-19-cadangan-1",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "tanggal": "2026-11-19",
+  "judul": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "platform": "threads",
+  "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Yang mau lihat-lihat dulu, linknya di bawah.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-19-cadangan-2",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "tanggal": "2026-11-19",
+  "judul": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "platform": "threads",
+  "teks": "Hp tinggal 20 persen padahal sepuluh menit lagi harus jalan. Ngecas cepat paling kerasa gunanya di momen kayak gini, sepuluh menit pun nambah banyak. Cek sendiri di link kalau penasaran.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-19-cadangan-3",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "tanggal": "2026-11-19",
+  "judul": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "platform": "threads",
+  "teks": "Colokan di rumah terbatas tapi yang dicas ada tiga barang? Satu kepala charger beberapa port lebih masuk akal daripada rebutan stopkontak. Yang mau lihat-lihat dulu, linknya di bawah.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-19-cadangan-4",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "tanggal": "2026-11-19",
+  "judul": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "platform": "threads",
+  "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-19-cadangan-5",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "tanggal": "2026-11-19",
+  "judul": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "platform": "threads",
+  "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Detail lengkapnya di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
  }
 ]

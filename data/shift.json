@@ -1,6 +1,6 @@
 {
- "tanggal": "2026-11-18",
- "jam": "16:16 WIB",
+ "tanggal": "2026-11-19",
+ "jam": "00:54 WIB",
  "status": "gagal",
  "model": "gemini-3.8-flash",
  "agents": {
@@ -10,27 +10,27 @@
    "peran": "Trend hunter",
    "catatan": "12 judul terbaca dari RSS",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   },
   "paero": {
    "nama": "Paero",
    "divisi": "Shorts & Editor",
    "peran": "Naskah",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   },
   "bonyek": {
    "nama": "Bonyek",
    "divisi": "Shorts & Editor",
    "peran": "Editor video",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   },
   "botak": {
    "nama": "Botak",
@@ -47,27 +47,27 @@
    "divisi": "Affiliate & Sosmed",
    "peran": "Caption",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   },
   "rahma": {
    "nama": "Rahma",
    "divisi": "Sekretariat",
    "peran": "Sekretaris CEO",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   }
  },
  "log": [
-  "Gendol gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Paero gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-  "Bonyek gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+  "Gendol gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
+  "Paero gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+  "Bonyek gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
   "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Mahim gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-  "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+  "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+  "Rahma gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
  ],
- "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+ "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
 }
