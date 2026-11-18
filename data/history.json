@@ -1,7 +1,7 @@
 [
  {
   "tanggal": "2026-11-18",
-  "jam": "16:02 WIB",
+  "jam": "16:16 WIB",
   "status": "gagal",
   "model": "gemini-3.8-flash",
   "agents": {
@@ -11,27 +11,27 @@
     "peran": "Trend hunter",
     "catatan": "12 judul terbaca dari RSS",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
    "paero": {
     "nama": "Paero",
     "divisi": "Shorts & Editor",
     "peran": "Naskah",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
     },
-    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
    "bonyek": {
     "nama": "Bonyek",
     "divisi": "Shorts & Editor",
     "peran": "Editor video",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
    "botak": {
     "nama": "Botak",
@@ -39,38 +39,38 @@
     "peran": "Riset produk",
     "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
    "mahim": {
     "nama": "Mahim",
     "divisi": "Affiliate & Sosmed",
     "peran": "Caption",
     "hasil": {
-     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
     },
-    "error": "batas waktu shift tercapai, agent ini dilewati"
+    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
    "rahma": {
     "nama": "Rahma",
     "divisi": "Sekretariat",
     "peran": "Sekretaris CEO",
     "hasil": {
-     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "batas waktu shift tercapai, agent ini dilewati"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    }
   },
   "log": [
-   "Gendol gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
-   "Paero gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
-   "Bonyek gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-   "Botak gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-   "Mahim gagal: batas waktu shift tercapai, agent ini dilewati",
-   "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
+   "Gendol gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+   "Paero gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
+   "Bonyek gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+   "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+   "Mahim gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
+   "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   ],
-  "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+  "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  },
  {
   "tanggal": "2026-11-17",
