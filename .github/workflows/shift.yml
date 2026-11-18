@@ -34,6 +34,10 @@ jobs:
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
         run: python agents/office.py
 
+      - name: Isi antrean cadangan kalau agent gagal
+        if: always()
+        run: python agents/cadangan.py
+
       - name: Kirim yang disetujui ke Threads
         if: always()
         env:
