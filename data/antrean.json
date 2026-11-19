@@ -116,5 +116,65 @@
   "setujui": false,
   "terkirim": false,
   "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-20-cadangan-1",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "tanggal": "2026-11-20",
+  "judul": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "platform": "threads",
+  "teks": "Ngecas di mobil sering kalah cepat sama borosnya baterai. Kepala charger yang dayanya cukup bikin baterai naik, bukan cuma bertahan. Detail lengkapnya di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-20-cadangan-2",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "tanggal": "2026-11-20",
+  "judul": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "platform": "threads",
+  "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Cek sendiri di link kalau penasaran.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-20-cadangan-3",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "tanggal": "2026-11-20",
+  "judul": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "platform": "threads",
+  "teks": "Kabel sama kepala charger numpuk di tas tiap mau pergi? GaN bikin kepala charger jauh lebih kecil tanpa ngurangi dayanya. Tas jadi enteng. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-20-cadangan-4",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "tanggal": "2026-11-20",
+  "judul": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "platform": "threads",
+  "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Infonya ada di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-20-cadangan-5",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "tanggal": "2026-11-20",
+  "judul": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "platform": "threads",
+  "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Infonya ada di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
  }
 ]

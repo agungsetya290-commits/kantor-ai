@@ -1,6 +1,6 @@
 {
- "tanggal": "2026-11-19",
- "jam": "00:54 WIB",
+ "tanggal": "2026-11-20",
+ "jam": "01:05 WIB",
  "status": "gagal",
  "model": "gemini-3.8-flash",
  "agents": {
@@ -19,9 +19,9 @@
    "divisi": "Shorts & Editor",
    "peran": "Naskah",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   },
   "bonyek": {
    "nama": "Bonyek",
@@ -38,36 +38,36 @@
    "peran": "Riset produk",
    "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   },
   "mahim": {
    "nama": "Mahim",
    "divisi": "Affiliate & Sosmed",
    "peran": "Caption",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "gagal": "batas waktu shift tercapai, agent ini dilewati"
    },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+   "error": "batas waktu shift tercapai, agent ini dilewati"
   },
   "rahma": {
    "nama": "Rahma",
    "divisi": "Sekretariat",
    "peran": "Sekretaris CEO",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "gagal": "batas waktu shift tercapai, agent ini dilewati"
    },
-   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+   "error": "batas waktu shift tercapai, agent ini dilewati"
   }
  },
  "log": [
   "Gendol gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-  "Paero gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
+  "Paero gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
   "Bonyek gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-  "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Rahma gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+  "Botak gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
+  "Mahim gagal: batas waktu shift tercapai, agent ini dilewati",
+  "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
  ],
  "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
 }
