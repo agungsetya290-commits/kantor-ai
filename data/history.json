@@ -1,9 +1,9 @@
 [
  {
   "tanggal": "2026-11-21",
-  "jam": "18:07 WIB",
+  "jam": "23:40 WIB",
   "status": "sebagian",
-  "model": "gemini-3.6-flash",
+  "model": "gemini-3.5-flash",
   "agents": {
    "gendol": {
     "nama": "Gendol",
@@ -13,21 +13,21 @@
     "hasil": {
      "ide": [
       {
-       "judul_kerja": "The 60-Second Curse of Room 42",
-       "sudut": "Pendekatan micro-drama horor atmosferik tanpa wajah menggunakan sinematografi ala analog horror dan voiceover bahasa Inggris, mengadaptasi tren tren 'Microdramas'.",
-       "kenapa_nonton": "Menyajikan narasi horor super singkat dengan ketegangan bertahap dan audio ambience mencekam yang memanfaatkan tingginya minat penonton pada format drama mikro.",
+       "judul_kerja": "Micro-Horror: The 1912 Ghost Ship That Never Docked",
+       "sudut": "Pemanfaatan format microdrama dalam bentuk horor atmosferik dan sejarah singkat 60 detik. Menggunakan voiceover bahasa Inggris berbisik/dramatis, efek suara ambience badai laut, serta potongan visual arsip/AI vintage tanpa menampilkan wajah.",
+       "kenapa_nonton": "Mengangkat tren microdramas yang membuat penonton global terpikat pada alur cerita seram yang cepat namun imersif.",
        "sumber": "berita"
       },
       {
-       "judul_kerja": "The Deadly Victorian 'Beauty' Trend",
-       "sudut": "Kilas sejarah kelam tentang penggunaan arsenik demi standar estetika era Victoria, menghubungkan tren kecantikan video pendek dengan narasi sejarah horor berbasis gambar arsip tua.",
-       "kenapa_nonton": "Membalikkan topik 'beauty trend' yang sedang hangat di media sosial menjadi konten sejarah gelap yang memicu rasa penasaran tanpa perlu menampilkan wajah.",
+       "judul_kerja": "Atmospheric Mystery: Victorian Rainy Library at 3 AM",
+       "sudut": "Video ambience gotik/horor 9:16 yang menggabungkan audio hujan deras, derit kayu tua, serta narasi pendek bahasa Inggris tentang mitos rahasia buku terlarang abad ke-19.",
+       "kenapa_nonton": "Menarik audiens internasional yang menyukai konten relaksasi berorientasi suasana (ambience) sekaligus penyuka estetika horor sejarah.",
        "sumber": "berita"
       },
       {
-       "judul_kerja": "The Lost Cosmonaut: 1961 Audio Leak",
-       "sudut": "Eksperimen audio-visual mendalam tentang misteri sinyal radio tua dari luar angkasa, menggabungkan efek suara tape hiss, ambience ruang hampa, dan visual dokumen arsip.",
-       "kenapa_nonton": "Mengandalkan ketegangan atmosferik dan desain suara immersive yang memancing audiens internasional berteori di kolom komentar.",
+       "judul_kerja": "Dark History: The Cursed Plague Doctor Mask",
+       "sudut": "Kisah nyata horor sejarah tentang asal-usul topeng dokter wabah. Dikemas dengan musik dark ambient mencekam, visual cinemagraph artefak tua, dan narasi bahasa Inggris yang intens.",
+       "kenapa_nonton": "Menyajikan fakta sejarah kelam yang dikombinasikan dengan rasa takut intuitif, terbukti disukai audiens luar negeri penyuka misteri dan fakta supranatural.",
        "sumber": "lab"
       }
      ]
@@ -38,40 +38,40 @@
     "divisi": "Shorts & Editor",
     "peran": "Naskah",
     "hasil": {
-     "hook": "Never step inside Room 42 after midnight... unless you want to disappear.",
+     "hook": "In 1912, an ocean liner vanished into thin air... but the ocean never let it die.",
      "naskah": [
       {
        "detik": "0-3",
-       "narasi": "Never step inside Room 42 after midnight... unless you want to disappear.",
-       "teks_layar": "[Top: by Agung] [Glitch Effect] ROOM 42: DO NOT ENTER"
+       "narasi": "In 1912, an ocean liner vanished into thin air... but the ocean never let it die.",
+       "teks_layar": "[TOP FRAME - FADE IN] by Agung\n[GLITCH ANIMATION] Vanished in 1912..."
       },
       {
        "detik": "3-10",
-       "narasi": "Legend says the countdown begins the exact second the heavy door locks behind you.",
-       "teks_layar": "[Top: by Agung] [Typewriter Animation] THE COUNTDOWN BEGINS"
+       "narasi": "No distress call was sent. No debris ever surfaced. Just a thick, freezing fog that swallowed two hundred souls whole.",
+       "teks_layar": "[TOP FRAME - STATIC] by Agung\n[TYPEWRITER ANIMATION] No Distress Call.\nNo Debris."
       },
       {
        "detik": "10-18",
-       "narasi": "You have sixty seconds before the analog static bleeds through the walls and whispers your name.",
-       "teks_layar": "[Top: by Agung] [Static Noise Flicker] 60 SECONDS LEFT"
+       "narasi": "Decades later, static on dead radio frequencies began repeating her name... always at precisely 3:15 AM.",
+       "teks_layar": "[TOP FRAME - STATIC] by Agung\n[PULSE & GLOW ANIMATION] 3:15 AM Signals Echoing..."
       },
       {
        "detik": "18-27",
-       "narasi": "At second thirty, the lights die. At second fifty, a freezing breath hits the back of your neck.",
-       "teks_layar": "[Top: by Agung] [Shake & Fade In] IT IS STANDING BEHIND YOU"
+       "narasi": "Modern captains still report a rusted, unlit hull slicing through modern shipping lanes during severe storms.",
+       "teks_layar": "[TOP FRAME - STATIC] by Agung\n[DRIFT & FADE ANIMATION] Sightings in the Storm"
       },
       {
-       "detik": "27-35",
-       "narasi": "And when the timer hits zero... the room resets, empty once again, waiting for the next victim.",
-       "teks_layar": "[Top: by Agung] [Blur Pulse Effect] NO ONE EVER ESCAPES"
+       "detik": "27-34",
+       "narasi": "Instruments die. Temperatures plunge to zero. And the sound of heavy footsteps echoes on empty iron decks.",
+       "teks_layar": "[TOP FRAME - STATIC] by Agung\n[ZOOM & FLICKER ANIMATION] Footsteps on Empty Decks..."
       },
       {
-       "detik": "35-40",
-       "narasi": "Would you dare to spend sixty seconds inside Room 42?",
-       "teks_layar": "[Top: by Agung] [Zoom Out Glitch] WOULD YOU SURVIVE?"
+       "detik": "34-40",
+       "narasi": "If you saw a ghost ship emerging from the mist... would you stop to help, or sail away as fast as you could?",
+       "teks_layar": "[TOP FRAME - FADE OUT] by Agung\n[SLOW REVEAL & SHAKE ANIMATION] Would you stop to help?"
       }
      ],
-     "cta": "Would you dare to spend sixty seconds inside Room 42? Comment below!",
+     "cta": "Would you stop to help, or sail away as fast as you could?",
      "durasi_detik": 40
     }
    },
@@ -80,9 +80,60 @@
     "divisi": "Shorts & Editor",
     "peran": "Editor video",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+     "shot": [
+      {
+       "detik": "0-3",
+       "visual": "Cinematic shot haluan kapal pesiar tua tahun 1912 perlahan lenyap masuk ke dalam kabut tebal malam hari, suasana gelap bernuansa dingin.",
+       "teks": "Vanished in 1912...",
+       "animasi_teks": "Glitch Animation (Durasi: 0.8s, In: Fast Glitch, Out: Fade)",
+       "transisi": "Fade to Black (Durasi: 0.5s)",
+       "sfx": "Suara angin laut dingin bertiup kencang dipadu efek glitch audio tebal"
+      },
+      {
+       "detik": "3-10",
+       "visual": "Lautan luas gelap gulita berselimut kabut tebal tanpa jejak puing kapal, kamera perlahan bergerak zoom in ke kegelapan.",
+       "teks": "No Distress Call.\nNo Debris.",
+       "animasi_teks": "Typewriter Animation (Durasi: 2.0s, Kecepatan: Sedang)",
+       "transisi": "Fog Dissolve (Durasi: 0.7s)",
+       "sfx": "Suara ombak pelan dengan frekuensi bass rendah (sub-bass drone) yang mencekam"
+      },
+      {
+       "detik": "10-18",
+       "visual": "Close-up radio antik berkarat di ruangan gelap, jarum gelombang bergetar dan lampu indikator kedip-kedip merah.",
+       "teks": "3:15 AM Signals Echoing...",
+       "animasi_teks": "Pulse & Glow Animation (Durasi: 1.5s, Loop Glow 0.5s)",
+       "transisi": "Radio Static Glitch Cut (Durasi: 0.4s)",
+       "sfx": "Krebekan radio statis gelombang pendek dan beeping sinyal Morse samar-samar"
+      },
+      {
+       "detik": "18-27",
+       "visual": "Siluet kapal besi berkarat raksasa tanpa lampu penerangan melintas di tengah badai laut dahsyat, kilatan petir menyinari lambung kapal.",
+       "teks": "Sightings in the Storm",
+       "animasi_teks": "Drift & Fade Animation (Durasi: 1.2s, In: Drift Left, Out: Soft Blur)",
+       "transisi": "Thunder Flash Cut (Durasi: 0.3s)",
+       "sfx": "Suara gemuruh petir keras berkilat dan derit gemertak besi tua diterpa badai"
+      },
+      {
+       "detik": "27-34",
+       "visual": "Kamera bergerak melintasi geladak besi kapal yang kosong dan berembun es, efek kamera bergoyang tegang (handheld camera shake).",
+       "teks": "Footsteps on Empty Decks...",
+       "animasi_teks": "Zoom & Flicker Animation (Durasi: 1.0s, Flicker Rate: 3Hz)",
+       "transisi": "Whip Pan Left (Durasi: 0.4s)",
+       "sfx": "Gema langkah kaki sepatu berat di atas geladak besi kosong dan embusan hembusan es"
+      },
+      {
+       "detik": "34-40",
+       "visual": "Point-of-view dari kapten kapal modern menatap kabut tebal tempat kapal hantu perlahan memudar dan menghilang.",
+       "teks": "Would you stop to help?",
+       "animasi_teks": "Slow Reveal & Shake Animation (Durasi: 1.5s, Text Shake pelan)",
+       "transisi": "Fade Out to Black (Durasi: 1.5s)",
+       "sfx": "Suara sirene kapal bergema jauh dan ketukan detak jantung (heartbeat) memelan hingga habis"
+      }
+     ],
+     "musik": "Dark Cinematic Horror Drone / Suspense Atmosphere, Tempo Lambat, Volume 35% (Ducking otomatis di bawah Voiceover & SFX)",
+     "safe_area": "Format 9:16 Vertical (TikTok/Reels/Shorts). Teks utama di area 40%-60% layar tengah. Bebas dari icon UI kanan dan caption bawah.",
+     "by_agung": "Posisi terpasang di Top Center (Frame Atas Tengah), font Sans-Serif kecil, warna putih transparan (Opacity 75%), melayang diam sepanjang video dari awal hingga akhir."
+    }
    },
    "botak": {
     "nama": "Botak",
@@ -90,18 +141,53 @@
     "peran": "Riset produk",
     "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
     "hasil": {
-     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
-    },
-    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+     "ide": [
+      {
+       "topik": "Mitos Watt Besar dan Proteksi Fast Charging",
+       "masalah_penonton": "Ragu menggunakan charger watt tinggi karena takut merusak kesehatan baterai dalam jangka panjang.",
+       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+       "hook": "Masih percaya mitos kalau charger 60W bikin baterai HP cepet bocor? Ini fakta arus PD yang sebenarnya!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Bahaya Charger Lightning Tanpa Sertifikasi Resmi untuk iPhone Lama",
+       "masalah_penonton": "Pengguna iPhone seri lama sering mendapati HP panas berlebih dan baterai cepat drop akibat charger non-MFi.",
+       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+       "hook": "Kenapa iPhone lama kamu makin sering panas pas dicas? Bisa jadi bukan karena baterai tua, tapi kepala casanmu!",
+       "sumber": "lab"
+      },
+      {
+       "topik": "Indikator Visual Kestabilan Daya saat Ngecas",
+       "masalah_penonton": "Kesulitan mengetahui apakah pengisian daya berjalan optimal atau terhambat tanpa alat ukur rumit.",
+       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+       "hook": "Ngecas HP tapi bingung arusnya masuk lancar atau kagak? Coba intip ekspresi di kepala casan ini!",
+       "sumber": "lab"
+      },
+      {
+       "topik": "Penanganan Suhu Panas saat Pengisian Daya Ekstrem",
+       "masalah_penonton": "Charger cepat panas hingga mengalami penurunan kecepatan isi daya ketika digunakan di area bersuhu hangat.",
+       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+       "hook": "Sering kebingungan kepala charger mendadak overheat pas fast charging? Ini solusinya biar tetep adem!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Monitoring Watt Real-Time untuk Mencegah Overcharging Semalaman",
+       "masalah_penonton": "Kebiasaan tinggalkan HP dicas semalaman bikin cemas arus terus menyengat meski baterai sudah penuh.",
+       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+       "hook": "Suka ngeri ngecas HP ditinggal tidur semalaman? Perhatikan perubahan watt otomatis di angka digital ini!",
+       "sumber": "berita"
+      }
+     ]
+    }
    },
    "mahim": {
     "nama": "Mahim",
     "divisi": "Affiliate & Sosmed",
     "peran": "Caption",
     "hasil": {
-     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
     },
-    "error": "batas waktu shift tercapai, agent ini dilewati"
+    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
    },
    "rahma": {
     "nama": "Rahma",
@@ -116,12 +202,12 @@
   "log": [
    "Gendol trend hunter selesai",
    "Paero naskah selesai",
-   "Bonyek gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-   "Botak gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
-   "Mahim gagal: batas waktu shift tercapai, agent ini dilewati",
+   "Bonyek editor video selesai",
+   "Botak riset produk selesai",
+   "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
    "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
   ],
-  "error": "4 agent gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+  "error": "2 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  },
  {
   "tanggal": "2026-11-20",
