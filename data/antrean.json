@@ -236,5 +236,65 @@
   "setujui": false,
   "terkirim": false,
   "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-cadangan-1",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "tanggal": "2026-11-22",
+  "judul": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "platform": "threads",
+  "teks": "Baterai hp cepat soak itu sering gara-gara chargernya, bukan hpnya. Arus yang stabil bikin baterai lebih awet daripada arus yang naik turun sembarangan. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-cadangan-2",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "tanggal": "2026-11-22",
+  "judul": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "platform": "threads",
+  "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-cadangan-3",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "tanggal": "2026-11-22",
+  "judul": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "platform": "threads",
+  "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Detail lengkapnya di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-cadangan-4",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "tanggal": "2026-11-22",
+  "judul": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "platform": "threads",
+  "teks": "Bawa charger gembul ke mana-mana itu ribet. Ukuran GaN muat di kantong celana, jadi nggak ada alasan ketinggalan charger. Cek sendiri di link kalau penasaran.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-cadangan-5",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "tanggal": "2026-11-22",
+  "judul": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "platform": "threads",
+  "teks": "Bawa charger gembul ke mana-mana itu ribet. Ukuran GaN muat di kantong celana, jadi nggak ada alasan ketinggalan charger. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false,
+  "error": "token ditolak: HTTP 400"
  }
 ]
