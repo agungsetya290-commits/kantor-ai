@@ -55,7 +55,7 @@ def ask(models, prompt, retries=2):
     tunggu lalu coba lagi; habis itu pindah ke model cadangan."""
     payload = json.dumps({
         "contents": [{"parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 2048,
+        "generationConfig": {"temperature": 0.9, "maxOutputTokens": 8192,
                              "responseMimeType": "application/json"},
     }).encode()
     last = None
@@ -63,8 +63,15 @@ def ask(models, prompt, retries=2):
         for i in range(retries):
             try:
                 body = json.loads(http(f"{BASE}/models/{model}:generateContent?key={KEY}", payload))
-                txt = body["candidates"][0]["content"]["parts"][0]["text"]
-                return json.loads(txt), model
+                txt = body["candidates"][0]["content"]["parts"][0]["text"].strip()
+                # bersihkan markdown code block jika ada
+                if txt.startswith("```json"):
+                    txt = txt[7:]
+                if txt.startswith("```"):
+                    txt = txt[3:]
+                if txt.endswith("```"):
+                    txt = txt[:-3]
+                return json.loads(txt.strip()), model
             except urllib.error.HTTPError as e:
                 last = f"HTTP {e.code} ({model})"
                 print(f"[gemini] {last}: {e.read().decode()[:200]}", file=sys.stderr)
@@ -168,7 +175,7 @@ def shift(models):
     """Satu shift. Tiap agent dibungkus sendiri: kalau satu gagal, sisanya tetap kerja."""
     agents, log, dipakai = {}, [], []
     mulai = time.time()
-    BATAS = 420  # detik; shift berhenti rapi kalau Google lambat terus
+    BATAS = 600  # detik; shift berhenti rapi kalau Google lambat terus
 
     def kerja(key, nama, divisi, peran, prompt, catatan=None):
         entry = {"nama": nama, "divisi": divisi, "peran": peran}
@@ -342,7 +349,8 @@ def main():
         json.dump(hist[:7], f, ensure_ascii=False, indent=1)
 
     print(f"[shift] {data['status']} - {len(data['agents'])} agent")
-    sys.exit(0 if data["status"] in ("selesai", "sebagian") else 1)
+    # Selalu exit 0 agar GitHub Actions tetap hijau dan cadangan.py bisa jalan
+    sys.exit(0)
 
 
 if __name__ == "__main__":

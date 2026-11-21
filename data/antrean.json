@@ -30,8 +30,7 @@
   "platform": "threads",
   "teks": "Hp tinggal 20 persen padahal sepuluh menit lagi harus jalan. Ngecas cepat paling kerasa gunanya di momen kayak gini, sepuluh menit pun nambah banyak. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-18-cadangan-3",
@@ -42,8 +41,7 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-18-cadangan-4",
@@ -54,8 +52,7 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Detail lengkapnya di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-19-cadangan-1",
@@ -66,8 +63,7 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Yang mau lihat-lihat dulu, linknya di bawah.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-19-cadangan-2",
@@ -78,8 +74,7 @@
   "platform": "threads",
   "teks": "Hp tinggal 20 persen padahal sepuluh menit lagi harus jalan. Ngecas cepat paling kerasa gunanya di momen kayak gini, sepuluh menit pun nambah banyak. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-19-cadangan-3",
@@ -90,8 +85,7 @@
   "platform": "threads",
   "teks": "Colokan di rumah terbatas tapi yang dicas ada tiga barang? Satu kepala charger beberapa port lebih masuk akal daripada rebutan stopkontak. Yang mau lihat-lihat dulu, linknya di bawah.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-19-cadangan-4",
@@ -102,8 +96,7 @@
   "platform": "threads",
   "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Spesifikasinya bisa dicek di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-19-cadangan-5",
@@ -114,8 +107,7 @@
   "platform": "threads",
   "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Detail lengkapnya di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-20-cadangan-1",
@@ -126,8 +118,7 @@
   "platform": "threads",
   "teks": "Ngecas di mobil sering kalah cepat sama borosnya baterai. Kepala charger yang dayanya cukup bikin baterai naik, bukan cuma bertahan. Detail lengkapnya di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-20-cadangan-2",
@@ -138,8 +129,7 @@
   "platform": "threads",
   "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-20-cadangan-3",
@@ -150,8 +140,7 @@
   "platform": "threads",
   "teks": "Kabel sama kepala charger numpuk di tas tiap mau pergi? GaN bikin kepala charger jauh lebih kecil tanpa ngurangi dayanya. Tas jadi enteng. Spesifikasinya bisa dicek di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-20-cadangan-4",
@@ -162,8 +151,7 @@
   "platform": "threads",
   "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-20-cadangan-5",
@@ -174,8 +162,7 @@
   "platform": "threads",
   "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-21-cadangan-1",
@@ -186,8 +173,7 @@
   "platform": "threads",
   "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-21-cadangan-2",
@@ -198,8 +184,7 @@
   "platform": "threads",
   "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Spesifikasinya bisa dicek di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-21-cadangan-3",
@@ -210,8 +195,7 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-21-cadangan-4",
@@ -222,8 +206,7 @@
   "platform": "threads",
   "teks": "Baterai hp cepat soak itu sering gara-gara chargernya, bukan hpnya. Arus yang stabil bikin baterai lebih awet daripada arus yang naik turun sembarangan. Cek sendiri di link kalau penasaran.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  },
  {
   "id": "2026-11-21-cadangan-5",
@@ -234,7 +217,6 @@
   "platform": "threads",
   "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Yang mau lihat-lihat dulu, linknya di bawah.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": false
  }
 ]

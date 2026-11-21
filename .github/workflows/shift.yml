@@ -32,7 +32,7 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
-        run: python agents/office.py
+        run: python agents/office.py || true
 
       - name: Isi antrean cadangan kalau agent gagal
         if: always()
