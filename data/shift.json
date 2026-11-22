@@ -1,8 +1,8 @@
 {
- "tanggal": "2026-11-21",
- "jam": "23:40 WIB",
- "status": "sebagian",
- "model": "gemini-3.5-flash",
+ "tanggal": "2026-11-22",
+ "jam": "23:58 WIB",
+ "status": "selesai",
+ "model": "gemini-3.6-flash",
  "agents": {
   "gendol": {
    "nama": "Gendol",
@@ -12,21 +12,21 @@
    "hasil": {
     "ide": [
      {
-      "judul_kerja": "Micro-Horror: The 1912 Ghost Ship That Never Docked",
-      "sudut": "Pemanfaatan format microdrama dalam bentuk horor atmosferik dan sejarah singkat 60 detik. Menggunakan voiceover bahasa Inggris berbisik/dramatis, efek suara ambience badai laut, serta potongan visual arsip/AI vintage tanpa menampilkan wajah.",
-      "kenapa_nonton": "Mengangkat tren microdramas yang membuat penonton global terpikat pada alur cerita seram yang cepat namun imersif.",
+      "judul_kerja": "The 3 AM Clock Shift: A 60-Second Micro-Horror",
+      "sudut": "Micro-drama horor atmosferik tanpa wajah (POV sudut pandang orang pertama) menggunakan visual liminal space, narasi bahasa Inggris yang berbisik, dan efek suara binaural.",
+      "kenapa_nonton": "Memanfaat tren Microdramas di Shorts yang membuat penonton penasaran dengan jalan cerita cepat namun penuh ketegangan psikologis.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "Atmospheric Mystery: Victorian Rainy Library at 3 AM",
-      "sudut": "Video ambience gotik/horor 9:16 yang menggabungkan audio hujan deras, derit kayu tua, serta narasi pendek bahasa Inggris tentang mitos rahasia buku terlarang abad ke-19.",
-      "kenapa_nonton": "Menarik audiens internasional yang menyukai konten relaksasi berorientasi suasana (ambience) sekaligus penyuka estetika horor sejarah.",
+      "judul_kerja": "The Forgotten Mass Hysteria of 1518",
+      "sudut": "Kisah sejarah singkat tentang Wabah Menari 1518 menggunakan gaya visual arsip bernuansa dark/eerie, diiringi audio ambience yang menekan dan suara narator Inggris berbobot.",
+      "kenapa_nonton": "Mengangkat topik sejarah aneh (monokultur misteri masa lalu) yang memicu rasa ingin tahu tinggi dalam format serba cepat.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "Dark History: The Cursed Plague Doctor Mask",
-      "sudut": "Kisah nyata horor sejarah tentang asal-usul topeng dokter wabah. Dikemas dengan musik dark ambient mencekam, visual cinemagraph artefak tua, dan narasi bahasa Inggris yang intens.",
-      "kenapa_nonton": "Menyajikan fakta sejarah kelam yang dikombinasikan dengan rasa takut intuitif, terbukti disukai audiens luar negeri penyuka misteri dan fakta supranatural.",
+      "judul_kerja": "Rainy Victorian Library: 30-Second Ambient Escape",
+      "sudut": "Video estetika 9:16 perpustakaan tua abad ke-19 saat hujan badai, fokus pada detail audio ASMR 8D (perapian, gesekan kertas, petir) tanpa dialog atau wajah.",
+      "kenapa_nonton": "Memberikan jeda ketenangan (cozy/eerie vibe) di tengah linimasa Shorts yang bising, cocok untuk audiens global yang mencari konten relaksasi cepat.",
       "sumber": "lab"
      }
     ]
@@ -37,40 +37,40 @@
    "divisi": "Shorts & Editor",
    "peran": "Naskah",
    "hasil": {
-    "hook": "In 1912, an ocean liner vanished into thin air... but the ocean never let it die.",
+    "hook": "Whatever you do, don't look at your clock at 3:00 AM.",
     "naskah": [
      {
       "detik": "0-3",
-      "narasi": "In 1912, an ocean liner vanished into thin air... but the ocean never let it die.",
-      "teks_layar": "[TOP FRAME - FADE IN] by Agung\n[GLITCH ANIMATION] Vanished in 1912..."
+      "narasi": "Whatever you do... don't look at your clock at 3:00 AM.",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'DON'T LOOK AT 3:00 AM' - Efek Glitch Teks Merah]"
      },
      {
-      "detik": "3-10",
-      "narasi": "No distress call was sent. No debris ever surfaced. Just a thick, freezing fog that swallowed two hundred souls whole.",
-      "teks_layar": "[TOP FRAME - STATIC] by Agung\n[TYPEWRITER ANIMATION] No Distress Call.\nNo Debris."
+      "detik": "3-9",
+      "narasi": "The digital display freezes at 2:59. The seconds stop... but the darkness around you starts moving.",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'Time Has Stopped...' - Efek Typewriter Bergetar]"
      },
      {
-      "detik": "10-18",
-      "narasi": "Decades later, static on dead radio frequencies began repeating her name... always at precisely 3:15 AM.",
-      "teks_layar": "[TOP FRAME - STATIC] by Agung\n[PULSE & GLOW ANIMATION] 3:15 AM Signals Echoing..."
+      "detik": "9-16",
+      "narasi": "You hear heavy breathing right behind your left ear, but your body refuses to turn around.",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'Behind your left ear...' - Efek Blur-to-Clear Smooth]"
      },
      {
-      "detik": "18-27",
-      "narasi": "Modern captains still report a rusted, unlit hull slicing through modern shipping lanes during severe storms.",
-      "teks_layar": "[TOP FRAME - STATIC] by Agung\n[DRIFT & FADE ANIMATION] Sightings in the Storm"
+      "detik": "16-24",
+      "narasi": "You try to scream, but your voice is trapped. Something invisible is stealing seconds directly from your life.",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'Stealing your seconds...' - Efek Pulse Glow Merah]"
      },
      {
-      "detik": "27-34",
-      "narasi": "Instruments die. Temperatures plunge to zero. And the sound of heavy footsteps echoes on empty iron decks.",
-      "teks_layar": "[TOP FRAME - STATIC] by Agung\n[ZOOM & FLICKER ANIMATION] Footsteps on Empty Decks..."
+      "detik": "24-32",
+      "narasi": "At 3:01 AM, the clock finally ticks. You think you're safe... until you notice your shadow is still looking at you.",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'That is NOT your shadow.' - Efek Zoom In Distorsi Fast]"
      },
      {
-      "detik": "34-40",
-      "narasi": "If you saw a ghost ship emerging from the mist... would you stop to help, or sail away as fast as you could?",
-      "teks_layar": "[TOP FRAME - FADE OUT] by Agung\n[SLOW REVEAL & SHAKE ANIMATION] Would you stop to help?"
+      "detik": "32-40",
+      "narasi": "Have you ever felt time freeze at night... or were you just taken?",
+      "teks_layar": "[Teks Atas: 'by Agung' - Statis Kecil] [Teks Utama: 'Were you just taken?' - Efek Slow Dissolve Fade Out]"
      }
     ],
-    "cta": "Would you stop to help, or sail away as fast as you could?",
+    "cta": "Have you ever felt time freeze at night... or were you just taken?",
     "durasi_detik": 40
    }
   },
@@ -82,56 +82,56 @@
     "shot": [
      {
       "detik": "0-3",
-      "visual": "Cinematic shot haluan kapal pesiar tua tahun 1912 perlahan lenyap masuk ke dalam kabut tebal malam hari, suasana gelap bernuansa dingin.",
-      "teks": "Vanished in 1912...",
-      "animasi_teks": "Glitch Animation (Durasi: 0.8s, In: Fast Glitch, Out: Fade)",
-      "transisi": "Fade to Black (Durasi: 0.5s)",
-      "sfx": "Suara angin laut dingin bertiup kencang dipadu efek glitch audio tebal"
+      "visual": "Close-up dramatis jam digital merah di nakas kamar tidur gelap, pencahayaan low-key dengan vignette pekat mengitari frame.",
+      "teks": "DON'T LOOK AT 3:00 AM",
+      "animasi_teks": "Efek Glitch 1 / Chromatic Aberration (durasi in 0.5s, shake subtle loop sampai detik 3).",
+      "transisi": "Fade in dari hitam (0.5s)",
+      "sfx": "SFX detak jarum jam mekanik cepat mendadak berhenti tiba-tiba + low frequency drone glitch."
      },
      {
-      "detik": "3-10",
-      "visual": "Lautan luas gelap gulita berselimut kabut tebal tanpa jejak puing kapal, kamera perlahan bergerak zoom in ke kegelapan.",
-      "teks": "No Distress Call.\nNo Debris.",
-      "animasi_teks": "Typewriter Animation (Durasi: 2.0s, Kecepatan: Sedang)",
-      "transisi": "Fog Dissolve (Durasi: 0.7s)",
-      "sfx": "Suara ombak pelan dengan frekuensi bass rendah (sub-bass drone) yang mencekam"
+      "detik": "3-9",
+      "visual": "Layar jam digital membeku di angka '2:59', kabut hitam pekat mulai merayap keluar dari sudut lantai kamar tidur.",
+      "teks": "Time Has Stopped...",
+      "animasi_teks": "Typewriter II dengan jitter getar horizontal (durasi ketik 1.2s, subtle float hingga detik 8.5 lalu fade out 0.3s).",
+      "transisi": "Camera Shake Glitch (0.3s)",
+      "sfx": "SFX suara hening mekanis mendadak (deep vacuum woosh) diikuti ambient room tone berat dan eerie whisper samar."
      },
      {
-      "detik": "10-18",
-      "visual": "Close-up radio antik berkarat di ruangan gelap, jarum gelombang bergetar dan lampu indikator kedip-kedip merah.",
-      "teks": "3:15 AM Signals Echoing...",
-      "animasi_teks": "Pulse & Glow Animation (Durasi: 1.5s, Loop Glow 0.5s)",
-      "transisi": "Radio Static Glitch Cut (Durasi: 0.4s)",
-      "sfx": "Krebekan radio statis gelombang pendek dan beeping sinyal Morse samar-samar"
+      "detik": "9-16",
+      "visual": "Over-the-shoulder shot karakter kaku menghadap dinding, bayangan hitam tak berbentuk mendekat tepat ke sisi kiri kepalanya.",
+      "teks": "Behind your left ear...",
+      "animasi_teks": "Blur-to-Clear Smooth (Gaussian Blur in 0.8s, scale up perlahan 10% selama 5s).",
+      "transisi": "Zoom Blur In (0.4s)",
+      "sfx": "Audio 3D Panning: SFX hembusan napas berat lembap keras tepat di telinga kiri (hard left ear)."
      },
      {
-      "detik": "18-27",
-      "visual": "Siluet kapal besi berkarat raksasa tanpa lampu penerangan melintas di tengah badai laut dahsyat, kilatan petir menyinari lambung kapal.",
-      "teks": "Sightings in the Storm",
-      "animasi_teks": "Drift & Fade Animation (Durasi: 1.2s, In: Drift Left, Out: Soft Blur)",
-      "transisi": "Thunder Flash Cut (Durasi: 0.3s)",
-      "sfx": "Suara gemuruh petir keras berkilat dan derit gemertak besi tua diterpa badai"
+      "detik": "16-24",
+      "visual": "Extreme close-up pupil mata karakter melebar ketakutan, urat leher tegang berusaha membuka mulut namun tubuh lumpuh total.",
+      "teks": "Stealing your seconds...",
+      "animasi_teks": "Pulse Glow Merah (Pulse scale in-out 0.6s per siklus, efek neon intensitas naik-turun).",
+      "transisi": "Whip Pan Left dengan motion blur cepat (0.3s)",
+      "sfx": "SFX detak jantung teredam (muffled heartbeat) berpacu kencang + riser frekuensi tinggi yang makin memekakkan telinga."
      },
      {
-      "detik": "27-34",
-      "visual": "Kamera bergerak melintasi geladak besi kapal yang kosong dan berembun es, efek kamera bergoyang tegang (handheld camera shake).",
-      "teks": "Footsteps on Empty Decks...",
-      "animasi_teks": "Zoom & Flicker Animation (Durasi: 1.0s, Flicker Rate: 3Hz)",
-      "transisi": "Whip Pan Left (Durasi: 0.4s)",
-      "sfx": "Gema langkah kaki sepatu berat di atas geladak besi kosong dan embusan hembusan es"
+      "detik": "24-32",
+      "visual": "Angka jam melompat ke '3:01'. Karakter menghela napas lega, namun bayangan di dinding berdiri terpisah dan menoleh menatap tajam ke arah kamera.",
+      "teks": "That is NOT your shadow.",
+      "animasi_teks": "Crash Zoom In Distorsi (0.3s snap zoom) disertai efek RGB Split Flicker berulang.",
+      "transisi": "Flash White to Negative Color Invert (0.2s)",
+      "sfx": "SFX Jumpscare sting logam menusuk (metallic drone screech) + tawa bisikan dingin bernada rendah."
      },
      {
-      "detik": "34-40",
-      "visual": "Point-of-view dari kapten kapal modern menatap kabut tebal tempat kapal hantu perlahan memudar dan menghilang.",
-      "teks": "Would you stop to help?",
-      "animasi_teks": "Slow Reveal & Shake Animation (Durasi: 1.5s, Text Shake pelan)",
-      "transisi": "Fade Out to Black (Durasi: 1.5s)",
-      "sfx": "Suara sirene kapal bergema jauh dan ketukan detak jantung (heartbeat) memelan hingga habis"
+      "detik": "32-40",
+      "visual": "Frame perlahan tersedot ke dalam kegelapan total, menyisakan siluet ruangan kosong yang dingin dan mencekam.",
+      "teks": "Were you just taken?",
+      "animasi_teks": "Slow Dissolve Fade In (1.0s), teks melayang naik pelan (drift up), diakhiri Fade Out halus ke hitam (1.2s).",
+      "transisi": "Slow Cinematic Blackout (1.0s)",
+      "sfx": "SFX Sub-bass rumble yang meluruh perlahan (decay panjang) menuju dead silence (hening total)."
      }
     ],
-    "musik": "Dark Cinematic Horror Drone / Suspense Atmosphere, Tempo Lambat, Volume 35% (Ducking otomatis di bawah Voiceover & SFX)",
-    "safe_area": "Format 9:16 Vertical (TikTok/Reels/Shorts). Teks utama di area 40%-60% layar tengah. Bebas dari icon UI kanan dan caption bawah.",
-    "by_agung": "Posisi terpasang di Top Center (Frame Atas Tengah), font Sans-Serif kecil, warna putih transparan (Opacity 75%), melayang diam sepanjang video dari awal hingga akhir."
+    "musik": "Dark Cinematic Horror Ambience / Sub-bass Tension Drone (Tempo lambat 60 BPM, instrumen cello disonan dan synth gelap, build-up tajam di detik 16-25, meluruh perlahan di detik 32-40).",
+    "safe_area": "Format 9:16 vertikal (TikTok/Reels/Shorts). Margin aman: 10% atas, 15% bawah (hindari tombol like/comment dan deskripsi platform), 8% kiri-kanan. Teks utama ditaruh di tengah vertikal (Y: 45%-55%).",
+    "by_agung": "Top-Center (Y: 5% dari tepi atas), font Montserrat/Inter Regular, ukuran 24pt, warna putih opacity 70%, statis sepanjang video tanpa efek animasi."
    }
   },
   "botak": {
@@ -142,39 +142,39 @@
    "hasil": {
     "ide": [
      {
-      "topik": "Mitos Watt Besar dan Proteksi Fast Charging",
-      "masalah_penonton": "Ragu menggunakan charger watt tinggi karena takut merusak kesehatan baterai dalam jangka panjang.",
+      "topik": "Mitos Fast Charging 60W dan Perlindungan Daya Ganda",
+      "masalah_penonton": "Takut menggunakan charger daya tinggi karena rumor berita bahwa fast charging bisa merusak kesehatan baterai secara permanen.",
       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
-      "hook": "Masih percaya mitos kalau charger 60W bikin baterai HP cepet bocor? Ini fakta arus PD yang sebenarnya!",
+      "hook": "Benar gak sih fast charging 60W bikin baterai HP cepet bocor? Ini faktanya!",
       "sumber": "berita"
      },
      {
-      "topik": "Bahaya Charger Lightning Tanpa Sertifikasi Resmi untuk iPhone Lama",
-      "masalah_penonton": "Pengguna iPhone seri lama sering mendapati HP panas berlebih dan baterai cepat drop akibat charger non-MFi.",
+      "topik": "Solusi Charger Tertifikasi MFi untuk Pengisian Daya iPhone Lama",
+      "masalah_penonton": "Pengguna iPhone lama sering mengeluhkan pengisian daya lambat dan akumulasi panas akibat memakai charger non-MFi.",
       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
-      "hook": "Kenapa iPhone lama kamu makin sering panas pas dicas? Bisa jadi bukan karena baterai tua, tapi kepala casanmu!",
-      "sumber": "lab"
+      "hook": "HP iPhone lama kamu sering panas pas dicas? Cek sertifikasi adapter kamu sekarang!",
+      "sumber": "berita"
      },
      {
-      "topik": "Indikator Visual Kestabilan Daya saat Ngecas",
-      "masalah_penonton": "Kesulitan mengetahui apakah pengisian daya berjalan optimal atau terhambat tanpa alat ukur rumit.",
+      "topik": "Indikator Visual Ekspresi Real-Time Saat Pengisian Daya",
+      "masalah_penonton": "Sering cemas apakah pengisian daya sudah optimal atau terputus tanpa perlu menyalakan layar HP terus-menerus.",
       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
-      "hook": "Ngecas HP tapi bingung arusnya masuk lancar atau kagak? Coba intip ekspresi di kepala casan ini!",
+      "hook": "Stop kebiasaan ngintip layar HP melulu pas dicas, mending liat ekspresi charger lucu ini!",
       "sumber": "lab"
      },
      {
-      "topik": "Penanganan Suhu Panas saat Pengisian Daya Ekstrem",
-      "masalah_penonton": "Charger cepat panas hingga mengalami penurunan kecepatan isi daya ketika digunakan di area bersuhu hangat.",
+      "topik": "Pentingnya Fitur Pendingin Adapter Saat Ngecas Sambil Main Game",
+      "masalah_penonton": "Suhu charger meroket dan kecepatan cas drop drastis ketika mengisi daya sambil beraktivitas berat.",
       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
-      "hook": "Sering kebingungan kepala charger mendadak overheat pas fast charging? Ini solusinya biar tetep adem!",
+      "hook": "Ngecas sambil push rank bikin kepala charger kamu sepanas kompor? Ini solusinya!",
       "sumber": "berita"
      },
      {
-      "topik": "Monitoring Watt Real-Time untuk Mencegah Overcharging Semalaman",
-      "masalah_penonton": "Kebiasaan tinggalkan HP dicas semalaman bikin cemas arus terus menyengat meski baterai sudah penuh.",
+      "topik": "Deteksi Protokol Fast Charging via Layar Digital Interaktif",
+      "masalah_penonton": "Bingung memastikan apakah fitur fast charging berjalan sesuai watt maksimum HP atau justru tertahan di daya rendah.",
       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
-      "hook": "Suka ngeri ngecas HP ditinggal tidur semalaman? Perhatikan perubahan watt otomatis di angka digital ini!",
-      "sumber": "berita"
+      "hook": "Gimana cara tahu fast charging kamu beneran aktif atau cuma formalitas? Cek watt real-time di sini!",
+      "sumber": "lab"
      }
     ]
    }
@@ -184,18 +184,136 @@
    "divisi": "Affiliate & Sosmed",
    "peran": "Caption",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+    "paket": [
+     {
+      "topik": "Mitos Fast Charging 60W dan Perlindungan Daya Ganda",
+      "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+      "tiktok": "Banyak yang masih ragu sama fast charging 60W karena takut baterai cepat bocor. Padahal, teknologi perlindungan daya ganda di adapter ini bikin pengisian daya tetap aman dan efisien buat iPhone atau Samsung kamu. Yuk, upgrade charger kamu sekarang, klik keranjang kuning di bawah!",
+      "threads": "Masih ada yang percaya mitos kalau ngecas cepat itu ngerusak baterai? Asal pakai adapter yang tepat dengan proteksi ganda kayak RAPAtech ION PRO ini, kesehatan baterai tetap terjaga kok.",
+      "facebook": "Isu seputar fast charging yang dianggap merusak kesehatan baterai secara permanen sering bikin kita ragu buat pakai daya tinggi. Padahal, kekhawatiran ini bisa diatasi dengan teknologi charger yang tepat.\n\nCharger GaN 60W RAPAtech ION PRO hadir dengan perlindungan daya ganda yang menyesuaikan alokasi listrik secara otomatis. Pengisian daya untuk iPhone maupun Samsung jadi lebih cepat tanpa bikin perangkat cepat panas. Solusi praktis buat kamu yang punya mobilitas tinggi tanpa khawatir baterai cepat aus.",
+      "hashtag": [
+       "#FastCharging",
+       "#RAPAtech",
+       "#GadgetTips",
+       "#TechInfo",
+       "#ChargerSafe"
+      ]
+     },
+     {
+      "topik": "Solusi Charger Tertifikasi MFi untuk Pengisian Daya iPhone Lama",
+      "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+      "tiktok": "Pengguna iPhone series lama merapat dulu! Kalau HP kamu sering panas dan ngecasnya lambat, saatnya pindah ke adapter yang sudah tertifikasi MFi ini. Pengisian aman dan stabil. Langsung checkout di keranjang kuning ya!",
+      "threads": "Buat yang masih pakai iPhone port Lightning, jangan asal pilih adapter murah ya. Panas berlebih itu biasanya karena belum MFi. Pakai UGREEN 20W ini udah tenang banget rasanya.",
+      "facebook": "Mengisi daya iPhone lama sering kali menimbulkan masalah seperti akumulasi panas berlebih dan durasi ngecas yang sangat lambat. Hal ini biasanya terjadi akibat penggunaan charger yang belum terstandarisasi resmi.\n\nCharger UGREEN 20W GaN MFi Type-C ke Lightning dirancang khusus untuk memastikan arus listrik masuk dengan stabil sesuai regulasi Apple. Suhu perangkat tetap terjaga dan daya terisi optimal tanpa merusak komponen internal iPhone kesayanganmu.",
+      "hashtag": [
+       "#UGREEN",
+       "#AppleMFi",
+       "#iPhoneTips",
+       "#ChargeriPhone",
+       "#GaNTech"
+      ]
+     },
+     {
+      "topik": "Indikator Visual Ekspresi Real-Time Saat Pengisian Daya",
+      "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+      "tiktok": "Pernah gak sih bolak-balik nyalain layar cuma buat ngecek baterai udah penuh atau belum? Sekarang tinggal liat ekspresi lucu di kepala charger ini aja! Gemes banget, kan? Amankan produknya di keranjang kuning sekarang!",
+      "threads": "Lucu banget charger zaman sekarang, ada ekspresi mukanya buat nandain status casan. Gak perlu lagi ditekan-tekan layarnya cuma buat memastikan listrik masuk.",
+      "facebook": "Kebiasaan mengecek layar smartphone secara berkala saat diisi daya memang sering bikin cemas, terutama saat kita ingin tahu apakah pengisian berjalan optimal atau malah terputus.\n\nTORRAS Big Eye 60W menghadirkan inovasi unik berupa layar ekspresi visual real-time. Melalui indikator wajah yang menggemaskan, kamu bisa langsung mengetahui status pengisian daya hanya dengan sekali lihat tanpa perlu menyalakan layar ponsel.",
+      "hashtag": [
+       "#TORRAS",
+       "#ChargerLucu",
+       "#GadgetUnik",
+       "#DeskSetup",
+       "#TechInnovation"
+      ]
+     },
+     {
+      "topik": "Pentingnya Fitur Pendingin Adapter Saat Ngecas Sambil Main Game",
+      "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+      "tiktok": "Lagi asik push rank tapi charger malah panas banget dan ngecasnya makin lemot? Itu tanda adapter kamu butuh fitur pendingin internal! Cek spesifikasi RAPAtech ION ini dan beli langsung via keranjang kuning!",
+      "threads": "Sering ngecas sambil main game bikin kepala charger panasnya kebangetan? Mending cari adapter yang ada pendingin dan display daya watt-nya biar performa tetap stabil.",
+      "facebook": "Aktivitas berat seperti bermain game sambil mengisi daya sering kali membuat suhu kepala charger meroket. Akibatnya, kecepatan pengisian daya akan turun drastis demi menyesuaikan suhu keselamatan.\n\nCharger GaN 45W RAPAtech ION hadir memberikan solusi melalui fitur pendingin internal terpadu serta layar pemantau daya. Suhu adapter tetap terjaga dingin meski digunakan dalam beban kerja tinggi, membuat proses pengisian daya tetap lancar tanpa mengganggu sesi gaming kamu.",
+      "hashtag": [
+       "#GamingGear",
+       "#RAPAtech",
+       "#ChargerGaN",
+       "#MobileGaming",
+       "#TechReview"
+      ]
+     },
+     {
+      "topik": "Deteksi Protokol Fast Charging via Layar Digital Interaktif",
+      "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+      "tiktok": "Suka penasaran gak, pengisian daya HP kamu beneran cepat atau cuma formalitas? Di adapter ini kamu bisa langsung lihat output watt-nya secara real-time! Yuk, dapatin barangnya lewat keranjang kuning!",
+      "threads": "Kadang tulisan 'fast charging' di layar HP belum tentu ngeluarin daya maksimal. Lebih mantap kalau ada layar digital di charger-nya langsung buat mantau real watt yang masuk.",
+      "facebook": "Banyak pengguna bingung memastikan apakah fitur pengisian cepat pada smartphone mereka benar-benar berjalan pada watt maksimum atau justru tertahan di daya rendah.\n\nCharger TORRAS FlashEyes GaN 45W memberikan transparansi penuh melalui layar digital interaktif. Kamu bisa memantau protokol dan arus daya real-time yang masuk ke perangkat. Tidak ada lagi tebak-tebakan, kamu bisa memastikan pengisian daya bekerja pada performa terbaiknya.",
+      "hashtag": [
+       "#TORRASFlashEyes",
+       "#RealTimePower",
+       "#SmartCharger",
+       "#GaN45W",
+       "#GadgetUpdate"
+      ]
+     }
+    ]
+   }
   },
   "rahma": {
    "nama": "Rahma",
    "divisi": "Sekretariat",
    "peran": "Sekretaris CEO",
    "hasil": {
-    "gagal": "batas waktu shift tercapai, agent ini dilewati"
-   },
-   "error": "batas waktu shift tercapai, agent ini dilewati"
+    "laporan_ceo": "Selamat malam Bos Gembi, ini Rahma. Semua tugas tim malam ini selesai 100% (Gendol, Paero, Bonyek, Botak, dan Mahim). Tidak ada laporan tugas yang gagal. Konten yang siap terdiri dari 1 Shorts bertema horor/misteri bahasa Inggris dan 5 materi caption affiliate charger lokal.",
+    "perlu_dicek": [
+     "Hook Shorts Inggris: 'Whatever you do, don't look at your clock at 3:00 AM.'",
+     "5 opsi draft caption affiliate produk charger dari Mahim",
+     "Hasil final editan video dari Bonyek"
+    ],
+    "antrean": [
+     {
+      "hari": "Hari 1",
+      "jam_wib": "12:00 WIB",
+      "platform": "TikTok / IG Reels (Affiliate ID)",
+      "isi": "Caption: Mitos Fast Charging 60W dan Perlindungan Daya Ganda",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 1",
+      "jam_wib": "19:00 WIB",
+      "platform": "TikTok / IG Reels (Affiliate ID)",
+      "isi": "Caption: Solusi Charger Tertifikasi MFi untuk Pengisian Daya iPhone Lama",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 1",
+      "jam_wib": "03:00 WIB",
+      "platform": "YouTube Shorts / TikTok Global (Target US/EU)",
+      "isi": "Shorts Hook: Whatever you do, don't look at your clock at 3:00 AM.",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 2",
+      "jam_wib": "12:00 WIB",
+      "platform": "TikTok / IG Reels (Affiliate ID)",
+      "isi": "Caption: Indikator Visual Ekspresi Real-Time Saat Pengisian Daya",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 2",
+      "jam_wib": "19:00 WIB",
+      "platform": "TikTok / IG Reels (Affiliate ID)",
+      "isi": "Caption: Pentingnya Fitur Pendingin Adapter Saat Ngecas Sambil Main Game",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 3",
+      "jam_wib": "19:00 WIB",
+      "platform": "TikTok / IG Reels (Affiliate ID)",
+      "isi": "Caption: Deteksi Protokol Fast Charging via Layar Digital Interaktif",
+      "status": "nunggu persetujuan CEO"
+     }
+    ]
+   }
   }
  },
  "log": [
@@ -203,8 +321,8 @@
   "Paero naskah selesai",
   "Bonyek editor video selesai",
   "Botak riset produk selesai",
-  "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-  "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
+  "Mahim caption selesai",
+  "Rahma sekretaris ceo selesai"
  ],
- "error": "2 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
+ "error": null
 }

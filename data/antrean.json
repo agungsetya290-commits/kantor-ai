@@ -54,8 +54,8 @@
   "platform": "threads",
   "teks": "Charger tipis sering dikira lemah. GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali. Detail lengkapnya di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": "2026-11-23 00:05 WIB",
+  "post_id": "17891201853486614"
  },
  {
   "id": "2026-11-19-cadangan-1",
@@ -296,5 +296,110 @@
   "setujui": false,
   "terkirim": false,
   "error": "token ditolak: HTTP 400"
+ },
+ {
+  "id": "2026-11-22-mahim-1",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "tanggal": "2026-11-22",
+  "judul": "Mitos Fast Charging 60W dan Perlindungan Daya Ganda",
+  "platform": "threads",
+  "teks": "Masih ada yang percaya mitos kalau ngecas cepat itu ngerusak baterai? Asal pakai adapter yang tepat dengan proteksi ganda kayak RAPAtech ION PRO ini, kesehatan baterai tetap terjaga kok.\n\n#FastCharging #RAPAtech #GadgetTips #TechInfo #ChargerSafe",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-22-mahim-2",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "tanggal": "2026-11-22",
+  "judul": "Solusi Charger Tertifikasi MFi untuk Pengisian Daya iPhone Lama",
+  "platform": "threads",
+  "teks": "Buat yang masih pakai iPhone port Lightning, jangan asal pilih adapter murah ya. Panas berlebih itu biasanya karena belum MFi. Pakai UGREEN 20W ini udah tenang banget rasanya.\n\n#UGREEN #AppleMFi #iPhoneTips #ChargeriPhone #GaNTech",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-22-mahim-3",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "tanggal": "2026-11-22",
+  "judul": "Indikator Visual Ekspresi Real-Time Saat Pengisian Daya",
+  "platform": "threads",
+  "teks": "Lucu banget charger zaman sekarang, ada ekspresi mukanya buat nandain status casan. Gak perlu lagi ditekan-tekan layarnya cuma buat memastikan listrik masuk.\n\n#TORRAS #ChargerLucu #GadgetUnik #DeskSetup #TechInnovation",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-22-mahim-4",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "tanggal": "2026-11-22",
+  "judul": "Pentingnya Fitur Pendingin Adapter Saat Ngecas Sambil Main Game",
+  "platform": "threads",
+  "teks": "Sering ngecas sambil main game bikin kepala charger panasnya kebangetan? Mending cari adapter yang ada pendingin dan display daya watt-nya biar performa tetap stabil.\n\n#GamingGear #RAPAtech #ChargerGaN #MobileGaming #TechReview",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-22-mahim-5",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "tanggal": "2026-11-22",
+  "judul": "Deteksi Protokol Fast Charging via Layar Digital Interaktif",
+  "platform": "threads",
+  "teks": "Kadang tulisan 'fast charging' di layar HP belum tentu ngeluarin daya maksimal. Lebih mantap kalau ada layar digital di charger-nya langsung buat mantau real watt yang masuk.\n\n#TORRASFlashEyes #RealTimePower #SmartCharger #GaN45W #GadgetUpdate",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-23-cadangan-1",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "tanggal": "2026-11-23",
+  "judul": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+  "platform": "threads",
+  "teks": "Ngecas di mobil sering kalah cepat sama borosnya baterai. Kepala charger yang dayanya cukup bikin baterai naik, bukan cuma bertahan. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-23-cadangan-2",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "tanggal": "2026-11-23",
+  "judul": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+  "platform": "threads",
+  "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Spesifikasinya bisa dicek di link.",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-23-cadangan-3",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "tanggal": "2026-11-23",
+  "judul": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+  "platform": "threads",
+  "teks": "Kabel sama kepala charger numpuk di tas tiap mau pergi? GaN bikin kepala charger jauh lebih kecil tanpa ngurangi dayanya. Tas jadi enteng. Infonya ada di link.",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-23-cadangan-4",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "tanggal": "2026-11-23",
+  "judul": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+  "platform": "threads",
+  "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Detail lengkapnya di link.",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-23-cadangan-5",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "tanggal": "2026-11-23",
+  "judul": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+  "platform": "threads",
+  "teks": "Satu kepala charger buat hp, earbuds, sama tablet sekaligus. Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor. Detail lengkapnya di link.",
+  "setujui": false,
+  "terkirim": false
  }
 ]
