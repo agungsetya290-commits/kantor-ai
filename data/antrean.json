@@ -102,8 +102,8 @@
   "platform": "threads",
   "teks": "Charger bawaan hp makin lama makin lemot ngecasnya? Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan. Spesifikasinya bisa dicek di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": "2026-11-23 22:45 WIB",
+  "post_id": "18456049054131646"
  },
  {
   "id": "2026-11-19-cadangan-5",
