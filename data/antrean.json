@@ -174,8 +174,8 @@
   "platform": "threads",
   "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Infonya ada di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": "2026-11-25 03:12 WIB",
+  "post_id": "18152309896631968"
  },
  {
   "id": "2026-11-21-cadangan-1",
@@ -449,6 +449,56 @@
   "judul": "Mendiagnosa Fast Charging yang Tidak Aktif Akibat Malfungsi Protokol Daya",
   "platform": "threads",
   "teks": "Kadang kesel banget kalau merasa ngecas kok lama banget padahal klaimnya fast charging. Ternyata protokol dayanya gak berjalan optimal. Untung pakai TORRAS FlashEyes GaN 45W, dari layarnya kelihatan riil berapa watt yang masuk. Gak ada lagi tebak-tebakan daya lambat.\n\n#TORRASFlashEyes #GaN45W #FastChargingInfo #LayarDigital #GadgetReview",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-25-mahim-1",
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "tanggal": "2026-11-25",
+  "judul": "Fakta Mitos Fast Charging Merusak Kesehatan Baterai Smartphone Modern",
+  "platform": "threads",
+  "teks": "Jujur, kalian masih percaya nggak sih kalau fast charging itu ngerusak baterai HP? Padahal yang bikin rusak itu panas berlebih, bukan daya watt-nya. Asal pakai adapter yang tepat seperti RAPAtech ION PRO 60W ini, pengisian daya tetap adem dan efisien.\n\n#FastCharging #RAPAtech #ChargerGaN #TipsGadget #TechInfo",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-25-mahim-2",
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "tanggal": "2026-11-25",
+  "judul": "Penyebab iPhone Lama Cepat Panas dan Kesehatan Baterai Anjlok Akibat Charger Non-Sertifikasi",
+  "platform": "threads",
+  "teks": "Bukan salah iPhone-nya kalau Battery Health tiba-tiba drop parah, coba cek casan yang dipakai sehari-hari. Kabel tanpa sertifikasi resmi MFi itu sering bikin arus listrik nggak stabil. Solusi paling aman ya balik ke pengisi daya yang terverifikasi resmi kaya UGREEN 20W GaN ini.\n\n#iPhoneTips #UGREENMFi #BatteryHealth #ChargeriPhone #GadgetCare",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-25-mahim-3",
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "tanggal": "2026-11-25",
+  "judul": "Mencegah Kebiasaan Overcharging Ditinggal Tidur Menggunakan Indikator Ekspresi Visual",
+  "platform": "threads",
+  "teks": "Ngecas HP ditinggal tidur tuh sering bikin was-was nggak sih? Unik banget nih TORRAS Big Eye 60W punya layar ekspresi visual yang kasih tahu status daya HP kamu secara intuitif. Lucu tapi kepake banget fiturnya.\n\n#TORRAS #ChargerUnik #TipsNgecas #GadgetInovasi #SmartCharging",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-25-mahim-4",
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "tanggal": "2026-11-25",
+  "judul": "Mengatasi Kepala Charger Overheat dan Watt Drop Saat Ngecas Sambil Bermain Game",
+  "platform": "threads",
+  "teks": "Buat yang suka main game sambil ngecas pasti paham rasanya kepala charger mendadak overheat terus pengisian jadi lelet. RAPAtech ION 45W ini solusinya, ada fitur pendinginnya jadi temperatur charger tetap terjaga adem.\n\n#GamingSetup #RAPAtechION #GaNCharger #MobileGaming #TechSolutions",
+  "setujui": false,
+  "terkirim": false
+ },
+ {
+  "id": "2026-11-25-mahim-5",
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "tanggal": "2026-11-25",
+  "judul": "Verifikasi Real-Time Arus Daya Watt untuk Mengetahui Kinerja Protokol Power Delivery",
+  "platform": "threads",
+  "teks": "Tampilan HP bilang 'Fast Charging', tapi kok terasa lambat ya pengisiannya? Beda cerita kalau pakai TORRAS FlashEyes GaN 45W, angka watt riil yang masuk kelihatan langsung di layar digitalnya. Jadi gak menebak-nebak lagi deh.\n\n#TORRASFlashEyes #PowerDelivery #RealTimeWatt #ReviewCharger #GadgetKnowledge",
   "setujui": false,
   "terkirim": false
  }

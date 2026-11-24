@@ -1,6 +1,6 @@
 {
- "tanggal": "2026-11-24",
- "jam": "03:59 WIB",
+ "tanggal": "2026-11-25",
+ "jam": "03:02 WIB",
  "status": "sebagian",
  "model": "gemini-3.6-flash",
  "agents": {
@@ -10,67 +10,49 @@
    "peran": "Trend hunter",
    "catatan": "12 judul terbaca dari RSS",
    "hasil": {
-    "ide": [
-     {
-      "judul_kerja": "Micro-Horror Drama: The Whispering Well of 1920",
-      "sudut": "Format mikro-drama horor atmosferik 60 detik yang memanfaatkan potongan foto arsip vintage, animasi gerak halus, dan narasi bahasa Inggris bernuansa mencekam tanpa memperlihatkan wajah.",
-      "kenapa_nonton": "Mengambil tren 'Microdramas on YouTube Shorts' dari berita minggu ini, mengemas cerita horor sejarah singkat yang membuat penonton penasaran dan ingin menonton episode lanjutannya.",
-      "sumber": "berita"
-     },
-     {
-      "judul_kerja": "3 AM Ambient Lore: The Lost Radio Frequency of Station 7",
-      "sudut": "Pengalaman audio-visual atmosferik horor murni, menampilkan animasi loop sinematik TV analog tua di tengah hutan malam hari dengan perpaduan suara ambient hujan, radio static, dan narasi kisah misteri singkat.",
-      "kenapa_nonton": "Menyasar penikmat audio ambience dan creepy aesthetic di luar negeri; format loop yang mulus terbukti efektif menaikkan retensi penonton Shorts.",
-      "sumber": "lab"
-     },
-     {
-      "judul_kerja": "Real Dark History: The Dancing Plague of 1518",
-      "sudut": "Kisah nyata sejarah kelam yang dikemas ala dokumenter horor singkat menggunakan lukisan klasik yang didigitalkan (pan-and-scan), efek suara atmosferik, dan narasi cerita sejarah misterius.",
-      "kenapa_nonton": "Merujuk pada tren perubahan durasi dan kebiasaan penonton yang menyukai konten fakta sejarah bernuansa misteri tanpa perlu interaksi wajah pembuat konten.",
-      "sumber": "berita"
-     }
-    ]
-   }
+    "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+   },
+   "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
   },
   "paero": {
    "nama": "Paero",
    "divisi": "Shorts & Editor",
    "peran": "Naskah",
    "hasil": {
-    "hook": "In 1920, an entire village disappeared... leaving only a whispering well.",
+    "hook": "Have you ever felt like you're falling right as you drift off to sleep?",
     "naskah": [
      {
       "detik": "0-3",
-      "narasi": "In 1920, an entire village disappeared... leaving only a whispering well.",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Glitch & Fade In Animation] 1920: The Vanishing Village"
+      "narasi": "Have you ever felt like you're falling right as you drift off to sleep?",
+      "teks_layar": "[Top frame: 'by Agung'] WHY DO YOU FEEL LIKE FALLING? (Text effect: Kinetic Glitch in)"
      },
      {
-      "detik": "3-10",
-      "narasi": "Locals claimed the well didn't hold water. It held voices of the forgotten.",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Typewriter Animation] It didn't hold water..."
+      "detik": "3-9",
+      "narasi": "Your body suddenly twitches, snapping you wide awake. This weird event is called a hypnic jerk.",
+      "teks_layar": "[Top frame: 'by Agung'] THE HYPNIC JERK! (Text effect: Bouncing Pop-up)"
      },
      {
-      "detik": "10-18",
-      "narasi": "When young Clara looked inside, she didn't see her reflection.",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Blur Reveal Animation] No reflection in the dark."
+      "detik": "9-17",
+      "narasi": "It happens when your muscles relax so deeply that your brain misinterprets the signal, thinking you're falling.",
+      "teks_layar": "[Top frame: 'by Agung'] Brain gets confused! (Text effect: Smooth Slide-in with Glow)"
      },
      {
-      "detik": "18-28",
-      "narasi": "Instead, hands reached out from the deep, whispering a secret name she had never told a living soul.",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Creepy Flicker & Shake Animation] IT KNEW HER NAME."
+      "detik": "17-25",
+      "narasi": "To protect you, your brain shoots a sudden burst of electrical signals to shock your body back awake.",
+      "teks_layar": "[Top frame: 'by Agung'] BRAIN EMERGENCY SIGNAL ⚡ (Text effect: Neon Flash Pulse)"
      },
      {
-      "detik": "28-35",
-      "narasi": "By morning, Clara was gone. Only her small shoes remained at the edge... facing down into the abyss.",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Slow Dissolve Animation] Left facing downward..."
+      "detik": "25-33",
+      "narasi": "Scientists believe it's an ancient survival instinct passed down from ancestors who slept high in trees.",
+      "teks_layar": "[Top frame: 'by Agung'] Ancient Survival Instinct (Text effect: Typewriter Animation)"
      },
      {
-      "detik": "35-40",
-      "narasi": "If a dark well whispered your secret name... would you dare to look inside?",
-      "teks_layar": "[Top frame: small text 'by Agung'] [Pulse & Glow Text Animation] Would you look inside?"
+      "detik": "33-40",
+      "narasi": "So your brain is basically trying to save your life while you rest! How often does this happen to you?",
+      "teks_layar": "[Top frame: 'by Agung'] How often does this happen to you? (Text effect: Zoom-in Wave)"
      }
     ],
-    "cta": "If a dark well whispered your secret name... would you dare to look inside?",
+    "cta": "How often do you experience this falling sensation? Tell me in the comments!",
     "durasi_detik": 40
    }
   },
@@ -79,9 +61,60 @@
    "divisi": "Shorts & Editor",
    "peran": "Editor video",
    "hasil": {
-    "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-   },
-   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+    "shot": [
+     {
+      "detik": "0-3",
+      "visual": "POV seseorang berbaring di kasur memejamkan mata, kamera mendadak terguncang drastis seolah jatuh dari ketinggian.",
+      "teks": "WHY DO YOU FEEL LIKE FALLING?",
+      "animasi_teks": "Kinetic Glitch in (Durasi: 0.5s)",
+      "transisi": "Whip Zoom Out",
+      "sfx": "Bass Drop + Glitch Distortion Sound"
+     },
+     {
+      "detik": "3-9",
+      "visual": "Close-up wajah mengejang/terkejut dan terbangun mendadak dengan efek sinematik slow-motion lalu kembali normal.",
+      "teks": "THE HYPNIC JERK!",
+      "animasi_teks": "Bouncing Pop-up (Durasi: 0.4s)",
+      "transisi": "Glitch Cut",
+      "sfx": "Sudden Heartbeat Stop + Impact Whoosh"
+     },
+     {
+      "detik": "9-17",
+      "visual": "Graphics 2D/3D otak manusia yang otot-ototnya merileks, mendadak muncul indikator sinyal merah berkedip.",
+      "teks": "Brain gets confused!",
+      "animasi_teks": "Smooth Slide-in with Glow (Durasi: 0.6s)",
+      "transisi": "Cross Dissolve",
+      "sfx": "Digital Beep + Low Ambient Drone"
+     },
+     {
+      "detik": "17-25",
+      "visual": "Visualisasi neuron otak menyalakan percikan listrik kilat yang menyebar cepat ke seluruh susunan saraf tubuh.",
+      "teks": "BRAIN EMERGENCY SIGNAL ⚡",
+      "animasi_teks": "Neon Flash Pulse (Durasi: 0.5s)",
+      "transisi": "Lightning Flash Transition",
+      "sfx": "Electricity Zap + Shockwave SFX"
+     },
+     {
+      "detik": "25-33",
+      "visual": "Ilustrasi sinematik manusia purba zaman dahulu sedang tidur di atas dahan pohon rindang malam hari.",
+      "teks": "Ancient Survival Instinct",
+      "animasi_teks": "Typewriter Animation (Durasi: 1.2s)",
+      "transisi": "Smooth Slide Left",
+      "sfx": "Night Forest Nature Ambient + Keyboard Click"
+     },
+     {
+      "detik": "33-40",
+      "visual": "Kamera kembali ke orang di kasur tersenyum lega, lalu muncul icon kolom komentar animasi untuk CTA.",
+      "teks": "How often does this happen to you?",
+      "animasi_teks": "Zoom-in Wave (Durasi: 0.5s)",
+      "transisi": "Fade Out to Black",
+      "sfx": "Chime Bell + Pop Notification SFX"
+     }
+    ],
+    "musik": "Lo-Fi Mysterious Ambient Beat (Fade in di awal, naik tempo saat detik 17, fade out di detik 40)",
+    "safe_area": "Format 9:16 (TikTok/Reels/Shorts), teks utama di tengah 40-60% layar",
+    "by_agung": "Posisi Top-Center (Y: 5%), Font: Sans-Serif Minimalis 12pt, Warna: Putih Semi-Transparan (Opacity 75%), tanpa logo/watermark lain"
+   }
   },
   "botak": {
    "nama": "Botak",
@@ -91,39 +124,39 @@
    "hasil": {
     "ide": [
      {
-      "topik": "Bahaya Fluktuasi Arus Colokan Mobil dan Solusi Charger GaN 60W Stabil",
-      "masalah_penonton": "Sering ngecas HP di colokan lighter mobil yang arusnya tidak stabil sehingga merusak kesehatan baterai HP.",
+      "topik": "Fakta Mitos Fast Charging Merusak Kesehatan Baterai Smartphone Modern",
+      "masalah_penonton": "Takut menggunakan charger daya tinggi karena percaya rumor bahwa fast charging membuat baterai HP cepat drop.",
       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
-      "hook": "Stop ngecas HP langsung di colokan mobil kalau gak mau battery health kamu terjun bebas!",
+      "hook": "Sering dengar mitos kalau fast charging 60W bikin baterai HP cepet soak? Ini penjelasan teknisnya!",
       "sumber": "berita"
      },
      {
-      "topik": "Penyebab Kabel Rusak dan iPhone Lama Panas Akibat Charger Non-Sertifikasi",
-      "masalah_penonton": "Menggunakan kepala charger dan kabel abal-abal pada iPhone seri lama yang membuat suhu HP melonjak dan kabel mudah terkoyak.",
+      "topik": "Penyebab iPhone Lama Cepat Panas dan Kesehatan Baterai Anjlok Akibat Charger Non-Sertifikasi",
+      "masalah_penonton": "Pengguna iPhone seri lama sering mengalami baterai cepat panas dan bocor karena memakai kombinasi adapter dan kabel sembarangan.",
       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
-      "hook": "Sering ngalamin kabel charger cepet kelupas dan HP mendadak panas banget pas dicolok?",
+      "hook": "Pantesan akumulasi Battery Health iPhone kamu drop parah, ternyata masih ngecas pakai kabel tanpa sertifikasi MFi!",
       "sumber": "berita"
      },
      {
-      "topik": "Visualisasi Status Pengisian Daya untuk Mencegah Kebiasaan Overcharging Ditinggal Tidur",
-      "masalah_penonton": "Khawatir daya listrik terus mengalir berlebihan saat HP ditinggal ngecas semalaman tanpa ada indikator visual penanda arus penuh.",
+      "topik": "Mencegah Kebiasaan Overcharging Ditinggal Tidur Menggunakan Indikator Ekspresi Visual",
+      "masalah_penonton": "Kebiasaan colok charger semalaman tanpa tahu apakah pengisian daya sudah memotong arus otomatis atau belum.",
       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
-      "hook": "Gimana caranya tahu charger kamu udah selesai ngisi tanpa perlu bolak-balik nyalain layar HP?",
+      "hook": "Jangan biarkan HP kamu kebiasaan dicolok semalaman tanpa pengawasan visual yang jelas kayak gini!",
       "sumber": "lab"
      },
      {
-      "topik": "Overheating Kepala Charger Akibat Pengisian Daya Tinggi Tanpa Fitur Pendingin Pasif",
-      "masalah_penonton": "Kepala adapter terasa sangat panas seperti setrikaan saat menyalurkan daya besar 45W secara terus-menerus.",
+      "topik": "Mengatasi Kepala Charger Overheat dan Watt Drop Saat Ngecas Sambil Bermain Game",
+      "masalah_penonton": "Suhu adapter charger melonjak drastis saat HP digunakan aktif bermain game sambil diisi daya, menyebabkan kecepatan cas melambat.",
       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
-      "hook": "Pernah gak ngerasa kepala charger kamu panasnya udah ekstrem banget pas lagi pengisian cepat?",
+      "hook": "Ngecas sambil main game bikin kepala charger kamu panas sampai bisa buat goreng telur? Ini bahayanya!",
       "sumber": "berita"
      },
      {
-      "topik": "Mendiagnosa Fast Charging yang Tidak Aktif Akibat Malfungsi Protokol Daya",
-      "masalah_penonton": "Bingung kenapa pengisian daya terasa lambat padahal sudah menggunakan adaptor fast charging, tanpa tahu berapa watt riil yang masuk.",
+      "topik": "Verifikasi Real-Time Arus Daya Watt untuk Mengetahui Kinerja Protokol Power Delivery",
+      "masalah_penonton": "Bingung apakah fitur fast charging benar-benar aktif atau hanya tampilan di layar HP saja tanpa pengisian daya yang optimal.",
       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
-      "hook": "Fast charging kamu tiba-tiba berubah jadi lambat padahal HP dan kabelnya udah mendukung?",
-      "sumber": "berita"
+      "hook": "HP tulisannya Fast Charging tapi kok ngisinya lambat banget? Cek angka Watt aslinya di sini!",
+      "sumber": "lab"
      }
     ]
    }
@@ -135,73 +168,73 @@
    "hasil": {
     "paket": [
      {
-      "topik": "Bahaya Fluktuasi Arus Colokan Mobil dan Solusi Charger GaN 60W Stabil",
+      "topik": "Fakta Mitos Fast Charging Merusak Kesehatan Baterai Smartphone Modern",
       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
-      "tiktok": "Stop ngecas HP langsung di colokan mobil kalau gak mau battery health kamu terjun bebas! Arus colokan mobil itu sering gak stabil dan riskan merusak komponen baterai. Biar aman, pakai Charger GaN 60W RAPAtech ION PRO yang punya daya stabil untuk fast charging iPhone dan Samsung kamu. Buruan amankan di keranjang kuning!",
-      "threads": "Jujur deh, siapa yang masih sering colok kabel casan langsung ke lighter mobil tanpa adapter berkualitas? Pantesan aja kesehatan baterai HP cepet drop. Sekarang gua beralih ke RAPAtech ION PRO 60W GaN, pengisian daya jadi jauh lebih stabil dan nggak bikin HP panas berlebih selama perjalanan.",
-      "facebook": "Pernah mikir gak kenapa kesehatan baterai smartphone kamu makin hari makin cepat berkurang? Salah satu penyebab tersembunyi yang sering diabaikan adalah kebiasaan mengecas di colokan mobil. Arus kelistrikan kendaraan tergolong fluktuatif sehingga bisa memberi tekanan berlebih pada komponen baterai.\n\nUntuk menjaga keawetan gadget kesayangan, kamu butuh pengaman ekstra seperti Charger GaN 60W RAPAtech ION PRO. Dilengkapi teknologi GaN mutakhir, adapter ini mampu menstabilkan arus output hingga 60W sehingga aman untuk fast charging iPhone maupun Samsung kamu selama berkendara. Lindungi baterai HP kamu mulai dari sekarang!",
+      "tiktok": "Siapa nih yang masih ragu pakai fast charging karena takut baterai HP gampang bocor? Teknologi HP modern dan GaN udah makin pintar kok buat ngatur suhunya. Biar pengisian daya tetap aman dan super cepat buat iPhone atau Samsung kamu, cobain Charger GaN 60W RAPAtech ION PRO ini. Langsung klik keranjang kuning ya!",
+      "threads": "Jujur, kalian masih percaya nggak sih kalau fast charging itu ngerusak baterai HP? Padahal yang bikin rusak itu panas berlebih, bukan daya watt-nya. Asal pakai adapter yang tepat seperti RAPAtech ION PRO 60W ini, pengisian daya tetap adem dan efisien.",
+      "facebook": "Banyak pengguna smartphone masih ragu berpindah ke adapter berdaya tinggi karena rumor bahwa fast charging 60W dapat memperpendek umur baterai. Padahal, teknologi pengisian daya modern sudah dilengkapi dengan Smart Chip yang mengatur arus secara otomatis sesuai kapasitas perangkat. Menggunakan Charger GaN 60W RAPAtech ION PRO membantu menjaga suhu tetap stabil saat pengisian cepat untuk iPhone maupun Samsung kamu. Jadi, tak perlu khawatir lagi baterai cepat drop akibat pengisian daya tinggi.",
       "hashtag": [
-       "#ChargerMobil",
-       "#RAPAtech",
-       "#GaNCharger",
-       "#TipsGadget",
-       "#FastCharging"
-      ]
-     },
-     {
-      "topik": "Penyebab Kabel Rusak dan iPhone Lama Panas Akibat Charger Non-Sertifikasi",
-      "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
-      "tiktok": "Sering ngalamin kabel charger cepet kelupas dan HP mendadak panas banget pas dicolok? Itu tanda kamu pakai charger abal-abal! Beralih ke Charger UGREEN 20W GaN MFi Type-C ke Lightning. Dijamin aman buat iPhone lama kamu dan gak bikin panas berlebih. Cek keranjang kuning sekarang ya!",
-      "threads": "Bahaya banget kalau masih bertahan pakai kepala charger dan kabel abal-abal cuma gara-gara murah. HP panasnya udah kayak setrikaan, ujung kabelnya baru sebulan udah terkoyak. Akhirnya ganti ke UGREEN 20W GaN MFi, beda banget rasanya. Pengisian stabil dan kabelnya kokoh.",
-      "facebook": "Mengapa iPhone lama kamu terasa sangat panas saat diisi daya? Atau kabel pengisi daya kamu sering sekali terkelupas di bagian ujungnya? Penyebab utamanya adalah penggunaan kepala charger dan kabel abal-abal yang belum bersertifikasi resmi.\n\nPenggunaan aksesoris tanpa sertifikasi tidak hanya merusak fisik kabel, tetapi juga berpotensi merusak chipset pengisian daya pada HP. Solusi terbaiknya adalah beralih ke Charger UGREEN 20W GaN MFi Type-C ke Lightning. Dilengkapi teknologi GaN yang efisien dan sertifikasi MFi resmi, proses pengisian daya iPhone lama kamu jadi lebih dingin, stabil, dan awet.",
-      "hashtag": [
-       "#UGREEN",
-       "#MFiCertified",
-       "#iPhoneTips",
-       "#ChargeriPhone",
-       "#GaNTechnology"
-      ]
-     },
-     {
-      "topik": "Visualisasi Status Pengisian Daya untuk Mencegah Kebiasaan Overcharging Ditinggal Tidur",
-      "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
-      "tiktok": "Gimana caranya tahu charger kamu udah selesai ngisi tanpa perlu bolak-balik nyalain layar HP? Pakai Charger TORRAS Big Eye 60W! Ada layar ekspresi wajah lucu yang ngasih tahu status daya HP kamu. Nggak perlu cemas overcharging pas ditinggal tidur semalaman. Klik keranjang kuning sekarang!",
-      "threads": "Kebiasaan ngecas HP ditinggal tidur emang bikin khawatir overcharging ya. Tapi charger TORRAS Big Eye 60W ini lucu banget, ada indikator ekspresi wajah yang berubah pas baterai penuh. Jadi gak perlu repot nyalain layar HP cuma buat cek status baterai.",
-      "facebook": "Kebiasaan mengecas smartphone semalaman sambil ditinggal tidur sering kali menimbulkan rasa khawatir akan bahaya overcharging dan arus berlebih. Apalagi jika kita malas untuk terus-menerus mengecek layar HP hanya untuk memastikan apakah baterai sudah penuh.\n\nKini ada cara yang lebih praktis untuk memantau pengisian daya. Charger TORRAS Big Eye 60W hadir dengan layar ekspresi wajah unik yang memberikan petunjuk visual langsung mengenai status pengisian. Selain mendukung daya hingga 60W, visualisasinya membantu kamu mengetahui kondisi pengisian secara instant. Mengecas jadi lebih tenang sepanjang malam!",
-      "hashtag": [
-       "#TORRAS",
-       "#BigEye60W",
-       "#ChargerUnik",
-       "#OverchargingProtection",
-       "#TechGadgets"
-      ]
-     },
-     {
-      "topik": "Overheating Kepala Charger Akibat Pengisian Daya Tinggi Tanpa Fitur Pendingin Pasif",
-      "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
-      "tiktok": "Pernah gak ngerasa kepala charger kamu panasnya udah ekstrem banget pas lagi pengisian cepat? Bahaya lho kalau dibiarin berlarut-larut! Solusinya ganti ke Charger GaN 45W RAPAtech ION. Udah ada fitur pendingin pasif dan layar daya real-time. Pengisian aman dan tenang, checkout di keranjang kuning!",
-      "threads": "Seram banget gak sih kalau nemu kepala casan yang panasnya nyengat banget pas lagi fast charging 45W? Makanya gua cari yang ada sistem pendingin pasifnya, ketemu Charger GaN 45W RAPAtech ION. Ada layar watt-nya juga, jadi tahu persis daya yang masuk tanpa worry overheating.",
-      "facebook": "Fenomena adapter pengisi daya yang terasa sangat panas saat menyalurkan daya besar adalah masalah yang sering ditemui. Pengisian daya tinggi tanpa sistem pelepas panas yang baik bisa memperpendek umur adapter dan merusak komponen di dalamnya.\n\nUntuk mengatasi masalah ini, Charger GaN 45W RAPAtech ION dirancang khusus dengan fitur pendingin pasif untuk meredam suhu panas secara efektif. Tidak hanya itu, terpasang juga layar digital yang menampilkan besaran daya secara akurat. Pengisian daya tinggi 45W kini tetap aman, dingin, dan terpantau jelas.",
-      "hashtag": [
+       "#FastCharging",
        "#RAPAtech",
        "#ChargerGaN",
-       "#CoolingTechnology",
-       "#FastCharging45W",
-       "#AksesorisHP"
+       "#TipsGadget",
+       "#TechInfo"
       ]
      },
      {
-      "topik": "Mendiagnosa Fast Charging yang Tidak Aktif Akibat Malfungsi Protokol Daya",
+      "topik": "Penyebab iPhone Lama Cepat Panas dan Kesehatan Baterai Anjlok Akibat Charger Non-Sertifikasi",
+      "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+      "tiktok": "Pantesan Battery Health iPhone kamu turun drastis! Bisa jadi gara-gara masih asal pakai adapter dan kabel tanpa sertifikasi MFi tuh. Biar iPhone lama kamu tetap awet dan gak gampang panas, mending beralih ke Charger UGREEN 20W GaN MFi ini deh. Klik keranjang kuning buat amankan produknya!",
+      "threads": "Bukan salah iPhone-nya kalau Battery Health tiba-tiba drop parah, coba cek casan yang dipakai sehari-hari. Kabel tanpa sertifikasi resmi MFi itu sering bikin arus listrik nggak stabil. Solusi paling aman ya balik ke pengisi daya yang terverifikasi resmi kaya UGREEN 20W GaN ini.",
+      "facebook": "Pengguna iPhone seri lama sering kali mengeluhkan suhu perangkat yang cepat panas serta tingkat Battery Health yang menurun drastis dalam waktu singkat. Salah satu penyebab utamanya adalah penggunaan pengisi daya non-sertifikasi yang tidak memiliki regulasi tegangan presisi. Dengan menggunakan Charger UGREEN 20W GaN MFi Type-C ke Lightning, pengisian daya menjadi lebih aman karena sudah terverifikasi standar resmi Apple untuk melindungi komponen baterai secara optimal.",
+      "hashtag": [
+       "#iPhoneTips",
+       "#UGREENMFi",
+       "#BatteryHealth",
+       "#ChargeriPhone",
+       "#GadgetCare"
+      ]
+     },
+     {
+      "topik": "Mencegah Kebiasaan Overcharging Ditinggal Tidur Menggunakan Indikator Ekspresi Visual",
+      "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+      "tiktok": "Suka ketiduran pas lagi ngecas HP semalaman? Jangan dibiasakan ya! Mending pakai Charger TORRAS Big Eye 60W yang ada indikator ekspresi wajah lucu ini. Kamu bisa langsung tahu status pengisian daya cuma dari lirik tampilannya. Checkout produknya di keranjang kuning sekarang!",
+      "threads": "Ngecas HP ditinggal tidur tuh sering bikin was-was nggak sih? Unik banget nih TORRAS Big Eye 60W punya layar ekspresi visual yang kasih tahu status daya HP kamu secara intuitif. Lucu tapi kepake banget fiturnya.",
+      "facebook": "Kebiasaan mengisi daya smartphone ditinggal tidur sering membuat kita khawatir akan risiko pengisian berlebih atau baterai tertekan arus terus-menerus. Charger TORRAS Big Eye 60W hadir dengan inovasi layar ekspresi visual interaktif yang membantu pengguna memantau status pengisian daya secara jelas. Selain desainnya yang unik, fitur indikator ini memberikan kepastian visual apakah daya sudah terputus secara otomatis atau masih mengalir.",
+      "hashtag": [
+       "#TORRAS",
+       "#ChargerUnik",
+       "#TipsNgecas",
+       "#GadgetInovasi",
+       "#SmartCharging"
+      ]
+     },
+     {
+      "topik": "Mengatasi Kepala Charger Overheat dan Watt Drop Saat Ngecas Sambil Bermain Game",
+      "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+      "tiktok": "Lagi asyik mabar tapi kepala casan panasnya parah sampai pengisian daya makin lambat? Beralih ke Charger GaN 45W RAPAtech ION! Udah dilengkapi fitur pendingin dan display daya real-time biar mabar tetap lancar tanpa keluhan. Klik keranjang kuning sekarang juga!",
+      "threads": "Buat yang suka main game sambil ngecas pasti paham rasanya kepala charger mendadak overheat terus pengisian jadi lelet. RAPAtech ION 45W ini solusinya, ada fitur pendinginnya jadi temperatur charger tetap terjaga adem.",
+      "facebook": "Bermain game berat sambil mengisi daya smartphone sering kali membuat suhu adapter pengisi daya melonjak drastis. Hal ini memicu fitur proteksi termal yang menyebabkan penurunan kecepatan pengisian daya (watt drop). Charger GaN 45W RAPAtech ION hadir dengan sistem pendingin terintegrasi serta layar pemantau daya, memastikan temperatur adapter tetap terjaga dan daya mengalir optimal walau HP digunakan secara aktif.",
+      "hashtag": [
+       "#GamingSetup",
+       "#RAPAtechION",
+       "#GaNCharger",
+       "#MobileGaming",
+       "#TechSolutions"
+      ]
+     },
+     {
+      "topik": "Verifikasi Real-Time Arus Daya Watt untuk Mengetahui Kinerja Protokol Power Delivery",
       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
-      "tiktok": "Fast charging kamu tiba-tiba berubah jadi lambat padahal HP dan kabelnya udah mendukung? Jangan bingung dulu! Pakai Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif. Kamu bisa langsung pantau output watt riil secara akurat. Yuk amankan produknya di keranjang kuning!",
-      "threads": "Kadang kesel banget kalau merasa ngecas kok lama banget padahal klaimnya fast charging. Ternyata protokol dayanya gak berjalan optimal. Untung pakai TORRAS FlashEyes GaN 45W, dari layarnya kelihatan riil berapa watt yang masuk. Gak ada lagi tebak-tebakan daya lambat.",
-      "facebook": "Apakah kamu pernah merasa pengisian daya smartphone kamu berjalan sangat lambat, padahal sudah menggunakan adaptor dan kabel yang mendukung pengisian cepat? Masalah ini sering kali disebabkan oleh malfungsi protokol daya atau ketidaksesuaian penyaluran arus.\n\nTanpa indikator yang jelas, kamu tidak akan tahu berapa watt riil yang benar-benar masuk ke HP. Solusi terbaik untuk mendiagnosis hal ini adalah Charger TORRAS FlashEyes GaN 45W. Dilengkapi dengan layar digital interaktif, kamu dapat melihat angka watt aktual secara real-time. Teknologi GaN 45W memastikan pengisian daya berjalan optimal dan transparan!",
+      "tiktok": "Pernah penasaran gak, tulisan 'Fast Charging' di layar HP kamu itu beneran cepat atau cuma tampilan aja? Cek angka Watt aslinya pakai Charger TORRAS FlashEyes GaN 45W yang ada layar digital interaktif ini. Langsung klik keranjang kuning ya!",
+      "threads": "Tampilan HP bilang 'Fast Charging', tapi kok terasa lambat ya pengisiannya? Beda cerita kalau pakai TORRAS FlashEyes GaN 45W, angka watt riil yang masuk kelihatan langsung di layar digitalnya. Jadi gak menebak-nebak lagi deh.",
+      "facebook": "Banyak pengguna smartphone tidak menyadari bahwa indikator 'Fast Charging' di layar HP belum tentu menandakan daya maksimal sedang masuk, tergantung pada kestabilan protokol Power Delivery yang berjalan. Charger TORRAS FlashEyes GaN 45W menjawab keraguan ini dengan menyertakan layar digital interaktif secara real-time. Pengguna dapat langsung memverifikasi besaran watt yang disalurkan ke perangkat secara akurat dan transparan.",
       "hashtag": [
        "#TORRASFlashEyes",
-       "#GaN45W",
-       "#FastChargingInfo",
-       "#LayarDigital",
-       "#GadgetReview"
+       "#PowerDelivery",
+       "#RealTimeWatt",
+       "#ReviewCharger",
+       "#GadgetKnowledge"
       ]
      }
     ]
@@ -212,66 +245,18 @@
    "divisi": "Sekretariat",
    "peran": "Sekretaris CEO",
    "hasil": {
-    "laporan_ceo": "Selamat malam Bos Gembi. Berikut laporan pekerjaan tim malam ini: Gendol (trend hunter), Paero (naskah), Botak (riset produk), dan Mahim (caption) telah menyelesaikan tugasnya. Namun, Bonyek mengalami kegagalan pada semua model dengan error terakhir HTTP 503 (gemini-3.5-flash). Antrean jadwal posting 3 hari ke depan sudah saya susun untuk ditinjau.",
-    "perlu_dicek": [
-     "Kendala teknis Bonyek (HTTP 503 - gemini-3.5-flash)",
-     "Draft naskah Shorts Inggris ('In 1920, an entire village disappeared...')",
-     "5 opsi caption produk affiliate buatan Mahim"
-    ],
-    "antrean": [
-     {
-      "hari": "Hari 1",
-      "jam_wib": "12:00 WIB",
-      "platform": "TikTok / Shopee Video (Affiliate)",
-      "isi": "Bahaya Fluktuasi Arus Colokan Mobil dan Solusi Charger GaN 60W Stabil",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 1",
-      "jam_wib": "19:00 WIB",
-      "platform": "Instagram Reels (Affiliate)",
-      "isi": "Penyebab Kabel Rusak dan iPhone Lama Panas Akibat Charger Non-Sertifikasi",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 1",
-      "jam_wib": "21:00 WIB",
-      "platform": "YouTube Shorts (US/EU)",
-      "isi": "Hook: In 1920, an entire village disappeared... leaving only a whispering well.",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 2",
-      "jam_wib": "12:30 WIB",
-      "platform": "TikTok / Shopee Video (Affiliate)",
-      "isi": "Visualisasi Status Pengisian Daya untuk Mencegah Kebiasaan Overcharging Ditinggal Tidur",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 2",
-      "jam_wib": "19:30 WIB",
-      "platform": "Instagram Reels (Affiliate)",
-      "isi": "Overheating Kepala Charger Akibat Pengisian Daya Tinggi Tanpa Fitur Pendingin Pasif",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 3",
-      "jam_wib": "19:00 WIB",
-      "platform": "TikTok / IG Reels (Affiliate)",
-      "isi": "Mendiagnosa Fast Charging yang Tidak Aktif Akibat Malfungsi Protokol Daya",
-      "status": "nunggu persetujuan CEO"
-     }
-    ]
-   }
+    "gagal": "batas waktu shift tercapai, agent ini dilewati"
+   },
+   "error": "batas waktu shift tercapai, agent ini dilewati"
   }
  },
  "log": [
-  "Gendol trend hunter selesai",
+  "Gendol gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
   "Paero naskah selesai",
-  "Bonyek gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
+  "Bonyek editor video selesai",
   "Botak riset produk selesai",
   "Mahim caption selesai",
-  "Rahma sekretaris ceo selesai"
+  "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
  ],
- "error": "1 agent gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
+ "error": "2 agent gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
 }

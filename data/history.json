@@ -1,5 +1,267 @@
 [
  {
+  "tanggal": "2026-11-25",
+  "jam": "03:02 WIB",
+  "status": "sebagian",
+  "model": "gemini-3.6-flash",
+  "agents": {
+   "gendol": {
+    "nama": "Gendol",
+    "divisi": "Shorts & Editor",
+    "peran": "Trend hunter",
+    "catatan": "12 judul terbaca dari RSS",
+    "hasil": {
+     "gagal": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+    },
+    "error": "semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+   },
+   "paero": {
+    "nama": "Paero",
+    "divisi": "Shorts & Editor",
+    "peran": "Naskah",
+    "hasil": {
+     "hook": "Have you ever felt like you're falling right as you drift off to sleep?",
+     "naskah": [
+      {
+       "detik": "0-3",
+       "narasi": "Have you ever felt like you're falling right as you drift off to sleep?",
+       "teks_layar": "[Top frame: 'by Agung'] WHY DO YOU FEEL LIKE FALLING? (Text effect: Kinetic Glitch in)"
+      },
+      {
+       "detik": "3-9",
+       "narasi": "Your body suddenly twitches, snapping you wide awake. This weird event is called a hypnic jerk.",
+       "teks_layar": "[Top frame: 'by Agung'] THE HYPNIC JERK! (Text effect: Bouncing Pop-up)"
+      },
+      {
+       "detik": "9-17",
+       "narasi": "It happens when your muscles relax so deeply that your brain misinterprets the signal, thinking you're falling.",
+       "teks_layar": "[Top frame: 'by Agung'] Brain gets confused! (Text effect: Smooth Slide-in with Glow)"
+      },
+      {
+       "detik": "17-25",
+       "narasi": "To protect you, your brain shoots a sudden burst of electrical signals to shock your body back awake.",
+       "teks_layar": "[Top frame: 'by Agung'] BRAIN EMERGENCY SIGNAL ⚡ (Text effect: Neon Flash Pulse)"
+      },
+      {
+       "detik": "25-33",
+       "narasi": "Scientists believe it's an ancient survival instinct passed down from ancestors who slept high in trees.",
+       "teks_layar": "[Top frame: 'by Agung'] Ancient Survival Instinct (Text effect: Typewriter Animation)"
+      },
+      {
+       "detik": "33-40",
+       "narasi": "So your brain is basically trying to save your life while you rest! How often does this happen to you?",
+       "teks_layar": "[Top frame: 'by Agung'] How often does this happen to you? (Text effect: Zoom-in Wave)"
+      }
+     ],
+     "cta": "How often do you experience this falling sensation? Tell me in the comments!",
+     "durasi_detik": 40
+    }
+   },
+   "bonyek": {
+    "nama": "Bonyek",
+    "divisi": "Shorts & Editor",
+    "peran": "Editor video",
+    "hasil": {
+     "shot": [
+      {
+       "detik": "0-3",
+       "visual": "POV seseorang berbaring di kasur memejamkan mata, kamera mendadak terguncang drastis seolah jatuh dari ketinggian.",
+       "teks": "WHY DO YOU FEEL LIKE FALLING?",
+       "animasi_teks": "Kinetic Glitch in (Durasi: 0.5s)",
+       "transisi": "Whip Zoom Out",
+       "sfx": "Bass Drop + Glitch Distortion Sound"
+      },
+      {
+       "detik": "3-9",
+       "visual": "Close-up wajah mengejang/terkejut dan terbangun mendadak dengan efek sinematik slow-motion lalu kembali normal.",
+       "teks": "THE HYPNIC JERK!",
+       "animasi_teks": "Bouncing Pop-up (Durasi: 0.4s)",
+       "transisi": "Glitch Cut",
+       "sfx": "Sudden Heartbeat Stop + Impact Whoosh"
+      },
+      {
+       "detik": "9-17",
+       "visual": "Graphics 2D/3D otak manusia yang otot-ototnya merileks, mendadak muncul indikator sinyal merah berkedip.",
+       "teks": "Brain gets confused!",
+       "animasi_teks": "Smooth Slide-in with Glow (Durasi: 0.6s)",
+       "transisi": "Cross Dissolve",
+       "sfx": "Digital Beep + Low Ambient Drone"
+      },
+      {
+       "detik": "17-25",
+       "visual": "Visualisasi neuron otak menyalakan percikan listrik kilat yang menyebar cepat ke seluruh susunan saraf tubuh.",
+       "teks": "BRAIN EMERGENCY SIGNAL ⚡",
+       "animasi_teks": "Neon Flash Pulse (Durasi: 0.5s)",
+       "transisi": "Lightning Flash Transition",
+       "sfx": "Electricity Zap + Shockwave SFX"
+      },
+      {
+       "detik": "25-33",
+       "visual": "Ilustrasi sinematik manusia purba zaman dahulu sedang tidur di atas dahan pohon rindang malam hari.",
+       "teks": "Ancient Survival Instinct",
+       "animasi_teks": "Typewriter Animation (Durasi: 1.2s)",
+       "transisi": "Smooth Slide Left",
+       "sfx": "Night Forest Nature Ambient + Keyboard Click"
+      },
+      {
+       "detik": "33-40",
+       "visual": "Kamera kembali ke orang di kasur tersenyum lega, lalu muncul icon kolom komentar animasi untuk CTA.",
+       "teks": "How often does this happen to you?",
+       "animasi_teks": "Zoom-in Wave (Durasi: 0.5s)",
+       "transisi": "Fade Out to Black",
+       "sfx": "Chime Bell + Pop Notification SFX"
+      }
+     ],
+     "musik": "Lo-Fi Mysterious Ambient Beat (Fade in di awal, naik tempo saat detik 17, fade out di detik 40)",
+     "safe_area": "Format 9:16 (TikTok/Reels/Shorts), teks utama di tengah 40-60% layar",
+     "by_agung": "Posisi Top-Center (Y: 5%), Font: Sans-Serif Minimalis 12pt, Warna: Putih Semi-Transparan (Opacity 75%), tanpa logo/watermark lain"
+    }
+   },
+   "botak": {
+    "nama": "Botak",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Riset produk",
+    "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
+    "hasil": {
+     "ide": [
+      {
+       "topik": "Fakta Mitos Fast Charging Merusak Kesehatan Baterai Smartphone Modern",
+       "masalah_penonton": "Takut menggunakan charger daya tinggi karena percaya rumor bahwa fast charging membuat baterai HP cepat drop.",
+       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+       "hook": "Sering dengar mitos kalau fast charging 60W bikin baterai HP cepet soak? Ini penjelasan teknisnya!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Penyebab iPhone Lama Cepat Panas dan Kesehatan Baterai Anjlok Akibat Charger Non-Sertifikasi",
+       "masalah_penonton": "Pengguna iPhone seri lama sering mengalami baterai cepat panas dan bocor karena memakai kombinasi adapter dan kabel sembarangan.",
+       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+       "hook": "Pantesan akumulasi Battery Health iPhone kamu drop parah, ternyata masih ngecas pakai kabel tanpa sertifikasi MFi!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Mencegah Kebiasaan Overcharging Ditinggal Tidur Menggunakan Indikator Ekspresi Visual",
+       "masalah_penonton": "Kebiasaan colok charger semalaman tanpa tahu apakah pengisian daya sudah memotong arus otomatis atau belum.",
+       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+       "hook": "Jangan biarkan HP kamu kebiasaan dicolok semalaman tanpa pengawasan visual yang jelas kayak gini!",
+       "sumber": "lab"
+      },
+      {
+       "topik": "Mengatasi Kepala Charger Overheat dan Watt Drop Saat Ngecas Sambil Bermain Game",
+       "masalah_penonton": "Suhu adapter charger melonjak drastis saat HP digunakan aktif bermain game sambil diisi daya, menyebabkan kecepatan cas melambat.",
+       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+       "hook": "Ngecas sambil main game bikin kepala charger kamu panas sampai bisa buat goreng telur? Ini bahayanya!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Verifikasi Real-Time Arus Daya Watt untuk Mengetahui Kinerja Protokol Power Delivery",
+       "masalah_penonton": "Bingung apakah fitur fast charging benar-benar aktif atau hanya tampilan di layar HP saja tanpa pengisian daya yang optimal.",
+       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+       "hook": "HP tulisannya Fast Charging tapi kok ngisinya lambat banget? Cek angka Watt aslinya di sini!",
+       "sumber": "lab"
+      }
+     ]
+    }
+   },
+   "mahim": {
+    "nama": "Mahim",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Caption",
+    "hasil": {
+     "paket": [
+      {
+       "topik": "Fakta Mitos Fast Charging Merusak Kesehatan Baterai Smartphone Modern",
+       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+       "tiktok": "Siapa nih yang masih ragu pakai fast charging karena takut baterai HP gampang bocor? Teknologi HP modern dan GaN udah makin pintar kok buat ngatur suhunya. Biar pengisian daya tetap aman dan super cepat buat iPhone atau Samsung kamu, cobain Charger GaN 60W RAPAtech ION PRO ini. Langsung klik keranjang kuning ya!",
+       "threads": "Jujur, kalian masih percaya nggak sih kalau fast charging itu ngerusak baterai HP? Padahal yang bikin rusak itu panas berlebih, bukan daya watt-nya. Asal pakai adapter yang tepat seperti RAPAtech ION PRO 60W ini, pengisian daya tetap adem dan efisien.",
+       "facebook": "Banyak pengguna smartphone masih ragu berpindah ke adapter berdaya tinggi karena rumor bahwa fast charging 60W dapat memperpendek umur baterai. Padahal, teknologi pengisian daya modern sudah dilengkapi dengan Smart Chip yang mengatur arus secara otomatis sesuai kapasitas perangkat. Menggunakan Charger GaN 60W RAPAtech ION PRO membantu menjaga suhu tetap stabil saat pengisian cepat untuk iPhone maupun Samsung kamu. Jadi, tak perlu khawatir lagi baterai cepat drop akibat pengisian daya tinggi.",
+       "hashtag": [
+        "#FastCharging",
+        "#RAPAtech",
+        "#ChargerGaN",
+        "#TipsGadget",
+        "#TechInfo"
+       ]
+      },
+      {
+       "topik": "Penyebab iPhone Lama Cepat Panas dan Kesehatan Baterai Anjlok Akibat Charger Non-Sertifikasi",
+       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+       "tiktok": "Pantesan Battery Health iPhone kamu turun drastis! Bisa jadi gara-gara masih asal pakai adapter dan kabel tanpa sertifikasi MFi tuh. Biar iPhone lama kamu tetap awet dan gak gampang panas, mending beralih ke Charger UGREEN 20W GaN MFi ini deh. Klik keranjang kuning buat amankan produknya!",
+       "threads": "Bukan salah iPhone-nya kalau Battery Health tiba-tiba drop parah, coba cek casan yang dipakai sehari-hari. Kabel tanpa sertifikasi resmi MFi itu sering bikin arus listrik nggak stabil. Solusi paling aman ya balik ke pengisi daya yang terverifikasi resmi kaya UGREEN 20W GaN ini.",
+       "facebook": "Pengguna iPhone seri lama sering kali mengeluhkan suhu perangkat yang cepat panas serta tingkat Battery Health yang menurun drastis dalam waktu singkat. Salah satu penyebab utamanya adalah penggunaan pengisi daya non-sertifikasi yang tidak memiliki regulasi tegangan presisi. Dengan menggunakan Charger UGREEN 20W GaN MFi Type-C ke Lightning, pengisian daya menjadi lebih aman karena sudah terverifikasi standar resmi Apple untuk melindungi komponen baterai secara optimal.",
+       "hashtag": [
+        "#iPhoneTips",
+        "#UGREENMFi",
+        "#BatteryHealth",
+        "#ChargeriPhone",
+        "#GadgetCare"
+       ]
+      },
+      {
+       "topik": "Mencegah Kebiasaan Overcharging Ditinggal Tidur Menggunakan Indikator Ekspresi Visual",
+       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+       "tiktok": "Suka ketiduran pas lagi ngecas HP semalaman? Jangan dibiasakan ya! Mending pakai Charger TORRAS Big Eye 60W yang ada indikator ekspresi wajah lucu ini. Kamu bisa langsung tahu status pengisian daya cuma dari lirik tampilannya. Checkout produknya di keranjang kuning sekarang!",
+       "threads": "Ngecas HP ditinggal tidur tuh sering bikin was-was nggak sih? Unik banget nih TORRAS Big Eye 60W punya layar ekspresi visual yang kasih tahu status daya HP kamu secara intuitif. Lucu tapi kepake banget fiturnya.",
+       "facebook": "Kebiasaan mengisi daya smartphone ditinggal tidur sering membuat kita khawatir akan risiko pengisian berlebih atau baterai tertekan arus terus-menerus. Charger TORRAS Big Eye 60W hadir dengan inovasi layar ekspresi visual interaktif yang membantu pengguna memantau status pengisian daya secara jelas. Selain desainnya yang unik, fitur indikator ini memberikan kepastian visual apakah daya sudah terputus secara otomatis atau masih mengalir.",
+       "hashtag": [
+        "#TORRAS",
+        "#ChargerUnik",
+        "#TipsNgecas",
+        "#GadgetInovasi",
+        "#SmartCharging"
+       ]
+      },
+      {
+       "topik": "Mengatasi Kepala Charger Overheat dan Watt Drop Saat Ngecas Sambil Bermain Game",
+       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+       "tiktok": "Lagi asyik mabar tapi kepala casan panasnya parah sampai pengisian daya makin lambat? Beralih ke Charger GaN 45W RAPAtech ION! Udah dilengkapi fitur pendingin dan display daya real-time biar mabar tetap lancar tanpa keluhan. Klik keranjang kuning sekarang juga!",
+       "threads": "Buat yang suka main game sambil ngecas pasti paham rasanya kepala charger mendadak overheat terus pengisian jadi lelet. RAPAtech ION 45W ini solusinya, ada fitur pendinginnya jadi temperatur charger tetap terjaga adem.",
+       "facebook": "Bermain game berat sambil mengisi daya smartphone sering kali membuat suhu adapter pengisi daya melonjak drastis. Hal ini memicu fitur proteksi termal yang menyebabkan penurunan kecepatan pengisian daya (watt drop). Charger GaN 45W RAPAtech ION hadir dengan sistem pendingin terintegrasi serta layar pemantau daya, memastikan temperatur adapter tetap terjaga dan daya mengalir optimal walau HP digunakan secara aktif.",
+       "hashtag": [
+        "#GamingSetup",
+        "#RAPAtechION",
+        "#GaNCharger",
+        "#MobileGaming",
+        "#TechSolutions"
+       ]
+      },
+      {
+       "topik": "Verifikasi Real-Time Arus Daya Watt untuk Mengetahui Kinerja Protokol Power Delivery",
+       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+       "tiktok": "Pernah penasaran gak, tulisan 'Fast Charging' di layar HP kamu itu beneran cepat atau cuma tampilan aja? Cek angka Watt aslinya pakai Charger TORRAS FlashEyes GaN 45W yang ada layar digital interaktif ini. Langsung klik keranjang kuning ya!",
+       "threads": "Tampilan HP bilang 'Fast Charging', tapi kok terasa lambat ya pengisiannya? Beda cerita kalau pakai TORRAS FlashEyes GaN 45W, angka watt riil yang masuk kelihatan langsung di layar digitalnya. Jadi gak menebak-nebak lagi deh.",
+       "facebook": "Banyak pengguna smartphone tidak menyadari bahwa indikator 'Fast Charging' di layar HP belum tentu menandakan daya maksimal sedang masuk, tergantung pada kestabilan protokol Power Delivery yang berjalan. Charger TORRAS FlashEyes GaN 45W menjawab keraguan ini dengan menyertakan layar digital interaktif secara real-time. Pengguna dapat langsung memverifikasi besaran watt yang disalurkan ke perangkat secara akurat dan transparan.",
+       "hashtag": [
+        "#TORRASFlashEyes",
+        "#PowerDelivery",
+        "#RealTimeWatt",
+        "#ReviewCharger",
+        "#GadgetKnowledge"
+       ]
+      }
+     ]
+    }
+   },
+   "rahma": {
+    "nama": "Rahma",
+    "divisi": "Sekretariat",
+    "peran": "Sekretaris CEO",
+    "hasil": {
+     "gagal": "batas waktu shift tercapai, agent ini dilewati"
+    },
+    "error": "batas waktu shift tercapai, agent ini dilewati"
+   }
+  },
+  "log": [
+   "Gendol gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out",
+   "Paero naskah selesai",
+   "Bonyek editor video selesai",
+   "Botak riset produk selesai",
+   "Mahim caption selesai",
+   "Rahma gagal: batas waktu shift tercapai, agent ini dilewati"
+  ],
+  "error": "2 agent gagal: semua model gagal; terakhir: TimeoutError (gemini-3.5-flash): The read operation timed out"
+ },
+ {
   "tanggal": "2026-11-24",
   "jam": "03:59 WIB",
   "status": "sebagian",
@@ -1032,117 +1294,5 @@
    "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
   ],
   "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
- },
- {
-  "tanggal": "2026-11-17",
-  "jam": "07:55 WIB",
-  "status": "sebagian",
-  "model": "gemini-3.6-flash",
-  "agents": {
-   "gendol": {
-    "nama": "Gendol",
-    "divisi": "Shorts & Editor",
-    "peran": "Trend hunter",
-    "catatan": "12 judul terbaca dari RSS",
-    "hasil": {
-     "ide": [
-      {
-       "judul_kerja": "Dark History: The Creepy 'Rizz' of Grigori Rasputin",
-       "sudut": "Menghubungkan tren budaya populer 'Rizz' dengan sejarah kelam daya pikat mistis Rasputin, menggunakan narasi bahasa Inggris bertekstur berat, efek suara atmosferik, dan visual vintage tanpa wajah.",
-       "kenapa_nonton": "Penonton internasional tertarik pada perpaduan istilah tren modern dengan fakta sejarah gelap yang misterius.",
-       "sumber": "berita"
-      },
-      {
-       "judul_kerja": "60-Second Horror Microdrama: The Lost Tapes of Paris Catacombs",
-       "sudut": "Mengadaptasi tren microdrama menjadi kisah horor sejarah singkat 9:16 berkecepatan tinggi tentang kejadian nyata di bawah tanah Paris, didukung soundscape ambience yang mencekam.",
-       "kenapa_nonton": "Format microdrama yang cepat dan sinematik memberikan ketegangan instan yang disukai pencinta horor global.",
-       "sumber": "berita"
-      },
-      {
-       "judul_kerja": "3 AM Ambience & Mystery: The Flannan Isles Lighthouse Disappearance",
-       "sudut": "Eksperimen narasi misteri hilangnya penjaga mercusuar yang dikombinasikan dengan ambience suara badai laut dan visual POV sinematik malam hari.",
-       "kenapa_nonton": "Menyajikan sensasi imersif dan efek merinding (chills) yang pas untuk dinikmati penonton luar negeri sebelum tidur.",
-       "sumber": "lab"
-      }
-     ]
-    }
-   },
-   "paero": {
-    "nama": "Paero",
-    "divisi": "Shorts & Editor",
-    "peran": "Naskah",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "bonyek": {
-    "nama": "Bonyek",
-    "divisi": "Shorts & Editor",
-    "peran": "Editor video",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "botak": {
-    "nama": "Botak",
-    "divisi": "Affiliate & Sosmed",
-    "peran": "Riset produk",
-    "catatan": "12 judul terbaca dari RSS",
-    "hasil": {
-     "ide": [
-      {
-       "topik": "Tips Memilih HP Gaming Terjangkau Bebas Lag",
-       "masalah_penonton": "Sering keliru beli HP murah tapi performa patah-patah dan baterai cepat boros saat dipakai main game.",
-       "produk_tipe": "Smartphone Gaming Entry-Level",
-       "hook": "Stop beli HP gaming asal murah! Cek 3 hal ini dulu biar main game anti ngelag dan baterai gak cepat habis.",
-       "sumber": "berita"
-      },
-      {
-       "topik": "Tips Beli Laptop Hemat yang Panjang Umur",
-       "masalah_penonton": "Khawatir laptop terjangkau cepat lemot dan tidak bisa dipakai jangka panjang untuk tugas kuliah atau kerja.",
-       "produk_tipe": "Laptop Student Upgradeable",
-       "hook": "Mau laptop terjangkau tapi pengen awet bertahun-tahun? Pastikan kamu pilih yang punya kemampuan upgrade ini!",
-       "sumber": "berita"
-      },
-      {
-       "topik": "Tips Cari HP Outdoor Tahan Banting & Baterai Awet",
-       "masalah_penonton": "HP sering retak atau rusak karena sering jatuh saat aktivitas outdoor dan mobilitas tinggi.",
-       "produk_tipe": "Smartphone Durabilitas Tinggi",
-       "hook": "Sering kerja outdoor dan HP gampang rusak? Cek kriteria HP tahan banting ini biar gak bolak-balik servis!",
-       "sumber": "berita"
-      }
-     ]
-    }
-   },
-   "mahim": {
-    "nama": "Mahim",
-    "divisi": "Affiliate & Sosmed",
-    "peran": "Caption",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "rahma": {
-    "nama": "Rahma",
-    "divisi": "Sekretariat",
-    "peran": "Sekretaris CEO",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   }
-  },
-  "log": [
-   "Gendol trend hunter selesai",
-   "Paero gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Bonyek gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Botak riset produk selesai",
-   "Mahim gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-  ],
-  "error": "4 agent gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  }
 ]
