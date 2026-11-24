@@ -198,8 +198,8 @@
   "platform": "threads",
   "teks": "Angka watt besar belum tentu kepakai semua. Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita. Spesifikasinya bisa dicek di link.",
   "setujui": false,
-  "terkirim": false,
-  "error": "token ditolak: HTTP 400"
+  "terkirim": "2026-11-25 06:35 WIB",
+  "post_id": "18128523679900522"
  },
  {
   "id": "2026-11-21-cadangan-3",
