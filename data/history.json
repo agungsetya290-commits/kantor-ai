@@ -1,5 +1,333 @@
 [
  {
+  "tanggal": "2026-11-26",
+  "jam": "02:02 WIB",
+  "status": "selesai",
+  "model": "gemini-3.6-flash",
+  "agents": {
+   "gendol": {
+    "nama": "Gendol",
+    "divisi": "Shorts & Editor",
+    "peran": "Trend hunter",
+    "catatan": "12 judul terbaca dari RSS",
+    "hasil": {
+     "ide": [
+      {
+       "judul_kerja": "The 60-Second Micro-Horror: Don't Look at the Moon",
+       "sudut": "Microdrama horor atmosferik tanpa wajah menggunakan narasi bisikan bahasa Inggris (whispered narration), visual vintage surrealistis, serta efek suara binaural yang merinding.",
+       "kenapa_nonton": "Memanfaatkan tren microdrama dan maraknya konten horor buatan YouTubers ('YouTubers Took Over Horror') yang disukai penonton global karena memberikan sensasi merinding cepat.",
+       "sumber": "berita"
+      },
+      {
+       "judul_kerja": "60-Second History: The Mystery of the Mary Celeste Ghost Ship",
+       "sudut": "Kisah sejarah singkat tentang kapal hantu Mary Celeste yang dikemas dengan visual peta tua bergerak, ilustrasi sinematik gelap, narasi naratif bahasa Inggris yang berat, dan soundscape lautan malam hari.",
+       "kenapa_nonton": "Memanfaatkan tren narasi sejarah mikro (Microdramas/Short Stories) yang efektif menahan retention rate penonton luar negeri penggemar misteri sejarah.",
+       "sumber": "berita"
+      },
+      {
+       "judul_kerja": "Victorian Haunted Library: Rain & Whispering Ambience",
+       "sudut": "Loop visual 9:16 atmosferik ruang perpustakaan tua abad ke-19 saat hujan badai malam hari, dengan efek suara hujan di jendela dan gema bisikan misterius halus. Tanpa wajah, narasi hanya teks/quote gothic bahasa Inggris di awal.",
+       "kenapa_nonton": "Konten ambience/ASMR berestetika dark gothic memiliki daya tarik universal bagi audiens internasional yang mencari relaksasi sekaligus sensasi misterius.",
+       "sumber": "lab"
+      }
+     ]
+    }
+   },
+   "paero": {
+    "nama": "Paero",
+    "divisi": "Shorts & Editor",
+    "peran": "Naskah",
+    "hasil": {
+     "hook": "Whatever you do tonight... do not look at the moon.",
+     "naskah": [
+      {
+       "detik": "0-3",
+       "narasi": "(Whispering) Whatever you do tonight... do not look at the moon.",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Glitch Fade-In] DO NOT LOOK UP..."
+      },
+      {
+       "detik": "3-10",
+       "narasi": "(Soft eerie whisper) It started with a quiet broadcast. They said the moonlight had changed... calling everyone outside.",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Typewriter Slide-Up] THE MOONLIGHT CHANGED"
+      },
+      {
+       "detik": "10-18",
+       "narasi": "(Whispering) I locked every window. But my brother couldn't resist taking a single glance.",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Distorted Static Flicker] HE LOOKED AT IT"
+      },
+      {
+       "detik": "18-27",
+       "narasi": "(Deep whisper with binaural static) Now his shadow is standing right outside my bedroom door... scratching.",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Creepy Pulse Zoom] SOMETHING IS AT THE DOOR"
+      },
+      {
+       "detik": "27-35",
+       "narasi": "(Faint whisper) He's begging me to open up... but the voice isn't coming from his mouth.",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Shaking Red Glow] DON'T OPEN IT"
+      },
+      {
+       "detik": "35-42",
+       "narasi": "(Slow, chilling whisper) Tell me... is the moonlight shining through your window right now?",
+       "teks_layar": "[Top frame small text: 'by Agung'] [Effect: Slow Blur Dissolve] IS IT SHINING ON YOU?"
+      }
+     ],
+     "cta": "Is the moonlight shining through your window right now?",
+     "durasi_detik": 42
+    }
+   },
+   "bonyek": {
+    "nama": "Bonyek",
+    "divisi": "Shorts & Editor",
+    "peran": "Editor video",
+    "hasil": {
+     "shot": [
+      {
+       "detik": "0-3",
+       "visual": "Tampilan langit malam gelap dengan bulan merah darah bersinar misterius di balik awan tipis, efek kamera zoom-in perlahan.",
+       "teks": "DO NOT LOOK UP...",
+       "animasi_teks": "Glitch Fade-In (Durasi: 0.5s)",
+       "transisi": "Flash Black Cut (Durasi: 0.3s)",
+       "sfx": "Radio Static Glitch + Suara angin berbisik"
+      },
+      {
+       "detik": "3-10",
+       "visual": "Layar TV analog tua menampilkan siaran darurat rusak dengan distorsi sinyal dan garis-garis statis.",
+       "teks": "THE MOONLIGHT CHANGED",
+       "animasi_teks": "Typewriter Slide-Up (Durasi: 0.8s)",
+       "transisi": "Static Noise Wipe (Durasi: 0.4s)",
+       "sfx": "Dengung TV Static + Soft eerie chime"
+      },
+      {
+       "detik": "10-18",
+       "visual": "POV kamar gelap, tirai jendela terkunci rapat, bayangan gelap seseorang berjalan melintas di luar jendela.",
+       "teks": "HE LOOKED AT IT",
+       "animasi_teks": "Distorted Static Flicker (Durasi: 0.6s)",
+       "transisi": "Glitch Zoom In (Durasi: 0.3s)",
+       "sfx": "Detak jantung berat (Heartbeat) + Getaran kaca jendela"
+      },
+      {
+       "detik": "18-27",
+       "visual": "Close-up pintu kayu kamar tidur yang terkunci, terlihat bayangan tinggi tak wajar berdiri di celah bawah pintu.",
+       "teks": "SOMETHING IS AT THE DOOR",
+       "animasi_teks": "Creepy Pulse Zoom (Durasi: 0.7s)",
+       "transisi": "Flicker Fade Out (Durasi: 0.4s)",
+       "sfx": "Suara cakar pintu (Scratching SFX) + Sub-bass drone"
+      },
+      {
+       "detik": "27-35",
+       "visual": "Extreme close-up gagang pintu bergetar pelan, cahaya merah dari luar mengintip dari celah pintu.",
+       "teks": "DON'T OPEN IT",
+       "animasi_teks": "Shaking Red Glow (Durasi: 0.5s)",
+       "transisi": "Blur Dissolve (Durasi: 0.5s)",
+       "sfx": "Bisikan terdistorsi pitch rendah + Tokoh pintu pelan"
+      },
+      {
+       "detik": "35-42",
+       "visual": "POV perlahan menatap ke arah jendela kamar, sinar bulan merah pucat merambat masuk mengenai lantai.",
+       "teks": "IS IT SHINING ON YOU?",
+       "animasi_teks": "Slow Blur Dissolve (Durasi: 1.0s)",
+       "transisi": "Fade to Black (Durasi: 1.0s)",
+       "sfx": "Reversed Bell Eerie + Sunyi mendadak di akhir detik 42"
+      }
+     ],
+     "musik": "Ambient Eerie Horror Synth & Low Drone (Durasi 0-42s, volume dipasang 40%, naikkan ke 70% di detik 18-35)",
+     "safe_area": "Format Vertikal 9:16 (1080x1920). Teks utama di area tengah bawah (Y: 1350px). Bebas dari area tombol UI TikTok/Reels.",
+     "by_agung": "Tulisan 'by Agung' di posisi Atas Tengah (Top Center), ukuran kecil (Font Size 14pt), opacity 70%, muncul konstan detik 0-42"
+    }
+   },
+   "botak": {
+    "nama": "Botak",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Riset produk",
+    "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
+    "hasil": {
+     "ide": [
+      {
+       "topik": "Protokol Fast Charging Ganda untuk Pengguna Multi-Device (iPhone & Samsung)",
+       "masalah_penonton": "Punya dua HP beda brand (iPhone dan Samsung) tetapi daya isi salah satu HP selalu lambat karena charger tidak mendukung protokol Power Delivery dan Quick Charge secara simultan.",
+       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+       "hook": "Punya iPhone sama Samsung tapi repot bawa 2 kepala charger beda? Ini rahasia satu adaptor bisa fast charging maksimal di kedua brand sekaligus!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Pencegahan Kerusakan Konektor dan Kabel Lightning Akibat Daya Inkompatibel",
+       "masalah_penonton": "Kabel charger iPhone lama mudah rusak dan muncul notifikasi 'Accessory Not Supported' akibat penggunaan adaptor yang arus dayanya tidak stabil dan tanpa sertifikasi resmi.",
+       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+       "hook": "Kabel iPhone kamu sering patah atau muncul peringatan aksesori tidak didukung? Awas, kebiasaan pakai adaptor non-MFi bisa merusak port dan kabel!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Edukasi Kebiasaan Cabut Charger Saat Pengisian Selesai Lewat Indikator Visual Wajah",
+       "masalah_penonton": "Pengguna sering bingung memastikan apakah HP sudah selesai mengisi daya secara penuh (mode trickle charge) tanpa perlu bolak-balik menyalakan layar HP.",
+       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+       "hook": "Masih sering bingung baterai HP udah beneran penuh atau belum tanpa nyalain layar? Lihat perubahan ekspresi di charger ini buat tahu statusnya!",
+       "sumber": "lab"
+      },
+      {
+       "topik": "Solusi Pengisian Daya Lemot Akibat Penurunan Watt Saat Adaptor Kepanasan",
+       "masalah_penonton": "Kecepatan mengisi daya mendadak melambat setelah beberapa menit karena kepala charger mengalami thermal throttling akibat tumpukan suhu panas.",
+       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+       "hook": "Pernah merasa awal ngecas cepat tapi makin lama malah makin lambat? Itu tanda adaptor kamu kepanasan dan mengalami watt drop!",
+       "sumber": "berita"
+      },
+      {
+       "topik": "Identifikasi Penyebab Fast Charging Tidak Aktif Menggunakan Layar Digital Interaktif",
+       "masalah_penonton": "Pengguna tidak tahu pasti apakah fitur fast charging berjalan atau tidak karena tidak ada indikator daya real-time pada adaptor konvensional.",
+       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+       "hook": "Fast charging di HP kamu tiba-tiba tidak berfungsi dan pengisian jadi super lambat? Cek status koneksi dan dayanya langsung dari layar charger ini!",
+       "sumber": "lab"
+      }
+     ]
+    }
+   },
+   "mahim": {
+    "nama": "Mahim",
+    "divisi": "Affiliate & Sosmed",
+    "peran": "Caption",
+    "hasil": {
+     "paket": [
+      {
+       "topik": "Protokol Fast Charging Ganda untuk Pengguna Multi-Device (iPhone & Samsung)",
+       "produk": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
+       "tiktok": "Membawa banyak adaptor charger untuk brand HP yang berbeda sering kali bikin tas penuh dan pengisian daya kurang efisien. Kalau butuh satu adaptor yang bisa mendukung fast charging iPhone dan Samsung sekaligus, kamu bisa coba Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung ini. Dapatkan produknya sekarang di keranjang kuning!",
+       "threads": "Pengguna iPhone dan Samsung tidak perlu bingung lagi soal pengisian daya saat membawa dua perangkat. Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung hadir sebagai opsi praktis buat mendukung pengisian cepat di kedua brand tersebut secara efisien. Cek info produknya lewat tautan berikut ya. (link afiliasi)",
+       "facebook": "Apakah kamu punya dua smartphone dari merek berbeda seperti iPhone dan Samsung, tetapi salah satu selalu terasa lambat saat diisi dayanya? Penggunaan adaptor yang tepat sangat mempengaruhi efisiensi waktu kamu. Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung didesain untuk membantu pengisian daya cepat pada kedua perangkat tersebut tanpa repot membawa banyak kepala charger. Solusi ringkas untuk mendukung aktivitas multi-device kamu sehari-hari.",
+       "hashtag": [
+        "#chargergan",
+        "#fastcharging",
+        "#rapatech",
+        "#gadgetaccessories",
+        "#multidevice"
+       ]
+      },
+      {
+       "topik": "Pencegahan Kerusakan Konektor dan Kabel Lightning Akibat Daya Inkompatibel",
+       "produk": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
+       "tiktok": "Notifikasi aksesori tidak didukung di iPhone sering muncul akibat arus adaptor yang kurang stabil. Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama dirancang aman dengan sertifikasi MFi untuk membantu menjaga keamanan perangkat kamu. Yuk, checkout produknya di keranjang kuning sekarang!",
+       "threads": "Peringatan 'Accessory Not Supported' di iPhone lama sebaiknya jangan diabaikan. Agar konektor dan port tetap terlindungi dari ketidakstabilan arus, Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama bisa jadi pilihan tepat untuk pengisian daya yang terpercaya. (link afiliasi)",
+       "facebook": "Kerusakan pada kabel serta munculnya pesan error saat mengisi daya iPhone sering kali bersumber dari penggunaan adaptor yang tidak sesuai standar sertifikasi. Arus listrik yang tidak stabil dapat memperpendek usia komponen pengisian. Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama hadir membawa teknologi GaN serta lisensi resmi MFi untuk memastikan pengisian daya tetap stabil dan aman bagi pengguna iPhone seri lama.",
+       "hashtag": [
+        "#ugreen",
+        "#chargeriphone",
+        "#mficertified",
+        "#kabelightning",
+        "#aksesorisiphone"
+       ]
+      },
+      {
+       "topik": "Edukasi Kebiasaan Cabut Charger Saat Pengisian Selesai Lewat Indikator Visual Wajah",
+       "produk": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
+       "tiktok": "Tahukah kamu kalau bolak-balik menyalakan layar HP cuma buat cek status baterai itu kurang praktis? Charger TORRAS Big Eye 60W dengan layar ekspresi wajah memudahkan kamu memantau pengisian daya secara visual langsung dari kepala charger. Klik keranjang kuning di bawah untuk beli!",
+       "threads": "Penasaran apakah pengisian daya HP kamu sudah selesai atau belum? Charger TORRAS Big Eye 60W dengan layar ekspresi wajah menghadirkan indikator visual unik yang membantu melihat status charging tanpa perlu menyalakan layar ponsel. (link afiliasi)",
+       "facebook": "Mengetahui status pengisian daya baterai kini bisa dilakukan dengan cara yang lebih praktis tanpa perlu menyalakan layar smartphone terus-menerus. Charger TORRAS Big Eye 60W dengan layar ekspresi wajah dilengkapi dengan tampilan indikator ekspresi visual yang menarik untuk menginformasikan proses charging. Perangkat berdaya 60W ini menjadi opsi menarik untuk melengkapi meja kerja atau area pengisian daya kamu.",
+       "hashtag": [
+        "#torras",
+        "#charger60w",
+        "#layarekspresi",
+        "#gadgetunik",
+        "#fastcharger"
+       ]
+      },
+      {
+       "topik": "Solusi Pengisian Daya Lemot Akibat Penurunan Watt Saat Adaptor Kepanasan",
+       "produk": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
+       "tiktok": "Kecepatan pengisian daya yang tiba-tiba turun biasanya disebabkan oleh suhu adaptor yang terlalu tinggi. Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin membantu menjaga kestabilan suhu serta memantau daya saat proses charging. Cek keranjang kuning sekarang untuk dapatkan produknya!",
+       "threads": "Fenomena watt drop saat mengisi daya HP sering kali membuat proses charging berlangsung lama. Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin hadir untuk membantu menjaga performa pengisian sekaligus memantau daya secara konsisten. (link afiliasi)",
+       "facebook": "Pernahkah kamu mengalami pengisian daya HP yang awalnya sangat cepat, namun belakangan menjadi lambat? Hal tersebut bisa disebabkan oleh peningkatan suhu pada kepala charger yang memicu penurunan watt secara otomatis. Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin dirancang untuk membantu meminimalisasi masalah tersebut melalui fitur pendingin serta layar pemantau daya terintegrasi.",
+       "hashtag": [
+        "#rapatech",
+        "#chargergan45w",
+        "#layardaya",
+        "#chargerpendingin",
+        "#gadgettech"
+       ]
+      },
+      {
+       "topik": "Identifikasi Penyebab Fast Charging Tidak Aktif Menggunakan Layar Digital Interaktif",
+       "produk": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
+       "tiktok": "Sering ragu apakah fitur pengisian cepat di HP kamu benar-benar aktif atau tidak? Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif memberikan informasi daya secara langsung dan jelas. Yuk, amankan produknya lewat keranjang kuning!",
+       "threads": "Memastikan fitur fast charging berjalan kini lebih gampang dengan melihat arus dayanya secara langsung. Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif menyajikan tampilan informasi digital yang jelas saat mengecas ponsel. (link afiliasi)",
+       "facebook": "Banyak pengguna smartphone yang tidak menyadari bahwa pengisian daya cepat pada perangkatnya tidak bekerja maksimal karena tidak adanya informasi real-time dari adaptor konvensional. Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif memberikan kejelasan visual dengan menampilkan status daya langsung pada layar interaktifnya. Adaptor berbasis GaN 45W ini menjadi pilihan praktis bagi kamu yang mengutamakan kepastian pengisian daya.",
+       "hashtag": [
+        "#torrasflasheyes",
+        "#chargergan",
+        "#layardigital",
+        "#fastcharging45w",
+        "#inovasigadget"
+       ]
+      }
+     ]
+    }
+   },
+   "rahma": {
+    "nama": "Rahma",
+    "divisi": "Sekretariat",
+    "peran": "Sekretaris CEO",
+    "hasil": {
+     "laporan_ceo": "Selamat malam Pak Gembi. Laporan pekerjaan tim malam ini: Seluruh tugas selesai 100% (Gendol, Paero, Bonyek, Botak, dan Mahim telah merampungkan tugasnya masing-masing). Tidak ada pekerjaan yang gagal. Naskah, video, riset, dan caption affiliate serta Shorts Inggris sudah siap.",
+     "perlu_dicek": [
+      "Hook dan kesesuaian visual video Shorts Inggris: 'Whatever you do tonight... do not look at the moon.'",
+      "Kesesuaian 5 caption edukasi/affiliate charger dengan klip video yang disunting Bonyek",
+      "Persetujuan jadwal dan waktu rilis sebelum posting manual dilakukan oleh Pak Gembi"
+     ],
+     "antrean": [
+      {
+       "hari": "Hari 1",
+       "jam_wib": "12:30 WIB",
+       "platform": "TikTok / Instagram (Affiliate ID)",
+       "isi": "Protokol Fast Charging Ganda untuk Pengguna Multi-Device (iPhone & Samsung)",
+       "status": "nunggu persetujuan CEO"
+      },
+      {
+       "hari": "Hari 1",
+       "jam_wib": "22:00 WIB",
+       "platform": "YouTube Shorts (US/EU Target)",
+       "isi": "Shorts Inggris: Whatever you do tonight... do not look at the moon.",
+       "status": "nunggu persetujuan CEO"
+      },
+      {
+       "hari": "Hari 2",
+       "jam_wib": "19:00 WIB",
+       "platform": "TikTok / Shopee Video (Affiliate ID)",
+       "isi": "Pencegahan Kerusakan Konektor dan Kabel Lightning Akibat Daya Inkompatibel",
+       "status": "nunggu persetujuan CEO"
+      },
+      {
+       "hari": "Hari 2",
+       "jam_wib": "06:30 WIB",
+       "platform": "YouTube Shorts / TikTok Int (US Target Prime Morning)",
+       "isi": "Shorts Inggris (Repost/Variasi): Whatever you do tonight... do not look at the moon.",
+       "status": "nunggu persetujuan CEO"
+      },
+      {
+       "hari": "Hari 3",
+       "jam_wib": "12:00 WIB",
+       "platform": "Instagram / TikTok (Affiliate ID)",
+       "isi": "Edukasi Kebiasaan Cabut Charger Saat Pengisian Selesai Lewat Indikator Visual Wajah",
+       "status": "nunggu persetujuan CEO"
+      },
+      {
+       "hari": "Hari 3",
+       "jam_wib": "19:30 WIB",
+       "platform": "TikTok / Shopee Video (Affiliate ID)",
+       "isi": "Solusi Pengisian Daya Lemot Akibat Penurunan Watt Saat Adaptor Kepanasan",
+       "status": "nunggu persetujuan CEO"
+      }
+     ]
+    }
+   }
+  },
+  "log": [
+   "Gendol trend hunter selesai",
+   "Paero naskah selesai",
+   "Bonyek editor video selesai",
+   "Botak riset produk selesai",
+   "Mahim caption selesai",
+   "Rahma sekretaris ceo selesai"
+  ],
+  "error": null
+ },
+ {
   "tanggal": "2026-11-25",
   "jam": "03:02 WIB",
   "status": "sebagian",
@@ -1221,78 +1549,5 @@
    "Rahma gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
   ],
   "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
- },
- {
-  "tanggal": "2026-11-18",
-  "jam": "16:16 WIB",
-  "status": "gagal",
-  "model": "gemini-3.8-flash",
-  "agents": {
-   "gendol": {
-    "nama": "Gendol",
-    "divisi": "Shorts & Editor",
-    "peran": "Trend hunter",
-    "catatan": "12 judul terbaca dari RSS",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "paero": {
-    "nama": "Paero",
-    "divisi": "Shorts & Editor",
-    "peran": "Naskah",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-   },
-   "bonyek": {
-    "nama": "Bonyek",
-    "divisi": "Shorts & Editor",
-    "peran": "Editor video",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "botak": {
-    "nama": "Botak",
-    "divisi": "Affiliate & Sosmed",
-    "peran": "Riset produk",
-    "catatan": "12 judul berita, 5 produk afiliasi terdaftar",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   },
-   "mahim": {
-    "nama": "Mahim",
-    "divisi": "Affiliate & Sosmed",
-    "peran": "Caption",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)"
-   },
-   "rahma": {
-    "nama": "Rahma",
-    "divisi": "Sekretariat",
-    "peran": "Sekretaris CEO",
-    "hasil": {
-     "gagal": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-    },
-    "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-   }
-  },
-  "log": [
-   "Gendol gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Paero gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-   "Bonyek gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Botak gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)",
-   "Mahim gagal: semua model gagal; terakhir: HTTP 503 (gemini-3.5-flash)",
-   "Rahma gagal: semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
-  ],
-  "error": "semua model gagal; terakhir: HTTP 429 (gemini-3.5-flash)"
  }
 ]
