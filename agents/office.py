@@ -14,7 +14,7 @@ MODEL_PREF = ["3.8-flash", "3.6-flash", "3.5-flash", "flash-lite", "flash"]
 MODEL_BLOCK = ["image", "video", "embedding", "tts", "live", "audio", "vision", "gemma"]
 
 
-def http(url, data=None, timeout=40):
+def http(url, data=None, timeout=120):
     req = urllib.request.Request(url, data=data, headers={
         "User-Agent": UA, "Content-Type": "application/json", "Accept": "*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -175,7 +175,7 @@ def shift(models):
     """Satu shift. Tiap agent dibungkus sendiri: kalau satu gagal, sisanya tetap kerja."""
     agents, log, dipakai = {}, [], []
     mulai = time.time()
-    BATAS = 600  # detik; shift berhenti rapi kalau Google lambat terus
+    BATAS = 900  # detik; shift berhenti rapi kalau Google lambat terus
 
     def kerja(key, nama, divisi, peran, prompt, catatan=None):
         entry = {"nama": nama, "divisi": divisi, "peran": peran}
@@ -254,6 +254,8 @@ Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber
 Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threads (santai), Facebook (agak panjang).
 Buat satu paket untuk tiap ide. Kalimat pembuka tiap paket harus beda satu sama lain, jangan pakai pola yang sama.
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
+JANGAN mengaku sudah membeli atau memakai produk, jangan mengarang pengalaman atau testimoni.
+Jangan menyebut fitur yang tidak tertulis di nama produk. Caption Threads wajib diakhiri "(link afiliasi)".
 Salin field produk dari ide yang kamu pakai apa adanya.
 Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
 
@@ -300,6 +302,7 @@ def tulis_antrean(data):
             "link": link,
             "tanggal": data["tanggal"],
             "judul": p.get("topik") or f"caption {i}",
+            "versi": 2,
             "platform": "threads",
             "teks": (teks + ("\n\n" + tag if tag else "")).strip(),
             "setujui": False,

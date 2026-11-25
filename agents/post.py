@@ -71,6 +71,37 @@ def pengaturan():
         return {}
 
 
+JEDA_JAM = 3             # jarak minimal antar post, walau jadwal GitHub molor berdekatan
+
+
+def kunci(teks):
+    """Teks dinormalkan untuk cek kembar (tanpa beda huruf besar dan spasi)."""
+    return " ".join((teks or "").lower().split())
+
+
+def pilih(antrean, siap, now):
+    """Buang teks yang sudah pernah terkirim atau kembar, lalu dahulukan caption AI.
+
+    Kosong kalau post terakhir belum lewat JEDA_JAM.
+    """
+    waktu = []
+    for a in antrean:
+        try:
+            waktu.append(datetime.strptime(a["terkirim"], "%Y-%m-%d %H:%M WIB").replace(tzinfo=WIB))
+        except (KeyError, TypeError, ValueError):
+            pass
+    if waktu and now - max(waktu) < timedelta(hours=JEDA_JAM):
+        return []
+    sudah = {kunci(a.get("teks")) for a in antrean if a.get("terkirim")}
+    hasil = []
+    for a in sorted(siap, key=lambda x: "-cadangan-" in x.get("id", "")):
+        k = kunci(a.get("teks"))
+        if k not in sudah:
+            sudah.add(k)
+            hasil.append(a)
+    return hasil
+
+
 def baca_antrean():
     try:
         return json.load(open(ANTREAN, encoding="utf-8"))
@@ -91,10 +122,12 @@ def main():
     if auto:
         print("[post] mode setujui otomatis aktif")
     siap = [a for a in antrean
-            if (a.get("setujui") is True or auto) and not a.get("terkirim")
+            if (a.get("setujui") is True or (auto and ("-mahim-" not in a.get("id", "") or a.get("versi") == 2)))
+            and not a.get("terkirim")
             and a.get("platform", "threads") == "threads" and a.get("teks")]
+    siap = pilih(antrean, siap, now)
     if not siap:
-        print("[post] tidak ada yang disetujui; tidak ada yang dikirim")
+        print("[post] tidak ada yang layak dikirim (belum disetujui, teks kembar, atau jeda belum lewat)")
         return
 
     try:
