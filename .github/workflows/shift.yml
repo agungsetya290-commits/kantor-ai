@@ -7,7 +7,12 @@ on:
     - cron: "0 9 * * *"     # 16:00 WIB - agent kerja + kirim 1 post
     - cron: "30 12 * * *"   # 19:30 WIB - kirim 1 post
     - cron: "30 14 * * *"   # 21:30 WIB - kirim 1 post
-  workflow_dispatch:
+  workflow_dispatch:       # dipakai tombol manual dan pemicu luar (cron-job.org)
+    inputs:
+      agent:
+        description: "Jalankan agent Gemini juga"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -27,7 +32,7 @@ jobs:
           python-version: "3.12"
 
       - name: Agent kerja
-        if: github.event_name == 'workflow_dispatch' || github.event.schedule == '0 9 * * *'
+        if: (github.event_name == 'workflow_dispatch' && format('{0}', inputs.agent) == 'true') || github.event.schedule == '0 9 * * *'
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
