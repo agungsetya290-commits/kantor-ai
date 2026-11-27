@@ -124,6 +124,7 @@ def main():
     siap = [a for a in antrean
             if (a.get("setujui") is True or (auto and ("-mahim-" not in a.get("id", "") or a.get("versi") == 2)))
             and not a.get("terkirim")
+            and ("-mahim-" not in a.get("id", "") or a.get("link"))
             and a.get("platform", "threads") == "threads" and a.get("teks")]
     siap = pilih(antrean, siap, now)
     if not siap:

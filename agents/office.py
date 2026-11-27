@@ -177,11 +177,13 @@ def shift(models):
     mulai = time.time()
     BATAS = 900  # detik; shift berhenti rapi kalau Google lambat terus
 
-    def kerja(key, nama, divisi, peran, prompt, catatan=None):
+    def kerja(key, nama, divisi, peran, prompt, catatan=None, syarat=True):
         entry = {"nama": nama, "divisi": divisi, "peran": peran}
         if catatan:
             entry["catatan"] = catatan
         try:
+            if not syarat:
+                raise RuntimeError("bahan dari agent sebelumnya kosong, agent ini dilewati")
             if time.time() - mulai > BATAS:
                 raise RuntimeError("batas waktu shift tercapai, agent ini dilewati")
             hasil, model = ask(models, prompt)
@@ -257,7 +259,8 @@ Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
 JANGAN mengaku sudah membeli atau memakai produk, jangan mengarang pengalaman atau testimoni.
 Jangan menyebut fitur yang tidak tertulis di nama produk. Caption Threads wajib diakhiri "(link afiliasi)".
 Salin field produk dari ide yang kamu pakai apa adanya.
-Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""")
+Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""",
+        syarat=bool(isinstance(sari, dict) and sari.get("ide")))
 
     kerja("rahma", "Rahma", "Sekretariat", "Sekretaris CEO", f"""Kamu Rahma, sekretaris CEO Gembi. Laporan karyawan malam ini:
 Status kerja: {json.dumps(log, ensure_ascii=False)}
@@ -297,6 +300,9 @@ def tulis_antrean(data):
         if kid in sudah:
             continue
         link = produk.get((p.get("produk") or "").strip().lower(), "")
+        if not link:
+            print(f"[antrean] dibuang, produk tidak ada di daftar: {p.get('produk')}", file=sys.stderr)
+            continue
         antrean.append({
             "id": kid,
             "link": link,
