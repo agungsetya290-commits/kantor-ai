@@ -74,6 +74,10 @@ def pengaturan():
 JEDA_JAM = 3             # jarak minimal antar post, walau jadwal GitHub molor berdekatan
 
 
+BATAS_PER_HARI = 5       # jadwal jalan tiap jam, jadi jumlah post per hari dibatasi
+JAM_AKTIF = range(7, 23) # post hanya 07:00-22:59 WIB
+
+
 def kunci(teks):
     """Teks dinormalkan untuk cek kembar (tanpa beda huruf besar dan spasi)."""
     return " ".join((teks or "").lower().split())
@@ -90,6 +94,10 @@ def pilih(antrean, siap, now):
             waktu.append(datetime.strptime(a["terkirim"], "%Y-%m-%d %H:%M WIB").replace(tzinfo=WIB))
         except (KeyError, TypeError, ValueError):
             pass
+    if now.hour not in JAM_AKTIF:
+        return []
+    if sum(w.date() == now.date() for w in waktu) >= BATAS_PER_HARI:
+        return []
     if waktu and now - max(waktu) < timedelta(hours=JEDA_JAM):
         return []
     sudah = {kunci(a.get("teks")) for a in antrean if a.get("terkirim")}
@@ -128,7 +136,7 @@ def main():
             and a.get("platform", "threads") == "threads" and a.get("teks")]
     siap = pilih(antrean, siap, now)
     if not siap:
-        print("[post] tidak ada yang layak dikirim (belum disetujui, teks kembar, atau jeda belum lewat)")
+        print("[post] tidak ada yang layak dikirim (belum disetujui, teks kembar, jeda belum lewat, di luar jam 07-22 WIB, atau batas harian tercapai)")
         return
 
     try:
