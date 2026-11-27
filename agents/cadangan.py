@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Jaring pengaman: kalau agent AI gagal, antrean tetap diisi dari template.
-Dijalankan tiap run, sebelum post.py. Kalau antrean hari ini sudah cukup, diam saja.
+Dijalankan tiap run, sebelum post.py. Kalau stok belum terkirim sudah cukup, diam saja.
 """
 import json, os, random, datetime
+from giliran import giliran
 
 TARGET = 5
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,40 +20,50 @@ def tulis(nama, data):
     with open(os.path.join(D, nama), "w", encoding="utf-8") as f:
         json.dump(data, f, ensure_ascii=False, indent=2)
 
-PASANGAN = [
-    ("Charger bawaan hp makin lama makin lemot ngecasnya?",
-     "Biasanya bukan baterainya yang rusak, tapi kepala chargernya sudah turun kemampuan."),
-    ("Sering ngecas semalaman tapi paginya masih belum penuh?",
-     "Arus yang masuk kekecilan. Kepala charger yang dayanya pas bikin bedanya kerasa."),
-    ("Colokan di rumah terbatas tapi yang dicas ada tiga barang?",
-     "Satu kepala charger beberapa port lebih masuk akal daripada rebutan stopkontak."),
-    ("Charger murah sering bikin hp hangat pas dipakai sambil ngecas.",
-     "Yang bikin aman itu proteksi suhu dan arusnya, bukan angka watt di kemasan."),
-    ("Kabel sama kepala charger numpuk di tas tiap mau pergi?",
-     "GaN bikin kepala charger jauh lebih kecil tanpa ngurangi dayanya. Tas jadi enteng."),
-    ("Hp tinggal 20 persen padahal sepuluh menit lagi harus jalan.",
-     "Ngecas cepat paling kerasa gunanya di momen kayak gini, sepuluh menit pun nambah banyak."),
-    ("Bawa charger gembul ke mana-mana itu ribet.",
-     "Ukuran GaN muat di kantong celana, jadi nggak ada alasan ketinggalan charger."),
-    ("Baterai hp cepat soak itu sering gara-gara chargernya, bukan hpnya.",
-     "Arus yang stabil bikin baterai lebih awet daripada arus yang naik turun sembarangan."),
-    ("Satu kepala charger buat hp, earbuds, sama tablet sekaligus.",
-     "Hemat colokan, hemat tempat, dan nggak perlu gonta-ganti adaptor."),
-    ("Angka watt besar belum tentu kepakai semua.",
-     "Yang penting chargernya bisa nyesuaikan arus ke kemampuan baterai hp kita."),
-    ("Ngecas di mobil sering kalah cepat sama borosnya baterai.",
-     "Kepala charger yang dayanya cukup bikin baterai naik, bukan cuma bertahan."),
-    ("Charger tipis sering dikira lemah.",
-     "GaN justru kebalikannya, bentuknya kecil tapi panasnya lebih terkendali."),
-]
+# (pembuka, saran cek) per kategori. Sengaja tanpa klaim fitur, kondisi, atau pengalaman pakai.
+TEMPLATE = {
+    "charger": (["Lagi cari kepala charger baru?", "Charger lama sudah waktunya diganti?", "Butuh charger cadangan?"],
+                "Cocokkan dulu daya dan jenis colokannya dengan HP kamu."),
+    "kabel": (["Lagi cari kabel baru?", "Kabel lama sudah waktunya diganti?", "Butuh kabel cadangan?"],
+              "Pilih varian dan cek jenis colokannya sebelum checkout."),
+    "powerbank": (["Lagi cari power bank?", "Butuh cadangan daya buat di luar rumah?", "Mau punya power bank buat dibawa pergi?"],
+                  "Cek kapasitas, colokan, dan kecocokannya dengan HP kamu."),
+    "casing": (["Lagi cari case baru buat HP?", "Mau ganti tampilan HP?", "Bosan sama case yang sekarang?"],
+               "Pastikan pilih tipe HP yang pas sebelum checkout."),
+    "paket": (["Lagi cari paket pelindung atau aksesoris HP?", "Mau beli aksesoris sekaligus?", "Baru ganti HP dan cari aksesorisnya?"],
+              "Cek isi paket dan tipe HP yang cocok."),
+    "hp": (["Lagi cari-cari HP?", "Ada rencana ganti HP?", "Masih membandingkan pilihan HP?"],
+           "Cek varian, spesifikasi, dan reputasi toko sebelum checkout."),
+    "hp_bekas": (["Lagi cari HP second?", "Mempertimbangkan beli HP bekas?", "Masih membandingkan pilihan HP second?"],
+                 "Ini barang bekas, jadi tanyakan detail unitnya ke penjual sebelum checkout."),
+    "tablet": (["Lagi cari tablet?", "Butuh layar lebih lega dari HP?", "Masih membandingkan pilihan tablet?"],
+               "Cek merek, spesifikasi, dan reputasi toko sebelum checkout."),
+    "audio": (["Lagi cari perangkat audio?", "Mau tambah teman dengerin musik?", "Masih membandingkan pilihan audio?"],
+              "Cek spesifikasi, ulasan, dan reputasi toko dulu."),
+    "jam": (["Lagi cari smartwatch?", "Mau coba pakai smartwatch?", "Masih membandingkan pilihan smartwatch?"],
+            "Cek dulu kecocokannya dengan HP kamu."),
+}
+UMUM = (["Lagi cari barang ini?", "Siapa tahu lagi butuh.", "Buat yang lagi lihat-lihat."],
+        "Cek detail produk dan ulasannya dulu.")
+PENGANTAR = ["Salah satu pilihannya:", "Bisa dilirik:", "Yang ini bisa dicek:"]
+PENUTUP = ["Detailnya ada di link.", "Selengkapnya cek di link.", "Linknya ada di bawah."]
 
-PENUTUP = [
-    "Detail lengkapnya di link.",
-    "Spesifikasinya bisa dicek di link.",
-    "Yang mau lihat-lihat dulu, linknya di bawah.",
-    "Cek sendiri di link kalau penasaran.",
-    "Infonya ada di link.",
-]
+
+def buat_teks(p, rnd, sudah):
+    """Teks memuat nama produk, jadi tidak tertukar antar produk. Hindari teks yang sudah ada."""
+    buka, saran = TEMPLATE.get(p.get("kategori"), UMUM)
+    pilihan = ["%s %s %s. %s %s (link afiliasi)" % (b, a, p["nama"], saran, t)
+               for b in buka for a in PENGANTAR for t in PENUTUP]
+    rnd.shuffle(pilihan)
+    return next((x for x in pilihan if x not in sudah), pilihan[0])
+
+
+def tertunda(antrean):
+    """Baris yang masih menunggu dikirim (syaratnya sama dengan post.py)."""
+    return [a for a in antrean
+            if not a.get("terkirim") and a.get("teks") and a.get("platform", "threads") == "threads"
+            and ("-mahim-" not in a.get("id", "") or (a.get("versi") == 2 and a.get("link")))]
+
 
 def main():
     hari = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=7)
@@ -64,28 +75,18 @@ def main():
         return
 
     antrean = baca("antrean.json", [])
-    hari_ini = [a for a in antrean if a.get("tanggal") == tanggal]
-    kurang = TARGET - len(hari_ini)
+    kurang = TARGET - len(tertunda(antrean))
     if kurang <= 0:
-        print("[cadangan] antrean hari ini sudah %d, tidak perlu diisi" % len(hari_ini))
+        print("[cadangan] stok belum terkirim masih cukup, tidak perlu diisi")
         return
 
-    # acak tetap: sama sepanjang hari, beda tiap hari
-    rnd = random.Random(tanggal)
-    urut = produk[:]
-    rnd.shuffle(urut)
-
-    dipakai = {a.get("produk") for a in hari_ini}
-    sisa = [p for p in urut if p["nama"] not in dipakai] or urut
-
+    sudah = {a.get("teks") for a in antrean}
+    nomor = sum(1 for a in antrean if a.get("id", "").startswith(tanggal + "-cadangan-"))
     baru = []
-    for i in range(kurang):
-        p = sisa[i % len(sisa)]
-        r = random.Random(tanggal + p["nama"] + str(i))
-        buka, isi = r.choice(PASANGAN)
-        teks = "%s %s %s" % (buka, isi, r.choice(PENUTUP))
+    for i, p in enumerate(giliran(produk, antrean, kurang), nomor + 1):
+        teks = buat_teks(p, random.Random("%s-%d" % (tanggal, i)), sudah)
         baru.append({
-            "id": "%s-cadangan-%d" % (tanggal, i + 1),
+            "id": "%s-cadangan-%d" % (tanggal, i),
             "link": p["link"],
             "produk": p["nama"],
             "tanggal": tanggal,
@@ -100,7 +101,7 @@ def main():
     tambah = [b for b in baru if b["id"] not in ada]
     antrean.extend(tambah)
     tulis("antrean.json", antrean[-60:])
-    print("[cadangan] tambah %d baris template (antrean hari ini jadi %d)" % (len(tambah), len(hari_ini) + len(tambah)))
+    print("[cadangan] tambah %d baris template" % len(tambah))
 
 if __name__ == "__main__":
     main()

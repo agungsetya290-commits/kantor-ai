@@ -1,22 +1,292 @@
 [
  {
   "nama": "Charger GaN 60W RAPAtech ION PRO - fast charging iPhone dan Samsung",
-  "link": "https://s.shopee.co.id/3VluWXtWRU"
+  "link": "https://s.shopee.co.id/3VluWXtWRU",
+  "kategori": "charger"
  },
  {
   "nama": "Charger UGREEN 20W GaN MFi Type-C ke Lightning untuk iPhone lama",
-  "link": "https://s.shopee.co.id/3LSUKEu9mT"
+  "link": "https://s.shopee.co.id/3LSUKEu9mT",
+  "kategori": "charger"
  },
  {
   "nama": "Charger TORRAS Big Eye 60W dengan layar ekspresi wajah",
-  "link": "https://s.shopee.co.id/3qOkv9sFla"
+  "link": "https://s.shopee.co.id/3qOkv9sFla",
+  "kategori": "charger"
  },
  {
   "nama": "Charger GaN 45W RAPAtech ION dengan layar daya dan pendingin",
-  "link": "https://s.shopee.co.id/3g5Kiqst6Z"
+  "link": "https://s.shopee.co.id/3g5Kiqst6Z",
+  "kategori": "charger"
  },
  {
   "nama": "Charger TORRAS FlashEyes GaN 45W dengan layar digital interaktif",
-  "link": "https://s.shopee.co.id/2qWDjJw3nQ"
+  "link": "https://s.shopee.co.id/2qWDjJw3nQ",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max",
+  "link": "https://s.shopee.co.id/1W150lcS4g",
+  "kategori": "casing"
+ },
+ {
+  "nama": "iPhone 16 / 16 Plus second 128GB-512GB",
+  "link": "https://s.shopee.co.id/1CHE2Xf3A",
+  "kategori": "hp_bekas"
+ },
+ {
+  "nama": "Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik",
+  "link": "https://s.shopee.co.id/4LLGO2pYQi",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Samsung Galaxy S25 Series",
+  "link": "https://s.shopee.co.id/5VXDmHjVwP",
+  "kategori": "hp"
+ },
+ {
+  "nama": "Smartwatch Infinix GT Watch 5 Pro",
+  "link": "https://s.shopee.co.id/9fMmjxU4aY",
+  "kategori": "jam"
+ },
+ {
+  "nama": "Tablet Pro11 16GB/512GB",
+  "link": "https://s.shopee.co.id/4fy6nFzo5K",
+  "kategori": "tablet"
+ },
+ {
+  "nama": "Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED",
+  "link": "https://s.shopee.co.id/6fjBAzeGtk",
+  "kategori": "audio"
+ },
+ {
+  "nama": "USEMO CI30 jump starter dan pompa ban 12000mAh",
+  "link": "https://s.shopee.co.id/4qHWzfnPJb",
+  "kategori": "lain"
+ },
+ {
+  "nama": "Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro",
+  "link": "https://s.shopee.co.id/4B1qCVAnhy",
+  "kategori": "paket"
+ },
+ {
+  "nama": "Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14",
+  "link": "https://s.shopee.co.id/7VIIAkidvR",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Tongsis tripod ZIVOKA ZT17 4in1 180cm dengan remote Bluetooth",
+  "link": "https://s.shopee.co.id/3B9J19BMDn",
+  "kategori": "aksesoris"
+ },
+ {
+  "nama": "Kabel RAPAtech LINE Flash USB-C ke USB-C 60W/100W/240W",
+  "link": "https://s.shopee.co.id/1qdvQihWm1",
+  "kategori": "kabel"
+ },
+ {
+  "nama": "Casing Arasaka MagSafe silikon warna pastel untuk iPhone 11-18 Pro Max",
+  "link": "https://s.shopee.co.id/40iPzPdxXV",
+  "kategori": "casing"
+ },
+ {
+  "nama": "iPhone 13 second 128GB-512GB",
+  "link": "https://s.shopee.co.id/4LLGO5GFEU",
+  "kategori": "hp_bekas"
+ },
+ {
+  "nama": "Power bank wireless RAPAtech Origin ON+ 10.000mAh MagSafe",
+  "link": "https://s.shopee.co.id/5VXDmJQYci",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Apple iPhone Duo 256GB-2TB",
+  "link": "https://s.shopee.co.id/2qWSbvK4RO",
+  "kategori": "hp"
+ },
+ {
+  "nama": "Tablet Infinix XPAD 16GB+1024GB",
+  "link": "https://s.shopee.co.id/8fUFYhqxFb",
+  "kategori": "tablet"
+ },
+ {
+  "nama": "Earbuds Anker soundcore R50i NC",
+  "link": "https://s.shopee.co.id/3LSjCtPp8I",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Mesin kopi AZKO Kris",
+  "link": "https://s.shopee.co.id/8pnfl36yQi",
+  "kategori": "lain"
+ },
+ {
+  "nama": "Paket case bening RAPAtech ICE dan kaca pelindung AR untuk seri iPhone 17",
+  "link": "https://s.shopee.co.id/6q2bNXkz2f",
+  "kategori": "paket"
+ },
+ {
+  "nama": "Charger GaN RAPAtech 20W-45W Type-C ke Lightning untuk iPhone",
+  "link": "https://s.shopee.co.id/5AuNOYfGsa",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Silicone Case MagSafe Animation untuk iPhone 18 Pro / Pro Max",
+  "link": "https://s.shopee.co.id/9pgCwCdEdP",
+  "kategori": "casing"
+ },
+ {
+  "nama": "iPhone 15 / 15 Plus second",
+  "link": "https://s.shopee.co.id/7pv8Z5eLEW",
+  "kategori": "hp_bekas"
+ },
+ {
+  "nama": "Power bank wireless RAPAtech 10.000mAh Qi2.2 35W",
+  "link": "https://s.shopee.co.id/1BOEcoRhDh",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "VIVO V70 5G 8GB/256GB",
+  "link": "https://s.shopee.co.id/1qdvQJH7eH",
+  "kategori": "hp"
+ },
+ {
+  "nama": "Tablet Android (cek merek dan tipe di halaman produk)",
+  "link": "https://s.shopee.co.id/8KrPAF7DZR",
+  "kategori": "tablet"
+ },
+ {
+  "nama": "Headphone Bluetooth GOOJODOQ",
+  "link": "https://s.shopee.co.id/114oQqSeBV",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Speaker Quran murottal ZIKI 101",
+  "link": "https://s.shopee.co.id/8AXyxyAH8z",
+  "kategori": "lain"
+ },
+ {
+  "nama": "Paket case kulit MagSafe RAPAtech dan tempered glass untuk iPhone 15/16",
+  "link": "https://s.shopee.co.id/8fUFYyG78q",
+  "kategori": "paket"
+ },
+ {
+  "nama": "Charger GaN RAPAtech 30W/35W/45W Type-C untuk iPhone 15-17",
+  "link": "https://s.shopee.co.id/5VXDnBHwYp",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Case MagSafe motif denim untuk iPhone 11-18 Pro Max",
+  "link": "https://s.shopee.co.id/8pnfkNffwl",
+  "kategori": "casing"
+ },
+ {
+  "nama": "iPhone 13 second 128GB / 512GB",
+  "link": "https://s.shopee.co.id/4fy6nJ3oqf",
+  "kategori": "hp_bekas"
+ },
+ {
+  "nama": "Power bank RAPAtech Origin ON 10.000/5.000mAh wireless",
+  "link": "https://s.shopee.co.id/114oQXj7c1",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Tablet Infinix Pad 12 Pro",
+  "link": "https://s.shopee.co.id/70M1ZoWeQR",
+  "kategori": "tablet"
+ },
+ {
+  "nama": "Speaker Bluetooth portable GOOJODOQ dengan radio FM",
+  "link": "https://s.shopee.co.id/8pnflFgkr7",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Charger RAPAtech Power Loop GaN 45W kabel Type-C tarik untuk iPhone 17",
+  "link": "https://s.shopee.co.id/8KrPASFiR6",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Case Cassion Hybrid Crystal MagSafe untuk Samsung S22-S26",
+  "link": "https://s.shopee.co.id/1qdvPWy5D7",
+  "kategori": "casing"
+ },
+ {
+  "nama": "Power bank RAPAtech Origin MAX 15.000mAh PD100W Qi2",
+  "link": "https://s.shopee.co.id/1gKVDoecE6",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Tablet Infinix XPad 20 Pro 5G 16GB+512GB",
+  "link": "https://s.shopee.co.id/1W151kjMjS",
+  "kategori": "tablet"
+ },
+ {
+  "nama": "Headphone Bluetooth JBL Tune 510BT",
+  "link": "https://s.shopee.co.id/6L6KmjFBxq",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Charger RAPAtech 20W/30W Type-C ke Lightning untuk iPhone 11-14",
+  "link": "https://s.shopee.co.id/1CHFBjXbN",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Case RAPAtech Aero Hybrid MagSafe untuk iPhone 17/18 Pro dan Pro Max",
+  "link": "https://s.shopee.co.id/8AXyxpopMi",
+  "kategori": "casing"
+ },
+ {
+  "nama": "Power bank RAPAtech Origin Link 10.000mAh PD22.5W kabel bawaan",
+  "link": "https://s.shopee.co.id/7fbiMtKY7z",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Headset gaming wireless ANC Noir Resonance",
+  "link": "https://s.shopee.co.id/1BOEdGO5Kx",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Charger GaN RAPAtech PD20W/30W/35W untuk iPhone 12-17",
+  "link": "https://s.shopee.co.id/2gD2QAoy6N",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Case magnetik silikon warna burgundy untuk iPhone 12-18",
+  "link": "https://s.shopee.co.id/9pgCxM1LrU",
+  "kategori": "casing"
+ },
+ {
+  "nama": "Power bank mini GOOJODOQ 5000mAh colokan Lightning dan Type-C",
+  "link": "https://s.shopee.co.id/7KyryiKoMG",
+  "kategori": "powerbank"
+ },
+ {
+  "nama": "Speaker Bluetooth portable JBL Flip 6",
+  "link": "https://s.shopee.co.id/5fqdzXgUmP",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Charger GaN RAPAtech 25W-45W Type-C untuk iPhone 15-17",
+  "link": "https://s.shopee.co.id/9zzd9fvyxL",
+  "kategori": "charger"
+ },
+ {
+  "nama": "Speaker Bluetooth mini DAP-VY7 8W model robot dengan lampu RGB",
+  "link": "https://s.shopee.co.id/7fbiNI1iiu",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Speaker Bluetooth portable JBL Charge 6",
+  "link": "https://s.shopee.co.id/8fUFZ9FS6e",
+  "kategori": "audio"
+ },
+ {
+  "nama": "TWS earbuds JBL Wave 200",
+  "link": "https://s.shopee.co.id/W8XqEUiF4",
+  "kategori": "audio"
+ },
+ {
+  "nama": "Speaker karaoke Bluetooth Lenyes S861 dengan dua mikrofon",
+  "link": "https://s.shopee.co.id/5qA4C3stbu",
+  "kategori": "audio"
  }
 ]

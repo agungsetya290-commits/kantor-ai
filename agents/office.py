@@ -2,6 +2,7 @@
 """Kantor AI - satu shift malam. Jalan di GitHub Actions, tulis hasil ke data/."""
 import json, os, re, sys, time, urllib.parse, urllib.request, urllib.error, xml.etree.ElementTree as ET
 from datetime import datetime, timezone, timedelta
+from giliran import giliran
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 DATA = os.path.join(ROOT, "data")
@@ -120,8 +121,8 @@ FEED_SHORTS = [
     "https://news.google.com/rss/search?q=viral+short+video&hl=en-US&gl=US&ceid=US:en",
 ]
 FEED_GADGET = [
-    "https://news.google.com/rss/search?q=charger+hp+cepat+rusak&hl=id&gl=ID&ceid=ID:id",
-    "https://news.google.com/rss/search?q=fast+charging+GaN+charger&hl=id&gl=ID&ceid=ID:id",
+    "https://news.google.com/rss/search?q=aksesoris+hp&hl=id&gl=ID&ceid=ID:id",
+    "https://news.google.com/rss/search?q=gadget+terbaru&hl=id&gl=ID&ceid=ID:id",
 ]
 
 RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polos). "
@@ -129,7 +130,7 @@ RULES = ("Aturan wajib: tiap teks di video diberi efek animasi (jangan teks polo
          "Balas HANYA JSON valid sesuai skema.")
 
 
-def tren_threads(kata=("charger", "fast charging", "baterai hp")):
+def tren_threads(kata=("aksesoris hp", "powerbank", "earbuds")):
     """Apa yang lagi dibicarakan orang di Threads soal niche ini.
 
     Pakai keyword search resmi; kalau token tidak punya izinnya atau API menolak,
@@ -225,7 +226,12 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
 
     # --- Divisi Affiliate & Sosmed ---
     gadget = feed(FEED_GADGET)
-    produk = baca_produk()
+    semua_produk = baca_produk()
+    try:
+        antrean_lama = json.load(open(os.path.join(DATA, "antrean.json"), encoding="utf-8"))
+    except Exception:
+        antrean_lama = []
+    produk = giliran(semua_produk, antrean_lama, 5)
     nama_produk = [p["nama"] for p in produk]
     riwayat = judul_terpakai()
     tren = tren_threads()
@@ -236,9 +242,9 @@ Skema: {{"shot":[{{"detik":"","visual":"","teks":"","animasi_teks":"","transisi"
     sari = kerja("botak", "Botak", "Affiliate & Sosmed", "Riset produk", f"""Kamu Botak, karyawan riset produk affiliate gadget. Judul berita gadget hari ini:
 {json.dumps(gadget, ensure_ascii=False)}
 
-NICHE KANTOR INI KHUSUS CHARGER DAN AKSESORIS DAYA: fast charging, teknologi GaN, watt dan protokol PD,
-kabel, kebiasaan ngecas yang merusak baterai, cas sambil main game, charger untuk HP lama vs baru.
-Jangan keluar dari niche itu, jangan bahas HP, laptop, atau produk lain.
+NICHE KANTOR INI: HP, tablet, aksesorisnya, dan barang lain yang ada di daftar produk giliran ini.
+Tiap ide harus sesuai jenis produknya. Jangan membahas produk di luar daftar, dan jangan memaksakan topik charger ke produk lain.
+Untuk produk "second" (HP bekas): jangan menyebut atau menyiratkan kondisi fisik, kesehatan baterai, kelengkapan, garansi, atau keaslian.
 
 Usulkan 5 ide konten untuk TikTok/Shopee affiliate (keranjang kuning), format video pendek, tanpa wajah.
 Satu ide untuk tiap produk di daftar. Produk tetap sama tiap hari, jadi WAJIB ganti sudut pandang:
@@ -248,7 +254,7 @@ Yang lagi dibicarakan orang di Threads soal topik ini: {json.dumps(tren, ensure_
 Kalau daftar itu berisi, sambungkan minimal satu ide ke obrolan yang sedang ramai, tetap di akun sendiri.
 Jangan sebut harga pasti atau klaim penghasilan. Tandai sumber: "berita" atau "lab".{aturan_produk}
 Skema: {{"ide":[{{"topik":"","masalah_penonton":"","produk":"","hook":"","sumber":"berita|lab"}}]}}""",
-        catatan=f"{len(gadget)} judul berita, {len(produk)} produk afiliasi terdaftar")
+        catatan=f"{len(gadget)} judul berita, giliran {len(produk)} dari {len(semua_produk)} produk afiliasi")
 
     dimas = kerja("mahim", "Mahim", "Affiliate & Sosmed", "Caption", f"""Kamu Mahim, karyawan copywriter sosmed. Ide produk:
 {json.dumps((sari.get("ide") or [])[:5] if isinstance(sari, dict) else [], ensure_ascii=False)}
@@ -257,7 +263,8 @@ Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threa
 Buat satu paket untuk tiap ide. Kalimat pembuka tiap paket harus beda satu sama lain, jangan pakai pola yang sama.
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
 JANGAN mengaku sudah membeli atau memakai produk, jangan mengarang pengalaman atau testimoni.
-Jangan menyebut fitur yang tidak tertulis di nama produk. Caption Threads wajib diakhiri "(link afiliasi)".
+Jangan menyebut fitur yang tidak tertulis di nama produk. Jangan mengklaim original, resmi, atau bergaransi.
+Produk bertuliskan "second" wajib disebut second/bekas, tanpa klaim kondisi, baterai, kelengkapan, garansi, atau keaslian. Caption Threads wajib diakhiri "(link afiliasi)".
 Salin field produk dari ide yang kamu pakai apa adanya.
 Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""",
         syarat=bool(isinstance(sari, dict) and sari.get("ide")))
@@ -275,6 +282,16 @@ Skema: {{"laporan_ceo":"","perlu_dicek":[],"antrean":[{{"hari":"","jam_wib":"","
     return agents, log, dipakai
 
 
+KLAIM_BEKAS = re.compile(r"\b(garansi|bergaransi|original|ori|resmi|mulus|normal|battery health|bh|like new|segel)\b", re.I)
+
+
+def layak(teks, produk):
+    """HP bekas: wajib bilang bekas/second dan tanpa klaim kondisi, garansi, atau keaslian."""
+    if produk.get("kategori") != "hp_bekas":
+        return True
+    return bool(re.search(r"\b(bekas|second)\b", teks, re.I)) and not KLAIM_BEKAS.search(teks)
+
+
 def tulis_antrean(data):
     """Tambahkan caption Threads dari Mahim ke antrean, status menunggu CEO.
 
@@ -287,7 +304,8 @@ def tulis_antrean(data):
         antrean = []
     sudah = {a.get("id") for a in antrean}
 
-    produk = {p["nama"].strip().lower(): p["link"] for p in baca_produk()}
+    produk = {p["nama"].strip().lower(): p for p in baca_produk()}
+    link_run = set()
     mahim = (data.get("agents", {}).get("mahim") or {}).get("hasil") or {}
     paket = mahim.get("paket") if isinstance(mahim, dict) else None
     baru = 0
@@ -299,10 +317,20 @@ def tulis_antrean(data):
         kid = f"{data['tanggal']}-mahim-{i}"
         if kid in sudah:
             continue
-        link = produk.get((p.get("produk") or "").strip().lower(), "")
-        if not link:
+        barang = produk.get((p.get("produk") or "").strip().lower())
+        if not barang:
             print(f"[antrean] dibuang, produk tidak ada di daftar: {p.get('produk')}", file=sys.stderr)
             continue
+        link = barang["link"]
+        if link in link_run:
+            print(f"[antrean] dibuang, produk dobel dalam satu shift: {p.get('produk')}", file=sys.stderr)
+            continue
+        if not layak(teks, barang):
+            print(f"[antrean] dibuang, caption HP bekas tidak aman: {p.get('produk')}", file=sys.stderr)
+            continue
+        link_run.add(link)
+        if "(link afiliasi)" not in teks.lower():
+            teks += " (link afiliasi)"
         antrean.append({
             "id": kid,
             "link": link,

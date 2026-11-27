@@ -80,7 +80,7 @@ def kunci(teks):
 
 
 def pilih(antrean, siap, now):
-    """Buang teks yang sudah pernah terkirim atau kembar, lalu dahulukan caption AI.
+    """Buang teks yang sudah pernah terkirim atau kembar; urutan mengikuti antrean (yang lama duluan).
 
     Kosong kalau post terakhir belum lewat JEDA_JAM.
     """
@@ -94,7 +94,7 @@ def pilih(antrean, siap, now):
         return []
     sudah = {kunci(a.get("teks")) for a in antrean if a.get("terkirim")}
     hasil = []
-    for a in sorted(siap, key=lambda x: "-cadangan-" in x.get("id", "")):
+    for a in siap:
         k = kunci(a.get("teks"))
         if k not in sudah:
             sudah.add(k)
