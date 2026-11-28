@@ -1,6 +1,6 @@
 {
  "tanggal": "2026-11-28",
- "jam": "01:16 WIB",
+ "jam": "15:02 WIB",
  "status": "selesai",
  "model": "gemini-3.6-flash",
  "agents": {
@@ -12,21 +12,21 @@
    "hasil": {
     "ide": [
      {
-      "judul_kerja": "The Forgotten Room: 1923 Asylum Micro-Drama",
-      "sudut": "Mikro-drama horor atmosferik format 9:16 tanpa wajah (perspektif audio rekaman medis tua dan rekaman visual CCTV/EVP fiktif) yang menceritakan kisah nyata misteri rumah sakit jiwa abad ke-20.",
-      "kenapa_nonton": "Memanfaatkan tren Microdramas yang sangat disukai Gen Z untuk menyampaikan ketegangan horor psikologis dan sejarah singkat secara instan dalam waktu di bawah 60 detik.",
+      "judul_kerja": "The 60-Second Microdrama: The Smiling Man of 1920",
+      "sudut": "Menceritakan kisah horor sejarah singkat dalam format microdrama 9:16 tanpa memperlihatkan wajah (menggunakan arsip foto vintage bergerak, suara ambience mencekam, dan narasi bahasa Inggris berbisik). Terinspirasi dari tren maraknya konten microdrama horor di YouTube.",
+      "kenapa_nonton": "Menjawab tren berkembangnya web series horor berdurasi pendek (microdramas) yang sangat disukai penonton global karena langsung membangun ketegangan tanpa buang waktu.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "Midnight in 1888 Whitechapel: Rainy ASMR & Lost History",
-      "sudut": "Gabungan audio ambient relaksasi/horor (hujan di jalanan berkerikil, derak kereta kuda) dengan visual sinematik atmosferik malam hari, diiringi narasi sejarah kelam London yang misterius.",
-      "kenapa_nonton": "Menjawab preferensi penonton pada konten berdurasi fokus tinggi dan audio ambient yang imersif, memberikan sensasi hening sekaligus merinding sebelum tidur.",
+      "judul_kerja": "The Night Monoculture Died: The Lost 1980s TV Hijack",
+      "sudut": "Mengulas kisah sejarah penyiaran di mana satu siaran TV misterius menginterupsi tayangan publik dan meneror jutaan penonton simultaneously. Visual menggunakan estetika retro VHS glitch dan ambience gelombang radio tua.",
+      "kenapa_nonton": "Memanfaatkan tren pembahasan fenomena 'Monoculture' di media sosial dengan balutan sejarah misterius dan audio atmosferik yang memicu rasa penasaran.",
       "sumber": "berita"
      },
      {
-      "judul_kerja": "The Cold War Phantom Station: UVB-76 Signal Logs",
-      "sudut": "Estetika analog horror (layar monitor tua dan spektrogram audio) tanpa menampilkan wajah, mengulas sejarah nyata stasiun radio misterius Rusia yang memancarkan sinyal aneh sejak era Perang Dingin.",
-      "kenapa_nonton": "Daya tarik rasa penasaran tinggi (high curiosity hook) terhadap arsip sejarah nyata yang belum terpecahkan, cocok untuk audiens internasional penyuka misteri dan teori konspirasi.",
+      "judul_kerja": "Midnight Letters: The Rainy Victorian Attic Mystery",
+      "sudut": "Kombinasi ambience hujan 3 AM di loteng era Viktoria dengan narasi voiceover bahasa Inggris yang membacakan surat asli dari tokoh sejarah sebelum hilang secara misterius. Format animasi loop 9:16 yang estetik dan kelam.",
+      "kenapa_nonton": "Audiens luar negeri menyukai gabungan konten relaksasi ambience dengan narasi sejarah gelap (dark history) yang misterius sebagai tontonan malam hari.",
       "sumber": "lab"
      }
     ]
@@ -37,40 +37,40 @@
    "divisi": "Shorts & Editor",
    "peran": "Naskah",
    "hasil": {
-    "hook": "In 1923, an asylum sealed Room 47... with the doctor still inside.",
+    "hook": "In 1920, a photographer captured a man who shouldn't exist...",
     "naskah": [
      {
       "detik": "0-3",
-      "narasi": "In 1923, an asylum sealed Room 47... with the chief doctor still inside.",
-      "teks_layar": "[Top: by Agung] [Glitch Fade In] ROOM 47 WAS SEALED IN 1923"
+      "narasi": "In 1920, a photographer captured a man who shouldn't exist...",
+      "teks_layar": "[Atas: 'by Agung' - teks kecil static] | [Tengah: Animasi Glitch & Pop-in] THE SMILING MAN (1920)"
      },
      {
       "detik": "3-9",
-      "narasi": "Audio logs recovered decades later revealed Dr. Holloway wasn't treating a patient. He was locked in with something else.",
-      "teks_layar": "[Top: by Agung] [Typewriter Flicker] RECOVERED TAPE: DR. HOLLOWAY"
+      "narasi": "It was a foggy midnight in London. The streets were pitch black, except for one lonely lamp post.",
+      "teks_layar": "[Atas: 'by Agung'] | [Animasi Text Fade-in + Fog Shift Effect] Midnight, London - 1920"
      },
      {
       "detik": "9-17",
-      "narasi": "His final log at 3:14 AM contains no words. Only relentless, rhythmic scratching against the reinforced steel door from the inside.",
-      "teks_layar": "[Top: by Agung] [Kinetic Zoom In + Static Distortion] 03:14 AM: SCRATCHING FROM INSIDE"
+      "narasi": "Standing beneath it was a tall figure, frozen in place... with a smile stretched far too wide for a human face.",
+      "teks_layar": "[Atas: 'by Agung'] | [Animasi Slow Zoom + Red Glow Pulse] An Unnatural Smile..."
      },
      {
       "detik": "17-25",
-      "narasi": "When demolition crews breached the seal decades later, the room was empty. The chains were still locked, and the walls were hollowed out.",
-      "teks_layar": "[Top: by Agung] [Shake Reveal Effect] UNBROKEN CHAINS. EMPTY ROOM."
+      "narasi": "He didn't blink. He didn't breathe. But every time the camera flashed, he was three steps closer.",
+      "teks_layar": "[Atas: 'by Agung'] | [Animasi Typewriter + Distorsi Horor] He didn't blink."
      },
      {
       "detik": "25-33",
-      "narasi": "Except, when modern audio forensics enhanced his final tape, they isolated three distinct whispered words: 'Don't look up.'",
-      "teks_layar": "[Top: by Agung] [Subliminal Red Pulse] \"DON'T LOOK UP\""
+      "narasi": "When the film developed, his face was completely blurred—as if he was vibrating at a different frequency.",
+      "teks_layar": "[Atas: 'by Agung'] | [Animasi Flicker & Blur In-Out] Not From This World"
      },
      {
       "detik": "33-40",
-      "narasi": "What do you think took Dr. Holloway from that locked room? Tell us in the comments.",
-      "teks_layar": "[Top: by Agung] [Slide Up Bounce] What was trapped in Room 47?"
+      "narasi": "If you saw him standing outside your window tonight... would you look away?",
+      "teks_layar": "[Atas: 'by Agung'] | [Animasi Text Rise Up + Glitch Fade] Would you look away?"
      }
     ],
-    "cta": "What do you think was trapped in Room 47? Leave your theory below.",
+    "cta": "If you saw him standing outside your window tonight... would you look away?",
     "durasi_detik": 40
    }
   },
@@ -82,56 +82,56 @@
     "shot": [
      {
       "detik": "0-3",
-      "visual": "Extreme close-up pintu besi berkarat dengan tulisan '47' pudar dan rantai tebal terkunci, color grading sepia vintage 1920-an dengan efek film grain dan flickering light.",
-      "teks": "ROOM 47 WAS SEALED IN 1923",
-      "animasi_teks": "Glitch Fade In (durasi 0.6s)",
-      "transisi": "Hard cut dengan glitch flash",
-      "sfx": "Suara benturan pintu besi berat (iron slam) diikuti vinyl crackle pelan"
+      "visual": "Foto hitam putih bergaya 1920-an dengan efek film grain tebal, gerakan slow zoom out perlahan.",
+      "teks": "THE SMILING MAN (1920)",
+      "animasi_teks": "Glitch & Pop-in (Durasi: 0.5s)",
+      "transisi": "Fade to Black (Durasi: 0.3s)",
+      "sfx": "Suara jepretan kamera tua (Camera Shutter) + Vinyl Crackle"
      },
      {
       "detik": "3-9",
-      "visual": "Slow pan ke alat perekam reel-to-reel tape tua berdebu yang pita rolnya berputar lambat di atas meja kayu usang, pencahayaan dramatis temaram (chiaroscuro).",
-      "teks": "RECOVERED TAPE: DR. HOLLOWAY",
-      "animasi_teks": "Typewriter Flicker (durasi 1.0s)",
-      "transisi": "Static television noise wipe",
-      "sfx": "Suara klik tombol tape recorder analog, putaran motor pita, dan hum listrik frekuensi rendah"
+      "visual": "Visual cinematic jalanan London tempo dulu berkabut tebal malam hari, pencahayaan minim dari satu tiang lampu jalan.",
+      "teks": "Midnight, London - 1920",
+      "animasi_teks": "Text Fade-in + Fog Shift Effect (Durasi: 1.0s)",
+      "transisi": "Distortion Blur (Durasi: 0.5s)",
+      "sfx": "Desir angin malam mencekam + gema langkah kaki lambat"
      },
      {
       "detik": "9-17",
-      "visual": "Makro shot permukaan pintu baja dari dalam ruangan, memperlihatkan bekas cakar/goresan logam segar yang dalam secara berulang, kamera bergetar halus (camera shake).",
-      "teks": "03:14 AM: SCRATCHING FROM INSIDE",
-      "animasi_teks": "Kinetic Zoom In + Static Distortion (durasi 0.8s)",
-      "transisi": "Whip pan cepat dengan chromatic aberration",
-      "sfx": "Suara cakaran kuku besi tajam di pelat baja ritmis (metal scratching), detak jantung berdegup berat"
+      "visual": "Slow zoom ke sosok pria tinggi jangkung berdiri kaku di bawah lampu, tampak senyum lebar tidak wajar terpancar dari bayangan.",
+      "teks": "An Unnatural Smile...",
+      "animasi_teks": "Slow Zoom + Red Glow Pulse (Durasi: 1.5s)",
+      "transisi": "Strobe Flash (Durasi: 0.2s)",
+      "sfx": "Eerie Violin Riser (nada melengking naik perlahan)"
      },
      {
       "detik": "17-25",
-      "visual": "Sorotan lampu senter tim pembongkar menembus debu tebal ke dalam sel kosong; rantai masih utuh terkunci di lantai, dinding batu bata jebol berlubang ke arah kegelapan.",
-      "teks": "UNBROKEN CHAINS. EMPTY ROOM.",
-      "animasi_teks": "Shake Reveal Effect (durasi 0.7s)",
-      "transisi": "Blur dissolve",
-      "sfx": "Suara gemerincing rantai berat (chain rattle), hembusan angin hampa lorong bawah tanah, puing runtuh halus"
+      "visual": "Cut cepat setiap kilatan jepretan kamera (3x), posisi sosok pria berpindah makin dekat ke arah kamera secara konstan.",
+      "teks": "He didn't blink.",
+      "animasi_teks": "Typewriter + Distorsi Horor (Durasi: 0.8s)",
+      "transisi": "Camera Flash Snap (Durasi: 0.1s)",
+      "sfx": "Detak jantung berat (Heartbeat thud) + Flash strobe sound"
      },
      {
       "detik": "25-33",
-      "visual": "POV kamera perlahan mendongak (tilt up) ke arah plafon sel yang gelap pekat dan berjamur, siluet bayangan anomali tak wajar tampak bergelantungan di sudut atas.",
-      "teks": "\"DON'T LOOK UP\"",
-      "animasi_teks": "Subliminal Red Pulse (durasi 0.5s looping)",
-      "transisi": "Fade to black cepat berkedip",
-      "sfx": "Audio riser tegang tiba-tiba cut off, suara bisikan serak binaural sangat dekat: 'Don't look up'"
+      "visual": "Tampilan klosap lembaran foto yang sedang dicetak di larutan kimia, bagian wajah bergetar/buram seolah frekuensinya berbeda.",
+      "teks": "Not From This World",
+      "animasi_teks": "Flicker & Blur In-Out (Durasi: 1.2s)",
+      "transisi": "Glitch Zoom In (Durasi: 0.4s)",
+      "sfx": "Suara statis listrik/radio (Static noise) + Deep Sub-Bass Impact"
      },
      {
       "detik": "33-40",
-      "visual": "Kamera bergerak mundur lambat (dolly out) menjauhi pintu kamar 47 yang kembali gelap, muncul ikon interaksi komentar minimalis di layar.",
-      "teks": "What was trapped in Room 47?",
-      "animasi_teks": "Slide Up Bounce (durasi 0.5s)",
-      "transisi": "Fade to black lambat",
-      "sfx": "Sub-bass drop pelan dan atmospheric horror drone mereda"
+      "visual": "Sudut pandang dari dalam kamar gelap melihat ke arah jendela luar, bayangan sosok tersenyum muncul secara perlahan di kegelapan.",
+      "teks": "Would you look away?",
+      "animasi_teks": "Text Rise Up + Glitch Fade (Durasi: 1.0s)",
+      "transisi": "Fade Out to Black (Durasi: 1.0s)",
+      "sfx": "Ketukan pelan di kaca jendela 3x + Bisikan halus mencekam"
      }
     ],
-    "musik": "Dark ambient horror drone dengan tempo lambat, disonansi cello menegangkan, dan textur tape hiss retro sepanjang 40 detik.",
-    "safe_area": "Format 9:16 (1080x1920) untuk Shorts/Reels/TikTok: margin atas 150px, margin bawah 320px, margin sisi 60px agar teks dan visual fokus tidak tertutup UI platform.",
-    "by_agung": "Top-center frame, 90px dari batas atas layar, font Inter Semi-Bold ukuran kecil (24pt), warna putih opasitas 65%, posisi statis dari detik 0 hingga 40."
+    "musik": "Dark Ambient Horror Drone & Low Frequency Tension, Volume 35%, Loop dari detik 00:00 hingga 00:40",
+    "safe_area": "Format 9:16 Vertical (TikTok/Reels/Shorts). Semua elemen teks utama berada di area tengah (margin atas 15%, bawah 20%) agar tidak tertutup UI aplikasi.",
+    "by_agung": "Posisi teks static 'by Agung' berada di Top-Center (x: 50%, y: 5%), Font: Montserrat Regular 14px, Warna: Putih Transparan (Opacity 70%), aktif terus sepanjang video tanpa animasi."
    }
   },
   "botak": {
@@ -142,38 +142,38 @@
    "hasil": {
     "ide": [
      {
-      "topik": "Proteksi Grip dan Kekuatan Magnetik MagSafe untuk Penggunaan Holder Mobil",
-      "masalah_penonton": "Casing sering terasa licin di tangan dan magnet MagSafe terlalu lemah sehingga rawan jatuh saat dipasang di car mount",
-      "produk": "Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max",
-      "hook": "Capek gonta-ganti case gara-gara magnetnya loyo dan gampang merosot pas mobil ngerem mendadak?",
-      "sumber": "lab"
-     },
-     {
-      "topik": "Optimalisasi Tombol Camera Control dan Layar Lebar untuk Efisiensi Workflow Content Creator",
-      "masalah_penonton": "Kebingungan menentukan pilihan ukuran layar dan fleksibilitas tombol capture fisik untuk kebutuhan produksi video media sosial",
-      "produk": "iPhone 16 / 16 Plus second 128GB-512GB",
-      "hook": "Mau upgrade ke Camera Control tapi masih bingung mending ambil ukuran standar atau layar Plus buat ngonten?",
-      "sumber": "lab"
-     },
-     {
-      "topik": "Solusi Pengisian Daya Praktis Anti-Kabel Ruwet Saat Beraktivitas di Luar Ruangan",
-      "masalah_penonton": "Kabel data konvensional sering kusut di dalam tas, patah, atau lupa terbawa saat mobilitas tinggi",
-      "produk": "Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik",
-      "hook": "Masih betah bawa tas berantakan gara-gara lilitan kabel charger yang bikin repot waktu bepergian?",
+      "topik": "Visual Multitasking Layar Lebar dan Manajemen File Proyek Berkapasitas Besar",
+      "masalah_penonton": "Layar smartphone terlalu sempit untuk menggambar atau mengedit dokumen, serta memori internal cepat penuh akibat file media berukuran besar.",
+      "produk": "Tablet Pro11 16GB/512GB",
+      "hook": "Masih maksa edit naskah dan ilustrasi di layar HP yang sempit sampai memorinya sering jebol?",
       "sumber": "berita"
      },
      {
-      "topik": "Pemanfaatan Fitur Galaxy AI On-Device untuk Merangkum Rekaman Diskusi Kerja",
-      "masalah_penonton": "Kewalahan menyusun notulensi rapat manual dan menerjemahkan dokumen kerja lintas bahasa secara cepat",
-      "produk": "Samsung Galaxy S25 Series",
-      "hook": "Habis meeting berjam-jam tapi males banget nyalin catatan panjang satu per satu secara manual?",
+      "topik": "Portabilitas Hiburan Audio dan Pencahayaan Mood Lamp untuk Aktivitas Outdoor",
+      "masalah_penonton": "Suasana kumpul outdoor terasa sepi dan minim pencahayaan tanpa perlu membawa banyak perangkat terpisah.",
+      "produk": "Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED",
+      "hook": "Nongkrong malam di luar ruangan makin mati gaya gara-gara suasana sepi dan area sekitarnya gelap?",
+      "sumber": "berita"
+     },
+     {
+      "topik": "Solusi Darurat Kempes Ban dan Aki Drop Saat Perjalanan Jauh Anti-Panik",
+      "masalah_penonton": "Kepanikan saat tekanan angin ban kendaraan berkurang di jalan sepi yang jauh dari bengkel atau penambal ban.",
+      "produk": "USEMO CI30 jump starter dan pompa ban 12000mAh",
+      "hook": "Bayangkan ban kendaraan kamu mendadak kempes di tengah jalan sepi jam 1 malam tanpa ada bengkel!",
       "sumber": "lab"
      },
      {
-      "topik": "Pelacakan Metrik Olahraga Real-Time dengan Tampilan UI Bertema Gaming",
-      "masalah_penonton": "Jam tangan pintar olahraga di pasaran cenderung memiliki desain visual monoton yang kurang menarik dipakai harian",
-      "produk": "Smartwatch Infinix GT Watch 5 Pro",
-      "hook": "Bosan sama smartwatch pemantau olahraga yang tampilannya terlalu kaku dan gitu-gitu aja?",
+      "topik": "Proteksi Fisik Lengkap dan Pengisian Daya Efisien dalam Satu Paket Bundle",
+      "masalah_penonton": "Repot mencari aksesoris pengisi daya cepat dan pelindung layar/bodi secara terpisah yang pas presisinya.",
+      "produk": "Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro",
+      "hook": "Beli aksesoris proteksi dan daya satu per satu malah bikin pengeluaran membengkak dan ukurannya tidak pas?",
+      "sumber": "berita"
+     },
+     {
+      "topik": "Efisiensi Ruang Pouch Travel dengan Adaptor GaN Ukuran Ringkas Anti-Bongsor",
+      "masalah_penonton": "Adaptor charger lama ukurannya tebal dan berat sehingga menghabiskan ruang di dalam kantong penyimpan saat bepergian.",
+      "produk": "Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14",
+      "hook": "Tas pouch kamu mendadak penuh cuma gara-gara membawa batok charger iPhone lama yang ukurannya tebal?",
       "sumber": "lab"
      }
     ]
@@ -186,68 +186,68 @@
    "hasil": {
     "paket": [
      {
-      "topik": "Proteksi Grip dan Kekuatan Magnetik MagSafe untuk Penggunaan Holder Mobil",
-      "produk": "Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max",
-      "tiktok": "Lagi cari pelindung hp bahan liquid silicone dengan MagSafe? Cek Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max ini. Cek keranjang kuning sekarang!",
-      "threads": "Bahan liquid silicone memang punya tekstur yang khas, ditambah lagi sudah ada fitur MagSafe seperti pada Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max ini. (link afiliasi)",
-      "facebook": "Bagi pemilik iPhone yang memerlukan casing pendukung MagSafe, Case Getgard Liquid Silicone MagSafe untuk iPhone 18/17 Pro dan Pro Max bisa menjadi pilihan. Aksesori ini menggunakan material liquid silicone serta terintegrasi dengan modul MagSafe untuk tipe iPhone 17 Pro, 17 Pro Max, 18 Pro, dan 18 Pro Max. Sangat cocok sebagai pelindung harian bodi ponsel Anda.",
+      "topik": "Visual Multitasking Layar Lebar dan Manajemen File Proyek Berkapasitas Besar",
+      "produk": "Tablet Pro11 16GB/512GB",
+      "tiktok": "Masih maksa edit naskah dan ilustrasi di layar HP yang sempit sampai memorinya sering jebol? Tablet Pro11 16GB/512GB hadir memberikan ruang visual lebih lapang dan kapasitas simpan besar. Klik keranjang kuning sekarang untuk cek detailnya!",
+      "threads": "Layar ponsel yang terbatas memang sering bikin pusing pas lagi mengolah dokumen atau gambar. Kalau butuh area kerja yang lebih leluasa dan memori besar, Tablet Pro11 16GB/512GB bisa jadi opsi yang menarik. Info lengkap ada di bawah ya. (link afiliasi)",
+      "facebook": "Mengedit dokumen atau membuat ilustrasi di layar ponsel sering kali memicu kendala, apalagi ketika memori internal cepat penuh akibat file berukuran besar. Untuk memenuhi kebutuhan manajemen file proyek dan fleksibilitas visual, Tablet Pro11 16GB/512GB menyediakan kapasitas penyimpanan 512GB serta RAM 16GB. Ukuran layarnya yang luas membantu proses pengerjaan naskah maupun gambar menjadi lebih nyaman tanpa perlu khawatir kehabisan ruang simpan.",
       "hashtag": [
-       "#CaseGetgard",
-       "#LiquidSilicone",
-       "#MagSafeCase",
-       "#iPhoneCase"
+       "#TabletPro11",
+       "#Tablet16GB512GB",
+       "#GadgetKerja",
+       "#MultitaskingLayarLebar"
       ]
      },
      {
-      "topik": "Optimalisasi Tombol Camera Control dan Layar Lebar untuk Efisiensi Workflow Content Creator",
-      "produk": "iPhone 16 / 16 Plus second 128GB-512GB",
-      "tiktok": "Pilihan unit iPhone 16 / 16 Plus second kapasitas 128GB-512GB sudah tersedia nih. Opsi barang second ini bisa langsung dicek lewat keranjang kuning!",
-      "threads": "Kalau sedang mencari unit bekas, ada opsi iPhone 16 / 16 Plus second dengan pilihan memori 128GB hingga 512GB untuk kebutuhan harian. (link afiliasi)",
-      "facebook": "Tersedia pilihan perangkat smartphone bekas untuk model iPhone 16 / 16 Plus second dengan varian kapasitas penyimpanan mulai dari 128GB sampai 512GB. Unit second ini menawarkan dua variasi ukuran layar, yaitu versi standar 16 dan versi 16 Plus, yang dapat disesuaikan dengan kebutuhan ruang penyimpanan serta preferensi penggunaan Anda.",
+      "topik": "Portabilitas Hiburan Audio dan Pencahayaan Mood Lamp untuk Aktivitas Outdoor",
+      "produk": "Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED",
+      "tiktok": "Bayangkan lagi nongkrong malam di luar ruangan tapi suasananya sepi dan gelap gulita. Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED siap jadi pemutar musik sekaligus penerang lokasi kamu. Amankan produknya di keranjang kuning!",
+      "threads": "Acara santai outdoor kadang terasa ada yang kurang kalau tidak ada musik dan pencahayaan yang pas. Perangkat Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED ini menggabungkan pemutar audio dan lampu dalam satu bentuk yang praktis. Cek tautannya di sini. (link afiliasi)",
+      "facebook": "Ketika berkumpul di luar ruangan pada malam hari, suasana sering kali terasa sepi dan minim penerangan jika tidak membawa perlengkapan yang memadai. Membawa banyak perangkat terpisah tentu kurang praktis saat bepergian. Speaker Bluetooth GOOJODOQ 5W dengan radio FM dan lampu LED hadir sebagai solusi hemat tempat yang menyajikan fitur audio 5W, siaran radio FM, serta penerangan lampu LED dalam satu perangkat portabel.",
       "hashtag": [
-       "#iPhone16Second",
-       "#iPhone16PlusSecond",
-       "#iPhoneBekas",
-       "#GadgetSecond"
+       "#GOOJODOQ",
+       "#SpeakerBluetooth",
+       "#LampuLED",
+       "#OutdoorAudio"
       ]
      },
      {
-      "topik": "Solusi Pengisian Daya Praktis Anti-Kabel Ruwet Saat Beraktivitas di Luar Ruangan",
-      "produk": "Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik",
-      "tiktok": "Gak perlu repot gulung kabel tambahan, Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik ini praktis dibawa jalan. Beli sekarang di keranjang kuning!",
-      "threads": "Kabel charger berantakan di tas memang menyita tempat. Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik ini hadir menawarkan kepraktisan kabel tarik yang terpasang langsung. (link afiliasi)",
-      "facebook": "Menjaga baterai perangkat tetap terisi saat bepergian kini semakin ringkas dengan Power bank RAPAtech 10.000mAh PD40W dengan kabel Type-C tarik. Perangkat daya portabel ini memiliki kapasitas 10.000mAh serta daya hantar PD40W, lengkap dengan mekanisme kabel Type-C model tarik yang mempermudah penyimpanan saat dibawa bepergian.",
+      "topik": "Solusi Darurat Kempes Ban dan Aki Drop Saat Perjalanan Jauh Anti-Panik",
+      "produk": "USEMO CI30 jump starter dan pompa ban 12000mAh",
+      "tiktok": "Kepanikan saat tekanan ban mendadak berkurang di jalan sepi kini ada solusinya. Perangkat USEMO CI30 jump starter dan pompa ban 12000mAh siap membantu dalam situasi darurat perjalanan kamu. Yuk, cek keranjang kuning sekarang!",
+      "threads": "Mengalami kendala ban kurang angin di area yang jauh dari penambal ban memang bisa bikin cemas. Kehadiran USEMO CI30 jump starter dan pompa ban 12000mAh membantu penanganan kendala kendaraan secara mandiri saat di perjalanan. Detailnya bisa dilihat di sini. (link afiliasi)",
+      "facebook": "Perjalanan jauh terkadang menyimpan risiko tak terduga seperti tekanan angin ban yang berkurang atau masalah aki di lokasi yang jauh dari fasilitas bengkel. Untuk mengantisipasi momen darurat tersebut, USEMO CI30 jump starter dan pompa ban 12000mAh dirancang sebagai perangkat multifungsi berkapasitas 12000mAh yang dapat difungsikan untuk memompa ban sekaligus membantu menyalakan mesin saat kendala aki terjadi.",
       "hashtag": [
-       "#PowerBankRAPAtech",
-       "#PD40W",
-       "#PowerBank10000mAh",
-       "#TypeC"
+       "#USEMOCI30",
+       "#JumpStarter",
+       "#PompaBan12000mAh",
+       "#PerlengkapanMobil"
       ]
      },
      {
-      "topik": "Pemanfaatan Fitur Galaxy AI On-Device untuk Merangkum Rekaman Diskusi Kerja",
-      "produk": "Samsung Galaxy S25 Series",
-      "tiktok": "Mau perangkat yang bisa menunjang berbagai kegiatan mobile kamu? Lirik Samsung Galaxy S25 Series ini. Yuk intip langsung di keranjang kuning!",
-      "threads": "Samsung Galaxy S25 Series siap menjadi pilihan smartphone generasi terbaru untuk mendukung berbagai keperluan harian dan multitasking. (link afiliasi)",
-      "facebook": "Pembaruan lini flagship kembali dihadirkan melalui peluncuran Samsung Galaxy S25 Series. Smartphone kelas atas ini dirancang untuk pengguna yang membutuhkan performa perangkat tinggi guna menangani alur kerja harian, komunikasi bisnis, serta komputasi mobile masa kini secara lancar.",
+      "topik": "Proteksi Fisik Lengkap dan Pengisian Daya Efisien dalam Satu Paket Bundle",
+      "produk": "Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro",
+      "tiktok": "Membeli aksesoris pengisi daya dan pelindung bodi satu per satu sering bikin pengeluaran membengkak. Solusinya ada di Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro. Klik keranjang kuning sekarang!",
+      "threads": "Mencari aksesoris pelindung dan charger yang cocok sekaligus terkadang memakan banyak waktu. Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro menyajikan perlindungan lengkap beserta adaptor pengisi daya 60W dalam satu bundel. Cek tautan selengkapnya ya. (link afiliasi)",
+      "facebook": "Proses melengkapi proteksi perangkat sering kali memakan biaya lebih jika casing, pelindung layar, dan pengisi daya dibeli secara terpisah. Paket RAPAtech charger ZEN PRO GaN 60W, case bening, dan tempered glass iPhone 18 Pro menawarkan kemudahan aksesori lengkap. Dalam satu paket, terdapat tempered glass, casing transparan, serta kepala charger berbahan GaN dengan daya 60W untuk mendukung pengisian daya efisien.",
       "hashtag": [
-       "#SamsungGalaxyS25Series",
-       "#GalaxyS25",
-       "#SamsungGalaxy",
-       "#SmartphoneFlagship"
+       "#RAPAtech",
+       "#ZENPROGaN60W",
+       "#iPhone18Pro",
+       "#BundleAksesoris"
       ]
      },
      {
-      "topik": "Pelacakan Metrik Olahraga Real-Time dengan Tampilan UI Bertema Gaming",
-      "produk": "Smartwatch Infinix GT Watch 5 Pro",
-      "tiktok": "Tampil beda dengan jam pintar bernuansa sporty! Smartwatch Infinix GT Watch 5 Pro siap melengkapi gaya harianmu. Cek selengkapnya di keranjang kuning!",
-      "threads": "Smartwatch Infinix GT Watch 5 Pro hadir untuk pengguna yang mencari perangkat jam pintar dengan sentuhan visual khas lini GT. (link afiliasi)",
-      "facebook": "Bagi Anda yang sedang melirik aksesori jam pintar untuk dipakai berolahraga maupun aktivitas kasual, Smartwatch Infinix GT Watch 5 Pro menawarkan alternatif baru. Smartwatch dari seri GT ini membawa tampilan modern dan sporty yang pas melingkar di pergelangan tangan untuk menemani kegiatan sepanjang hari.",
+      "topik": "Efisiensi Ruang Pouch Travel dengan Adaptor GaN Ukuran Ringkas Anti-Bongsor",
+      "produk": "Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14",
+      "tiktok": "Bawa adaptor charger lama yang tebal dan tebal sering bikin tas pouch travel kamu mendadak penuh. Ganti ke Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14 yang lebih efisien. Checkout di keranjang kuning ya!",
+      "threads": "Menata barang bawaan buat bepergian jadi lebih rapi kalau tidak terhalang adaptor charger yang bongsor. Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14 memberikan solusi pengisian daya hemat tempat untuk berbagai model iPhone. (link afiliasi)",
+      "facebook": "Menata perlengkapan di dalam pouch travel sering kali terganggu oleh ukuran kepala charger konvensional yang tebal dan memakan tempat. Charger GaN RAPAtech 20W/30W Lightning untuk iPhone X sampai 14 memanfaatkan teknologi GaN dengan opsi daya 20W atau 30W serta kabel Lightning. Desainnya yang lebih ringkas sangat pas untuk menghemat ruang penyimpanan saat bepergian bagi pengguna iPhone seri X hingga 14.",
       "hashtag": [
-       "#InfinixGTWatch5Pro",
-       "#GTWatch5Pro",
-       "#SmartwatchInfinix",
-       "#JamTanganPintar"
+       "#ChargerGaN",
+       "#RAPAtech",
+       "#ChargeniPhone",
+       "#AksesorisTravel"
       ]
      }
     ]
@@ -258,53 +258,52 @@
    "divisi": "Sekretariat",
    "peran": "Sekretaris CEO",
    "hasil": {
-    "laporan_ceo": "Malam, Pak Gembi. Rahma izin melaporkan: Seluruh tugas tim (Gendol, Paero, Bonyek, Botak, dan Mahim) rampung 100% tepat waktu. Yang sudah jadi meliputi 1 draft video Shorts misteri internasional dan 5 variasi caption produk affiliate. Tidak ada kegagalan teknis maupun keterlambatan produksi malam ini. Seluruh materi saat ini statusnya on-hold menunggu keputusan dan eksekusi posting manual dari Bapak.",
+    "laporan_ceo": "Selamat malam Pak Gembi. Laporan malam ini menunjukkan seluruh tim (Gendol, Paero, Bonyek, Botak, dan Mahim) telah menyelesaikan tugasnya 100% tanpa ada kendala/kegagalan. Semua draf konten Shorts dan caption affiliate sudah siap untuk ditinjau sebelum Bapak posting secara manual.",
     "perlu_dicek": [
-     "Kesesuaian ritme editing video Bonyek terhadap naskah hook Shorts 'Room 47' (audio & visual pacing)",
-     "Kelayakan 5 variasi caption dari Mahim dan pencocokan link produk affiliate hasil riset Botak",
-     "Persetujuan final jadwal jam tayang sebelum Bapak posting secara manual"
+     "Draf editing video Shorts oleh Bonyek (Hook: 'In 1920, a photographer captured a man who shouldn't exist...')",
+     "Kesesuaian 5 pilihan caption affiliate buatan Mahim dengan produk hasil riset Botak"
     ],
     "antrean": [
      {
-      "hari": "Hari 1 (Besok)",
-      "jam_wib": "12.30 WIB",
-      "platform": "TikTok / Shopee Video (Affiliate Indo)",
-      "isi": "Proteksi Grip dan Kekuatan Magnetik MagSafe untuk Penggunaan Holder Mobil",
+      "hari": "Hari 1",
+      "jam_wib": "12:30 WIB",
+      "platform": "TikTok / Instagram (Affiliate ID)",
+      "isi": "Visual Multitasking Layar Lebar dan Manajemen File Proyek Berkapasitas Besar",
       "status": "nunggu persetujuan CEO"
      },
      {
-      "hari": "Hari 1 (Besok)",
-      "jam_wib": "22.00 WIB",
-      "platform": "YouTube Shorts (Global / US-EU)",
-      "isi": "Shorts Hook: 'In 1923, an asylum sealed Room 47... with the doctor still inside.'",
+      "hari": "Hari 1",
+      "jam_wib": "21:00 WIB",
+      "platform": "YouTube Shorts (Global/US/EU)",
+      "isi": "Shorts Video (Hook: In 1920, a photographer captured a man who shouldn't exist...)",
       "status": "nunggu persetujuan CEO"
      },
      {
-      "hari": "Hari 2 (Lusa)",
-      "jam_wib": "12.00 WIB",
-      "platform": "Instagram Reels / TikTok (Affiliate Indo)",
-      "isi": "Optimalisasi Tombol Camera Control dan Layar Lebar untuk Efisiensi Workflow Content Creator",
+      "hari": "Hari 2",
+      "jam_wib": "19:00 WIB",
+      "platform": "TikTok / Shopee Video (Affiliate ID)",
+      "isi": "Portabilitas Hiburan Audio dan Pencahayaan Mood Lamp untuk Aktivitas Outdoor",
       "status": "nunggu persetujuan CEO"
      },
      {
-      "hari": "Hari 2 (Lusa)",
-      "jam_wib": "19.30 WIB",
-      "platform": "TikTok / Shopee Video (Affiliate Indo)",
-      "isi": "Solusi Pengisian Daya Praktis Anti-Kabel Ruwet Saat Beraktivitas di Luar Ruangan",
-      "status": "nunggu persetujuan CEO"
-     },
-     {
-      "hari": "Hari 3",
-      "jam_wib": "13.00 WIB",
-      "platform": "TikTok / Instagram Reels (Affiliate Indo)",
-      "isi": "Pemanfaatan Fitur Galaxy AI On-Device untuk Merangkum Rekaman Diskusi Kerja",
+      "hari": "Hari 2",
+      "jam_wib": "21:30 WIB",
+      "platform": "TikTok / Instagram (Affiliate ID)",
+      "isi": "Solusi Darurat Kempes Ban dan Aki Drop Saat Perjalanan Jauh Anti-Panik",
       "status": "nunggu persetujuan CEO"
      },
      {
       "hari": "Hari 3",
-      "jam_wib": "20.00 WIB",
-      "platform": "TikTok / Shopee Video (Affiliate Indo)",
-      "isi": "Pelacakan Metrik Olahraga Real-Time dengan Tampilan UI Bertema Gaming",
+      "jam_wib": "12:00 WIB",
+      "platform": "Instagram / TikTok (Affiliate ID)",
+      "isi": "Proteksi Fisik Lengkap dan Pengisian Daya Efisien dalam Satu Paket Bundle",
+      "status": "nunggu persetujuan CEO"
+     },
+     {
+      "hari": "Hari 3",
+      "jam_wib": "19:30 WIB",
+      "platform": "TikTok / Shopee Video (Affiliate ID)",
+      "isi": "Efisiensi Ruang Pouch Travel dengan Adaptor GaN Ukuran Ringkas Anti-Bongsor",
       "status": "nunggu persetujuan CEO"
      }
     ]
