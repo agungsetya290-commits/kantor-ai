@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Cetak "ya" kalau agent belum menghasilkan caption sejak jam 16:00 WIB terakhir.
+"""Cetak "ya" kalau agent belum menghasilkan caption sejak jam 15:00 WIB terakhir.
 
-Kalau jadwal 16:00 telat sampai lewat tengah malam, run berikutnya tetap menyusul.
+Kalau jadwal 15:00 telat sampai lewat tengah malam, run berikutnya tetap menyusul.
 """
 import json, os
 from datetime import datetime, timezone, timedelta
@@ -11,7 +11,7 @@ SHIFT = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
 def perlu(shift, now):
-    batas = now.replace(hour=16, minute=0, second=0, microsecond=0)
+    batas = now.replace(hour=15, minute=0, second=0, microsecond=0)
     if now < batas:
         batas -= timedelta(days=1)
     try:

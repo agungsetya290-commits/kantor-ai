@@ -33,9 +33,8 @@ jobs:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
           THREADS_TOKEN: ${{ secrets.THREADS_TOKEN }}
-          JADWAL: ${{ github.event_name }}
         run: |
-          if [ "$JADWAL" = "schedule" ] && [ "$(python agents/perlu_agent.py)" != "ya" ]; then
+          if [ "$(python agents/perlu_agent.py)" != "ya" ]; then
             echo "agent sudah menghasilkan caption untuk periode ini, dilewati"
           else
             python agents/office.py || true
