@@ -2,7 +2,7 @@ name: Shift malam Kantor AI
 
 on:
   schedule:
-    - cron: "17 0-15 * * *"   # tiap jam, 07:17-22:17 WIB; post.py mengatur jeda dan batas harian
+    - cron: "17 0-15 * * *"   # tiap jam, 07:17-22:17 WIB (sering telat); post.py mengatur jeda dan batas harian
   workflow_dispatch:       # dipakai tombol manual dan pemicu luar (cron-job.org)
     inputs:
       agent:

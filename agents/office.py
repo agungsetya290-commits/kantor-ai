@@ -263,7 +263,7 @@ Tulis caption untuk 3 platform: TikTok (pendek, ada CTA keranjang kuning), Threa
 Buat satu paket untuk tiap ide. Kalimat pembuka tiap paket harus beda satu sama lain, jangan pakai pola yang sama.
 Bahasa Indonesia, tanpa klaim berlebihan, tanpa harga pasti.
 JANGAN mengaku sudah membeli atau memakai produk, jangan mengarang pengalaman atau testimoni.
-Jangan menyebut fitur yang tidak tertulis di nama produk. Jangan mengklaim original, resmi, atau bergaransi.
+Jangan menyebut fitur yang tidak tertulis di nama produk. Jangan mengklaim original, resmi, bergaransi, "terbaru", atau "generasi terbaru".
 Produk bertuliskan "second" wajib disebut second/bekas, tanpa klaim kondisi, baterai, kelengkapan, garansi, atau keaslian. Caption Threads wajib diakhiri "(link afiliasi)".
 Salin field produk dari ide yang kamu pakai apa adanya.
 Skema: {{"paket":[{{"topik":"","produk":"","tiktok":"","threads":"","facebook":"","hashtag":[]}}]}}""",
